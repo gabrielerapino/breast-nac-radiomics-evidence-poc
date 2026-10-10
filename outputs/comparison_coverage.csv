@@ -1,0 +1,29 @@
+study_id,category,comparison,status,reason
+YANG_2022,A,radiomics vs clinical-only,unavailable,"No isolated, source-supported comparator contrast available. Fusion with clinical+DL does not isolate a radiomics+DL-only contrast."
+YANG_2022,B,radiomics vs conventional ultrasound-only,unavailable,"No isolated, source-supported comparator contrast available. Fusion with clinical+DL does not isolate a radiomics+DL-only contrast."
+YANG_2022,C,combined vs clinical comparator,unavailable,"No isolated, source-supported comparator contrast available. Fusion with clinical+DL does not isolate a radiomics+DL-only contrast."
+YANG_2022,D,early vs baseline,available,All matched datasets exported; primary is the highest equivalent validation role.
+YANG_2022,E,delta vs baseline,available,All matched datasets exported; primary is the highest equivalent validation role.
+YANG_2022,F,radiomics+DL vs radiomics-only,unavailable,"No isolated, source-supported comparator contrast available. Fusion with clinical+DL does not isolate a radiomics+DL-only contrast."
+YANG_2022,G,fusion/combined vs components,available,All matched datasets exported; primary is the highest equivalent validation role.
+WANG_2025,A,radiomics vs clinical-only,unavailable,"No isolated, source-supported comparator contrast available. Fusion with clinical+DL does not isolate a radiomics+DL-only contrast."
+WANG_2025,B,radiomics vs conventional ultrasound-only,unavailable,"No isolated, source-supported comparator contrast available. Fusion with clinical+DL does not isolate a radiomics+DL-only contrast."
+WANG_2025,C,combined vs clinical comparator,available,All matched datasets exported; primary is the highest equivalent validation role.
+WANG_2025,D,early vs baseline,available,All matched datasets exported; primary is the highest equivalent validation role.
+WANG_2025,E,delta vs baseline,available,All matched datasets exported; primary is the highest equivalent validation role.
+WANG_2025,F,radiomics+DL vs radiomics-only,unavailable,"No isolated, source-supported comparator contrast available. Fusion with clinical+DL does not isolate a radiomics+DL-only contrast."
+WANG_2025,G,fusion/combined vs components,available,All matched datasets exported; primary is the highest equivalent validation role.
+WU_2025,A,radiomics vs clinical-only,available,All matched datasets exported; primary is the highest equivalent validation role.
+WU_2025,B,radiomics vs conventional ultrasound-only,unavailable,"No isolated, source-supported comparator contrast available. Fusion with clinical+DL does not isolate a radiomics+DL-only contrast."
+WU_2025,C,combined vs clinical comparator,unavailable,"No isolated, source-supported comparator contrast available. Fusion with clinical+DL does not isolate a radiomics+DL-only contrast."
+WU_2025,D,early vs baseline,unavailable,"No isolated, source-supported comparator contrast available. Fusion with clinical+DL does not isolate a radiomics+DL-only contrast."
+WU_2025,E,delta vs baseline,unavailable,"No isolated, source-supported comparator contrast available. Fusion with clinical+DL does not isolate a radiomics+DL-only contrast."
+WU_2025,F,radiomics+DL vs radiomics-only,unavailable,"No isolated, source-supported comparator contrast available. Fusion with clinical+DL does not isolate a radiomics+DL-only contrast."
+WU_2025,G,fusion/combined vs components,available,All matched datasets exported; primary is the highest equivalent validation role.
+FRONTIERS_2024,A,radiomics vs clinical-only,available,All matched datasets exported; primary is the highest equivalent validation role.
+FRONTIERS_2024,B,radiomics vs conventional ultrasound-only,unavailable,"No isolated, source-supported comparator contrast available. Fusion with clinical+DL does not isolate a radiomics+DL-only contrast."
+FRONTIERS_2024,C,combined vs clinical comparator,available,All matched datasets exported; primary is the highest equivalent validation role.
+FRONTIERS_2024,D,early vs baseline,unavailable,"No isolated, source-supported comparator contrast available. Fusion with clinical+DL does not isolate a radiomics+DL-only contrast."
+FRONTIERS_2024,E,delta vs baseline,unavailable,"No isolated, source-supported comparator contrast available. Fusion with clinical+DL does not isolate a radiomics+DL-only contrast."
+FRONTIERS_2024,F,radiomics+DL vs radiomics-only,unavailable,"No isolated, source-supported comparator contrast available. Fusion with clinical+DL does not isolate a radiomics+DL-only contrast."
+FRONTIERS_2024,G,fusion/combined vs components,available,All matched datasets exported; primary is the highest equivalent validation role.

@@ -1,0 +1,132 @@
+[
+  {
+    "file": "FRONTIERS_2024.html",
+    "sha256": "c9d28d7f28e67e32a2f3f6b9d5d31792479cf84fbfbbce22a5c697b6b5810927",
+    "bytes": 942180
+  },
+  {
+    "file": "FRONTIERS_2024.txt",
+    "sha256": "27288bd3106c73e1be9c4eef610d8e2c2a98ed817e458ce9621d120e50e668db",
+    "bytes": 53092
+  },
+  {
+    "file": "FRONTIERS_2024_figure5.webp",
+    "sha256": "2a2dd95b3515bef23f8992d2a4f7570a51de7fd82f4efc99ac2fbe94a4feb162",
+    "bytes": 487638
+  },
+  {
+    "file": "FRONTIERS_2024_tables.json",
+    "sha256": "e52d81a84f1e4a0b33b2154214e627315f0ce6308aa1c6182f9ef41839c12061",
+    "bytes": 9532
+  },
+  {
+    "file": "WANG_2025.html",
+    "sha256": "268028c28c14649f3609ad7cf524cf5e89e3c94cc896b254bf0aedc4afcc4df3",
+    "bytes": 542125
+  },
+  {
+    "file": "WANG_2025.txt",
+    "sha256": "ad1999432aa7aaf96379372d07773826f130ca463478a35b7d77a6cb1f063fb9",
+    "bytes": 69133
+  },
+  {
+    "file": "WANG_2025_supplement1.docx",
+    "sha256": "af4c705b9b28f5fb97641a432c3398555b8046c0d4187d37c88dae759db8329e",
+    "bytes": 28878
+  },
+  {
+    "file": "WANG_2025_supplement1.txt",
+    "sha256": "7d0af31db7bb90006af60025d5b1bf3b3986bafa05f644742261d567520fef3a",
+    "bytes": 1065
+  },
+  {
+    "file": "WANG_2025_supplement2.docx",
+    "sha256": "60649ef63de31d2e2db598800f2a7c415b5ead75f56eab475711e34200a4e413",
+    "bytes": 28273
+  },
+  {
+    "file": "WANG_2025_supplement2.txt",
+    "sha256": "a4fdcc42c2724b4736e9dc9e0c2e8e3350de98607dc163651b96c733f327c8a1",
+    "bytes": 1004
+  },
+  {
+    "file": "WANG_2025_supplement3.docx",
+    "sha256": "ce38a6d9dfac9e35977d0a8bd72fee926aaef0e8cf4a8483aa72771cf2d4fc85",
+    "bytes": 25705
+  },
+  {
+    "file": "WANG_2025_supplement3.txt",
+    "sha256": "5960f1e5e286f3951cee6d79388cc08347b8f189771b0ba34b3f5a95d5a8c91e",
+    "bytes": 638
+  },
+  {
+    "file": "WANG_2025_supplement4.docx",
+    "sha256": "f8a75d3bc9963a32db6291ad7fc8dc619c6eb11f875aaa727d029a338a9573ef",
+    "bytes": 35881
+  },
+  {
+    "file": "WANG_2025_supplement4.txt",
+    "sha256": "340710e60eff5fa85d091a15aa47c33138aa1879da51a83fb71f2f39eb1619d6",
+    "bytes": 3267
+  },
+  {
+    "file": "WANG_2025_supplement5.docx",
+    "sha256": "3d04f6a66b51af37c0bdb67cb812e4c89ce3b7d0d78a6fd94385914264c76362",
+    "bytes": 27482
+  },
+  {
+    "file": "WANG_2025_supplement5.txt",
+    "sha256": "aea5865575228baa224d2382620cf219a5439536292147d678f9c9caab559b83",
+    "bytes": 947
+  },
+  {
+    "file": "WANG_2025_supplement6.docx",
+    "sha256": "3c4cc21f92fa97625efef63e800cd3f6be5ddc93a74371c1dfc6e244631844a8",
+    "bytes": 26842
+  },
+  {
+    "file": "WANG_2025_supplement6.txt",
+    "sha256": "72a2e5deeaed0395e555f41ff9b49a655dcb560338e6631d113593473376a427",
+    "bytes": 1074
+  },
+  {
+    "file": "WANG_2025_table3.html",
+    "sha256": "1091adde0c0e8d31750e92cc8e5c49fe0b7f45dcab1f5a6cca8e209ecd0beb84",
+    "bytes": 220488
+  },
+  {
+    "file": "WANG_2025_tables.json",
+    "sha256": "acdeaf6a3c9ba5407a5afd34efbb2c61c366043af6436aebb04c61d6e7a41846",
+    "bytes": 19900
+  },
+  {
+    "file": "WU_2025.html",
+    "sha256": "76c69e0decaff145530948bf8babfd651c457afdf746cd3a0f0d9ad210f36e0e",
+    "bytes": 766130
+  },
+  {
+    "file": "WU_2025.txt",
+    "sha256": "e0ef1e4d8e68989077bf3d1f9152d4a16288a5c6a81e548ded6a765b1c118f26",
+    "bytes": 57829
+  },
+  {
+    "file": "WU_2025_tables.json",
+    "sha256": "841ad0abf223312339a18ae31884a9f7aceb0f8ef1e8b3b71a8d184a1ca3f818",
+    "bytes": 4324
+  },
+  {
+    "file": "YANG_2022.html",
+    "sha256": "be888e25904e9be12e6788710950d96b05a3b55aae901df9c39227eca3f99480",
+    "bytes": 962312
+  },
+  {
+    "file": "YANG_2022.txt",
+    "sha256": "bf825ad7876d32143cf42d9c5ece4c2da0fee9190bf8d998fed07346508efc79",
+    "bytes": 59914
+  },
+  {
+    "file": "YANG_2022_tables.json",
+    "sha256": "21c77fbe0ca24ce05515f5cd9047d28de3fa0b06b03fcea1a23e7278acd495b9",
+    "bytes": 11965
+  }
+]

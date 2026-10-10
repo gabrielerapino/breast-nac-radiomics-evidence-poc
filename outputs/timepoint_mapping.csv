@@ -1,0 +1,5 @@
+study,timepoints_reported,model_roles
+YANG_2022,Pretreatment and after 2 NAC cycles,baseline; early-treatment; delta; longitudinal combined
+WANG_2025,Baseline and after 2 NAT cycles,baseline; early-treatment; delta; longitudinal combined
+WU_2025,Pretreatment and midpoint of NAC,longitudinal combined
+FRONTIERS_2024,Pretreatment before NAC,baseline

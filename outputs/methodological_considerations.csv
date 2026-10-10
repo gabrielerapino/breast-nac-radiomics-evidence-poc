@@ -1,0 +1,45 @@
+study_id,consideration,status,evidence,source
+YANG_2022,single_multicenter,observed,Single center; Guizhou Medical University,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.748008/full
+YANG_2022,internal_external,observed,Random stratified internal 7:3 holdout,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.748008/full
+YANG_2022,selected_cohort,observed,Previously untreated biopsy-confirmed invasive carcinoma; 4–8 NAC cycles; baseline and after-two-cycle US,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.748008/full
+YANG_2022,class_imbalance,observed,0.585253,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.748008/full
+YANG_2022,image_exclusions,observed,Bilateral/multiple lesions; large or poor-quality images; incomplete clinical/US data,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.748008/full
+YANG_2022,missing_data,unclear,Incomplete cases excluded; complete imputation/nesting details not verified.,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.748008/full
+YANG_2022,acquisition_standardization,observed,"GE Logiq E9; linear probe, central frequency 7 MHz",https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.748008/full
+YANG_2022,operator_dependence,observed,Manual 2D ITK-SNAP ROI; reader >5 years; repeat segmentation in 50 patients after one week,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.748008/full
+YANG_2022,patient_level_splitting,observed,Random stratified internal 7:3 holdout,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.748008/full
+YANG_2022,feature_selection_inside_validation,unclear,Feature selection and CV are described; full nesting is not established.,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.748008/full
+YANG_2022,external_generalization,not applicable,No external validation cohort,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.748008/full
+WANG_2025,single_multicenter,observed,Single center; West China Hospital,https://link.springer.com/article/10.1186/s12885-025-14556-4
+WANG_2025,internal_external,observed,Random stratified internal 7:3 holdout,https://link.springer.com/article/10.1186/s12885-025-14556-4
+WANG_2025,selected_cohort,observed,Pathological diagnosis; 6–8 anthracycline/taxane cycles; baseline and after-two-cycle US; surgery/pathology,https://link.springer.com/article/10.1186/s12885-025-14556-4
+WANG_2025,class_imbalance,unclear,51.5% MHR (reported; overall counts not explicit),https://link.springer.com/article/10.1186/s12885-025-14556-4
+WANG_2025,image_exclusions,observed,Prior breast cancer/treatment; pregnancy/lactation; timing violations; poor images/large lesions; incomplete data,https://link.springer.com/article/10.1186/s12885-025-14556-4
+WANG_2025,missing_data,unclear,Incomplete cases excluded; complete imputation/nesting details not verified.,https://link.springer.com/article/10.1186/s12885-025-14556-4
+WANG_2025,acquisition_standardization,observed,Siemens OXANA2 ABVS; follow-up same system or Philips Affiniti,https://link.springer.com/article/10.1186/s12885-025-14556-4
+WANG_2025,operator_dependence,observed,U-Net segmentation with radiologist manual correction,https://link.springer.com/article/10.1186/s12885-025-14556-4
+WANG_2025,patient_level_splitting,observed,Random stratified internal 7:3 holdout,https://link.springer.com/article/10.1186/s12885-025-14556-4
+WANG_2025,feature_selection_inside_validation,unclear,Feature selection and CV are described; full nesting is not established.,https://link.springer.com/article/10.1186/s12885-025-14556-4
+WANG_2025,external_generalization,not applicable,No external validation cohort,https://link.springer.com/article/10.1186/s12885-025-14556-4
+WU_2025,single_multicenter,observed,Two institutions: Xiangyang First People’s Hospital and Zou Ping Hospital,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1525285/full
+WU_2025,internal_external,observed,Internal 7:3 stratified split; independent external center,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1525285/full
+WU_2025,selected_cohort,observed,Invasive breast cancer; complete NAC/surgery; pre- and midpoint US; complete clinical/pathological data,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1525285/full
+WU_2025,class_imbalance,observed,0.393468,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1525285/full
+WU_2025,image_exclusions,observed,Bilateral cancer; incomplete/non-standard treatment/surgery; poor/missing US; metastatic disease/secondary malignancy,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1525285/full
+WU_2025,missing_data,unclear,Incomplete cases excluded; complete imputation/nesting details not verified.,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1525285/full
+WU_2025,acquisition_standardization,observed,Resona 7; Philips; GE LOGIQ E20; Samsung,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1525285/full
+WU_2025,operator_dependence,observed,"Manual 2D largest cross-sectional ROIs; two readers, senior supervision; blinded consensus",https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1525285/full
+WU_2025,patient_level_splitting,observed,Internal 7:3 stratified split; independent external center,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1525285/full
+WU_2025,feature_selection_inside_validation,unclear,Feature selection and CV are described; full nesting is not established.,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1525285/full
+WU_2025,external_generalization,observed,Independent external center,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1525285/full
+FRONTIERS_2024,single_multicenter,observed,Single center; Affiliated Tumor Hospital of Nantong University,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1485681/full
+FRONTIERS_2024,internal_external,observed,Random internal holdout,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1485681/full
+FRONTIERS_2024,selected_cohort,observed,pCR/non-pCR pathology after NAC/surgery; full NAC; preoperative US and biopsy,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1485681/full
+FRONTIERS_2024,class_imbalance,observed,0.424242,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1485681/full
+FRONTIERS_2024,image_exclusions,observed,Missing pathology; incomplete NAC; inadequate images; bilateral/multifocal tumors,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1485681/full
+FRONTIERS_2024,missing_data,unclear,Incomplete cases excluded; complete imputation/nesting details not verified.,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1485681/full
+FRONTIERS_2024,acquisition_standardization,observed,GE Logic E9 and Philips EPIQ7,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1485681/full
+FRONTIERS_2024,operator_dependence,observed,Two manual readers; third reader repeated 55 images after one month; ITK-SNAP 3.8.0,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1485681/full
+FRONTIERS_2024,patient_level_splitting,observed,Random internal holdout,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1485681/full
+FRONTIERS_2024,feature_selection_inside_validation,unclear,Feature selection and CV are described; full nesting is not established.,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1485681/full
+FRONTIERS_2024,external_generalization,not applicable,No external validation cohort,https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1485681/full

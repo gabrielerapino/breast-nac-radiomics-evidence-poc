@@ -1,0 +1,24 @@
+{
+  "reason": "Remove publisher Google Maps API key embedded in website configuration; scientific content and tables unchanged.",
+  "replacement": "REDACTED_GOOGLE_MAPS_API_KEY",
+  "files": [
+    {
+      "file": "sources/FRONTIERS_2024.html",
+      "redactions": 1,
+      "original_sha256": "2242318161de226b43136edf429a3be222fce51601f06054e3d145d00d226044",
+      "sanitized_sha256": "c9d28d7f28e67e32a2f3f6b9d5d31792479cf84fbfbbce22a5c697b6b5810927"
+    },
+    {
+      "file": "sources/WU_2025.html",
+      "redactions": 1,
+      "original_sha256": "d9f9363d6f9ccc6bd3af402c9bbc083e6bc80c3b9f19ab5635802d7b03c97026",
+      "sanitized_sha256": "76c69e0decaff145530948bf8babfd651c457afdf746cd3a0f0d9ad210f36e0e"
+    },
+    {
+      "file": "sources/YANG_2022.html",
+      "redactions": 1,
+      "original_sha256": "c24cb14ea41af98bd3e4cec9fd82ab7254da49d2c915156988cdd2945fbfcd4f",
+      "sanitized_sha256": "be888e25904e9be12e6788710950d96b05a3b55aae901df9c39227eca3f99480"
+    }
+  ]
+}

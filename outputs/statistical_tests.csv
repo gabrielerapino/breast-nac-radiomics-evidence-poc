@@ -1,0 +1,12 @@
+study_id,model_a,model_b,dataset_role,test,p_value,verified,source,p_value_note,file,sha256,reviewed
+WU_2025,Fusion,Clinical,internal_validation,DeLong,0.002,True,Wu Table 2 (Clinic benchmark footnote); column 5,,,,
+WU_2025,Fusion,Clinical,external_validation,DeLong,0.003,True,Wu Table 2 (Clinic benchmark footnote); column 6,,,,
+WU_2025,Deep learning,Clinical,internal_validation,DeLong,0.002,True,Wu Table 2 (Clinic benchmark footnote); column 5,,,,
+WU_2025,Deep learning,Clinical,external_validation,DeLong,0.014,True,Wu Table 2 (Clinic benchmark footnote); column 6,,,,
+WU_2025,Radiomics,Clinical,internal_validation,DeLong,0.019,True,Wu Table 2 (Clinic benchmark footnote); column 5,,,,
+WU_2025,Radiomics,Clinical,external_validation,DeLong,0.029,True,Wu Table 2 (Clinic benchmark footnote); column 6,,,,
+FRONTIERS_2024,GBM clinical+radiomics,GBM clinical,training,DeLong,0.0,True,"Zhou Figure 5G; visually inspected panel, row C-R, column C","Figure reports 0.000 (rounded, not exact zero)",FRONTIERS_2024_figure5.webp,2a2dd95b3515bef23f8992d2a4f7570a51de7fd82f4efc99ac2fbe94a4feb162,True
+FRONTIERS_2024,GBM clinical+radiomics,GBM radiomics,training,DeLong,0.001,True,"Zhou Figure 5G; visually inspected panel, row C-R, column R",Exact displayed p-value,FRONTIERS_2024_figure5.webp,2a2dd95b3515bef23f8992d2a4f7570a51de7fd82f4efc99ac2fbe94a4feb162,True
+FRONTIERS_2024,GBM clinical+radiomics,GBM clinical,internal_validation,DeLong,0.01,True,"Zhou Figure 5H; visually inspected panel, row C-R, column C",Exact displayed p-value,FRONTIERS_2024_figure5.webp,2a2dd95b3515bef23f8992d2a4f7570a51de7fd82f4efc99ac2fbe94a4feb162,True
+FRONTIERS_2024,GBM clinical+radiomics,GBM radiomics,internal_validation,DeLong,0.005,True,"Zhou Figure 5H; visually inspected panel, row C-R, column R",Exact displayed p-value,FRONTIERS_2024_figure5.webp,2a2dd95b3515bef23f8992d2a4f7570a51de7fd82f4efc99ac2fbe94a4feb162,True
+YANG_2022,Delta RS,RS1,training,DeLong,0.086,True,"Yang Results / Performance: training AUCs .743 versus .722, p=.086",,,,

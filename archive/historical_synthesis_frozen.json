@@ -1,0 +1,29 @@
+{
+  "research_question": "Does ultrasound-based radiomics provide incremental predictive value beyond clinical and conventional ultrasound models?",
+  "primary_studies": [
+    "YANG_2022",
+    "WANG_2025",
+    "WU_2025",
+    "FRONTIERS_2024"
+  ],
+  "primary_synthesis_frozen": true,
+  "benchmark_consulted": false,
+  "poolability": "not justified",
+  "poolability_reason": "The two pCR studies form an endpoint-aligned subgroup, but their radiomics timepoint roles differ (pretreatment baseline vs pretreatment+midpoint longitudinal), as do validation settings (internal holdout vs internal and external center validation). No sufficiently aligned subgroup remains for quantitative pooling; no forest plot or meta-analysis was produced.",
+  "pooling_performed": false,
+  "forest_plot_produced": false,
+  "key_message": "High predictive performance does not by itself demonstrate incremental value.",
+  "synthesis": [
+    "All four reports provide predictive performance, but outcome definitions and imaging strategies differ.",
+    "Yang 2022 targets an imaging-defined RECIST response, not pCR; its delta score was not significantly better than the baseline or early score in the reported comparison.",
+    "Wang 2025 reports Miller–Payne MHR (G4–G5), not pCR; its validation combined-model AUC is reported approximately and remains flagged for exact-value review.",
+    "The two pCR studies report promising combined-model performance, but the 2024 study's internal validation AUC is lower than training; Wu 2025 uses pretreatment plus midpoint imaging and has an abstract/table discrepancy for external fusion AUC.",
+    "Comparisons do not establish a consistent incremental contribution of radiomics beyond a conventional ultrasound/clinical model across all four studies."
+  ],
+  "review_required_count": 9,
+  "limitations": [
+    "Four selected studies only; not an exhaustive systematic review.",
+    "Several extraction values and timing details are ambiguous or approximate and remain flagged.",
+    "No pooling was run; qualitative poolability judgment is not a meta-analysis."
+  ]
+}

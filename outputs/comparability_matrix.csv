@@ -1,0 +1,7 @@
+study_a,study_b,alignment_score,evaluated_criteria,rating,reason
+YANG_2022,WANG_2025,0.611111,9,moderate,5.5/9 evaluable criteria; unavailable excluded. endpoint_definition: Different targets: RECIST versus MHR; binary coding does not make them equivalent.
+YANG_2022,WU_2025,0.5,8,moderate,4/8 evaluable criteria; unavailable excluded. endpoint_definition: Different targets: RECIST versus pCR; binary coding does not make them equivalent.; regimen: The primary source does not support enough detail for this semantic comparison.
+YANG_2022,FRONTIERS_2024,0.666667,9,moderate,6/9 evaluable criteria; unavailable excluded. endpoint_definition: Different targets: RECIST versus pCR; binary coding does not make them equivalent.
+WANG_2025,WU_2025,0.4375,8,low,3.5/8 evaluable criteria; unavailable excluded. endpoint_definition: Different targets: MHR versus pCR; binary coding does not make them equivalent.; regimen: The primary source does not support enough detail for this semantic comparison.
+WANG_2025,FRONTIERS_2024,0.555556,9,moderate,5/9 evaluable criteria; unavailable excluded. endpoint_definition: Different targets: MHR versus pCR; binary coding does not make them equivalent.
+WU_2025,FRONTIERS_2024,0.625,8,moderate,5/8 evaluable criteria; unavailable excluded. regimen: The primary source does not support enough detail for this semantic comparison.

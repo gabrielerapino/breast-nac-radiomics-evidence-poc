@@ -1,0 +1,4 @@
+study_id,dataset_role,scenario,fusion_auc,deep_auc,delta_AUC,classification,note
+WU_2025,external_validation,Both Table 2,0.877,0.834,0.043,Suggestive,No direct Fusion vs Deep statistical test verified; alternative values remain unresolved.
+WU_2025,external_validation,Both Results prose,0.891,0.874,0.017,Suggestive,No direct Fusion vs Deep statistical test verified; alternative values remain unresolved.
+WU_2025,external_validation,Legacy mixed sources; not a coherent primary pair,0.877,0.874,0.003,Suggestive,No direct Fusion vs Deep statistical test verified; alternative values remain unresolved.

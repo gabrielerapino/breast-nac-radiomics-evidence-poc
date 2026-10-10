@@ -1,0 +1,11 @@
+endpoint,timepoint,model_type,dataset_role,studies,study_count,precision_available,eligible,reason
+RECIST,baseline,radiomics-only,internal_validation,YANG_2022,1,True,False,Fewer than two independent studies in this joint endpoint/timepoint/model/validation stratum.
+RECIST,delta,radiomics-only,internal_validation,YANG_2022,1,True,False,Fewer than two independent studies in this joint endpoint/timepoint/model/validation stratum.
+RECIST,early-treatment,radiomics-only,internal_validation,YANG_2022,1,True,False,Fewer than two independent studies in this joint endpoint/timepoint/model/validation stratum.
+RECIST,longitudinal combined,clinical+radiomics,internal_validation,YANG_2022,1,True,False,Fewer than two independent studies in this joint endpoint/timepoint/model/validation stratum.
+pCR,baseline,clinical+radiomics,internal_validation,FRONTIERS_2024,1,False,False,Fewer than two independent studies in this joint endpoint/timepoint/model/validation stratum.
+pCR,baseline,radiomics-only,internal_validation,FRONTIERS_2024,1,False,False,Fewer than two independent studies in this joint endpoint/timepoint/model/validation stratum.
+pCR,longitudinal combined,clinical+radiomics+deep learning,external_validation,WU_2025,1,False,False,Fewer than two independent studies in this joint endpoint/timepoint/model/validation stratum.
+pCR,longitudinal combined,clinical+radiomics+deep learning,internal_validation,WU_2025,1,True,False,Fewer than two independent studies in this joint endpoint/timepoint/model/validation stratum.
+pCR,longitudinal combined,radiomics-only,external_validation,WU_2025,1,True,False,Fewer than two independent studies in this joint endpoint/timepoint/model/validation stratum.
+pCR,longitudinal combined,radiomics-only,internal_validation,WU_2025,1,True,False,Fewer than two independent studies in this joint endpoint/timepoint/model/validation stratum.

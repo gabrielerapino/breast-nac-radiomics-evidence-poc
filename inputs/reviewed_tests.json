@@ -1,0 +1,50 @@
+[
+  {
+    "study_id": "FRONTIERS_2024",
+    "model_a": "GBM clinical+radiomics",
+    "model_b": "GBM clinical",
+    "dataset_role": "training",
+    "p_value": 0.0,
+    "p_value_note": "Figure reports 0.000 (rounded, not exact zero)",
+    "file": "FRONTIERS_2024_figure5.webp",
+    "sha256": "2a2dd95b3515bef23f8992d2a4f7570a51de7fd82f4efc99ac2fbe94a4feb162",
+    "reviewed": true,
+    "source": "Zhou Figure 5G; visually inspected panel, row C-R, column C"
+  },
+  {
+    "study_id": "FRONTIERS_2024",
+    "model_a": "GBM clinical+radiomics",
+    "model_b": "GBM radiomics",
+    "dataset_role": "training",
+    "p_value": 0.001,
+    "p_value_note": "Exact displayed p-value",
+    "file": "FRONTIERS_2024_figure5.webp",
+    "sha256": "2a2dd95b3515bef23f8992d2a4f7570a51de7fd82f4efc99ac2fbe94a4feb162",
+    "reviewed": true,
+    "source": "Zhou Figure 5G; visually inspected panel, row C-R, column R"
+  },
+  {
+    "study_id": "FRONTIERS_2024",
+    "model_a": "GBM clinical+radiomics",
+    "model_b": "GBM clinical",
+    "dataset_role": "internal_validation",
+    "p_value": 0.01,
+    "p_value_note": "Exact displayed p-value",
+    "file": "FRONTIERS_2024_figure5.webp",
+    "sha256": "2a2dd95b3515bef23f8992d2a4f7570a51de7fd82f4efc99ac2fbe94a4feb162",
+    "reviewed": true,
+    "source": "Zhou Figure 5H; visually inspected panel, row C-R, column C"
+  },
+  {
+    "study_id": "FRONTIERS_2024",
+    "model_a": "GBM clinical+radiomics",
+    "model_b": "GBM radiomics",
+    "dataset_role": "internal_validation",
+    "p_value": 0.005,
+    "p_value_note": "Exact displayed p-value",
+    "file": "FRONTIERS_2024_figure5.webp",
+    "sha256": "2a2dd95b3515bef23f8992d2a4f7570a51de7fd82f4efc99ac2fbe94a4feb162",
+    "reviewed": true,
+    "source": "Zhou Figure 5H; visually inspected panel, row C-R, column R"
+  }
+]

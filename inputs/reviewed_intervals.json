@@ -1,0 +1,62 @@
+[
+  {
+    "study_id": "FRONTIERS_2024",
+    "model_id": "GBM clinical",
+    "dataset_role": "training",
+    "CI_low": 0.756,
+    "CI_high": 0.881,
+    "source": "Zhou Figure 5A; legend visually inspected; archived sources/FRONTIERS_2024_figure5.webp",
+    "file": "FRONTIERS_2024_figure5.webp",
+    "sha256": "2a2dd95b3515bef23f8992d2a4f7570a51de7fd82f4efc99ac2fbe94a4feb162"
+  },
+  {
+    "study_id": "FRONTIERS_2024",
+    "model_id": "GBM radiomics",
+    "dataset_role": "training",
+    "CI_low": 0.797,
+    "CI_high": 0.905,
+    "source": "Zhou Figure 5A; legend visually inspected; archived sources/FRONTIERS_2024_figure5.webp",
+    "file": "FRONTIERS_2024_figure5.webp",
+    "sha256": "2a2dd95b3515bef23f8992d2a4f7570a51de7fd82f4efc99ac2fbe94a4feb162"
+  },
+  {
+    "study_id": "FRONTIERS_2024",
+    "model_id": "GBM clinical+radiomics",
+    "dataset_role": "training",
+    "CI_low": 0.906,
+    "CI_high": 0.973,
+    "source": "Zhou Figure 5A; legend visually inspected; archived sources/FRONTIERS_2024_figure5.webp",
+    "file": "FRONTIERS_2024_figure5.webp",
+    "sha256": "2a2dd95b3515bef23f8992d2a4f7570a51de7fd82f4efc99ac2fbe94a4feb162"
+  },
+  {
+    "study_id": "FRONTIERS_2024",
+    "model_id": "GBM clinical",
+    "dataset_role": "internal_validation",
+    "CI_low": 0.758,
+    "CI_high": 0.968,
+    "source": "Zhou Figure 5B; legend visually inspected; archived sources/FRONTIERS_2024_figure5.webp",
+    "file": "FRONTIERS_2024_figure5.webp",
+    "sha256": "2a2dd95b3515bef23f8992d2a4f7570a51de7fd82f4efc99ac2fbe94a4feb162"
+  },
+  {
+    "study_id": "FRONTIERS_2024",
+    "model_id": "GBM radiomics",
+    "dataset_role": "internal_validation",
+    "CI_low": 0.546,
+    "CI_high": 0.85,
+    "source": "Zhou Figure 5B; legend visually inspected; archived sources/FRONTIERS_2024_figure5.webp",
+    "file": "FRONTIERS_2024_figure5.webp",
+    "sha256": "2a2dd95b3515bef23f8992d2a4f7570a51de7fd82f4efc99ac2fbe94a4feb162"
+  },
+  {
+    "study_id": "FRONTIERS_2024",
+    "model_id": "GBM clinical+radiomics",
+    "dataset_role": "internal_validation",
+    "CI_low": 0.636,
+    "CI_high": 0.914,
+    "source": "Zhou Figure 5B; legend visually inspected; archived sources/FRONTIERS_2024_figure5.webp",
+    "file": "FRONTIERS_2024_figure5.webp",
+    "sha256": "2a2dd95b3515bef23f8992d2a4f7570a51de7fd82f4efc99ac2fbe94a4feb162"
+  }
+]

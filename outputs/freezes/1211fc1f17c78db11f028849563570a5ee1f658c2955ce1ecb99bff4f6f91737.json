@@ -1,0 +1,47 @@
+{
+  "benchmark_consulted_in_this_primary_run": false,
+  "benchmark_exposure_note": "The inherited project already consulted the benchmark; this rerun is not blind or independent of prior exposure.",
+  "forest_plot_produced": false,
+  "input_sha256": {
+    "inputs/reviewed_studies.json": "7addf3ee328a2a8ea371536e77301d192e216e62c852df5317c4ae80fe5708d8",
+    "inputs/reviewed_tests.json": "9120b7c411458625e2f598d997d5bdd7cb33a5f03cf076641f8cb33604b6ec56",
+    "inputs/source_manifest.json": "90b733750c9837c71be98d2d52380d32d8e4529182af558bf4bded8e75bdb554"
+  },
+  "key_message": "High predictive performance does not by itself demonstrate incremental value.",
+  "limitations": [
+    "Protocol-selected four studies; no exhaustive search or screening.",
+    "Narrative transcription and semantic mappings were curated by the building agent; deterministic source checks do not replace independent clinical appraisal.",
+    "Source contradictions, missing exact validation metrics and uncertain feature-selection nesting remain.",
+    "No patient data, model fitting, invented confidence intervals or imputed confusion matrices.",
+    "Previous benchmark exposure prevents a claim of blind synthesis."
+  ],
+  "poolability": "not justified",
+  "poolability_reason": "No joint stratum contains two independent studies with the same endpoint, imaging role, model composition and validation role. The pCR pair uses baseline versus pre+midpoint radiomics; operational pathology and source precision also need review. AUC differences alone cannot supply the within-patient covariance needed to pool incremental effects.",
+  "pooling_performed": false,
+  "previous_benchmark_exposure": true,
+  "primary_comparison_counts": {
+    "Demonstrated": 4,
+    "Indeterminate": 4,
+    "Not demonstrated": 2,
+    "Suggestive": 5
+  },
+  "primary_studies": [
+    "YANG_2022",
+    "WANG_2025",
+    "WU_2025",
+    "FRONTIERS_2024"
+  ],
+  "primary_synthesis_frozen": true,
+  "research_question": "Does ultrasound-based radiomics provide incremental predictive value for predicting response to neoadjuvant therapy in breast cancer beyond clinical and conventional ultrasound-based models?",
+  "review_required_count": 20,
+  "synthesis": [
+    "Four prespecified studies; 3 endpoint categories (RECIST, Miller–Payne MHR, pCR). This is not an exhaustive systematic review.",
+    "Available primary matched contrasts: 4 Demonstrated, 5 Suggestive, 2 Not demonstrated, 4 Indeterminate. Contrasts within a study are correlated and are not independent study counts.",
+    "Zhou 2024 has a direct clinical+radiomics versus clinical-only baseline validation contrast supported by Figure 5H; it provides evidence within one small internal cohort.",
+    "Wu 2025 validates multimodal models externally, but longitudinal information, clinical and deep features complicate attribution to radiomics alone; table/prose discrepancies leave effect sizes provisional.",
+    "Wang 2025 exact validation AUCs and dataset attribution of tests remain unresolved. Yang distinguishes early and delta from baseline; training tests are not borrowed for validation.",
+    "Poolability: not justified. No joint stratum contains two independent studies with the same endpoint, imaging role, model composition and validation role. The pCR pair uses baseline versus pre+midpoint radiomics; operational pathology and source precision also need review. AUC differences alone cannot supply the within-patient covariance needed to pool incremental effects.",
+    "20 REVIEW_REQUIRED checks remain visible. Clinical usefulness beyond discrimination is not established by AUC differences alone."
+  ],
+  "validation_status": "CHECKS_PASSED_WITH_REVIEW_REQUIRED"
+}

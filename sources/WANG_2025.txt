@@ -1,0 +1,1685 @@
+Integrative multimodal ultrasound and radiomics for early prediction of neoadjuvant therapy response in breast cancer: a clinical study | BMC Cancer | Springer Nature Link
+Skip to main content
+Advertisement
+BMC journals have moved to Springer Nature Link.
+Learn more about website changes.
+Integrative multimodal ultrasound and radiomics for early prediction of neoadjuvant therapy response in breast cancer: a clinical study
+Research
+Open access
+Published:
+09 July 2025
+Volume 25
+, article number
+1156
+(
+2025
+)
+Cite this article
+You have full access to this
+open access
+article
+Download PDF
+Save article
+View saved research
+BMC Cancer
+Aims and scope
+Submit manuscript
+Integrative multimodal ultrasound and radiomics for early prediction of neoadjuvant therapy response in breast cancer: a clinical study
+Download PDF
+Abstract
+Purpose
+This study aimed to develop an early predictive model for neoadjuvant therapy (NAT) response in breast cancer by integrating multimodal ultrasound (conventional B-mode, shear-wave elastography, and contrast-enhanced ultrasound) and radiomics with clinical-pathological data, and to evaluate its predictive accuracy after two cycles of NAT.
+Methods
+This retrospective study included 239 breast cancer patients receiving neoadjuvant therapy, divided into training (
+n
+= 167) and validation (
+n
+= 72) cohorts. Multimodal ultrasound—B-mode, shear-wave elastography (SWE), and contrast-enhanced ultrasound (CEUS)—was performed at baseline and after two cycles. Tumors were segmented using a U-Net-based deep learning model with radiologist adjustment, and radiomic features were extracted via PyRadiomics. Candidate variables were screened using univariate analysis and multicollinearity checks, followed by LASSO and stepwise logistic regression to build three models: a clinical-ultrasound model, a radiomics-only model, and a combined model. Model performance for early response prediction was assessed using ROC analysis.
+Results
+In the training cohort (
+n
+= 167), Model_Clinic achieved an AUC of 0.85, with HER2 positivity, maximum tumor stiffness (Emax), stiffness heterogeneity (Estd), and the CEUS “radiation sign” emerging as independent predictors (all
+P
+< 0.05). The radiomics model showed moderate performance at baseline (AUC 0.69) but improved after two cycles (AUC 0.83), and a model using radiomic feature changes achieved an AUC of 0.79. Model_Combined demonstrated the best performance with a training AUC of 0.91 (sensitivity 89.4%, specificity 82.9%). In the validation cohort (
+n
+= 72), all models showed comparable AUCs (Model_Combined ~ 0.90) without significant degradation, and Model_Combined significantly outperformed Model_Clinic and Model_RSA (DeLong
+P
+= 0.006 and 0.042, respectively).
+Conclusion
+In our study, integrating multimodal ultrasound and radiomic features improved the early prediction of NAT response in breast cancer, and could provide valuable information to enable timely treatment adjustments and more personalized management strategies.
+View this article's peer review reports
+Similar content being viewed by others
+Integrating ultrasound radiomics and clinicopathological features for machine learning-based survival prediction in patients with nonmetastatic triple-negative breast cancer
+Article
+Open access
+18 February 2025
+Prediction of neoadjuvant chemotherapy efficacy in patients with HER2-low breast cancer based on ultrasound radiomics
+Article
+Open access
+26 September 2025
+Development and validation of a multi-modal ultrasomics model to predict response to neoadjuvant chemoradiotherapy in locally advanced rectal cancer
+Article
+Open access
+18 March 2024
+Explore related subjects
+Discover the latest articles, books and news in related subjects, suggested using machine learning.
+Ultrasonics
+Ultrasonography
+Cancer Imaging
+Predictive medicine
+Predictive markers
+Radiology
+Radiomic Applications in Oncology Imaging
+Introduction
+Breast cancer is a leading malignancy among women worldwide. Incidence rates have steadily risen, from about 0.88 million new cases in 1990 to over 2.0 million in 2019 [
+1
+,
+2
+]​. Neoadjuvant therapy (NAT) has become a critical component of comprehensive breast cancer care for patients without distant metastasis, as it can downstage tumors, increase breast-conserving surgery rates, and provide an in vivo test of tumor chemosensitivity [
+3
+]​. Patients who respond well to NAT may experience substantial tumor shrinkage or even pathologic complete response [
+4
+]​. However, a significant subset (approximately 10–35%) show minimal or no response [
+5
+,
+6
+]​, exposing them to the toxicities of ineffective treatment and delaying potential alternative therapies. This variability underscores an urgent need for early and precise predictors of NAT efficacy to guide personalized treatment decisions.
+Current standard methods for monitoring NAT response have important limitations. Clinical palpation and inspection are subjective, and conventional imaging modalities like ultrasound (US), mammography, and MRI primarily track changes in tumor size (as per RECIST 1.1 criteria) but often fail to capture early biological and microstructural changes in the tumor [
+7
+]​. Despite MRI’s prominent role in NAT assessment [
+8
+], its high cost and time-consuming nature limit its feasibility for frequent follow-ups, whereas ultrasound is widely available, cost-effective, and free of radiation. In China, clinical guidelines recommend ultrasound reassessment every two cycles during NAT [
+9
+]​. Multimodal ultrasound techniques—combining B-mode, Doppler, elastography, and contrast-enhanced ultrasound (CEUS)—can provide complementary information on tumor morphology, stiffness, vascularity, and perfusion [
+10
+,
+11
+].​ For example, shear-wave elastography (SWE) quantifies tumor stiffness (a surrogate for tissue composition and malignancy), and CEUS depicts tumor angiogenesis and perfusion in real time​. These advanced ultrasound modalities have shown promise in evaluating treatment response; our team’s previous work indicated that baseline ultrasound with elastography can stratify NAT outcomes [
+12
+,
+13
+], and other researchers have reported that changes in elasticity during chemotherapy correlate with response [
+14
+,
+15
+]. Similarly, CEUS features such as perfusion defects have been associated with therapeutic efficacy [
+16
+,
+17
+].​ Despite these advances, relying on single-modality ultrasound criteria remains insufficient for early prediction, as each modality captures only one aspect of tumor biology.
+Radiomics has emerged as a powerful approach to uncover subtle imaging patterns by extracting high-dimensional quantitative features from medical images. MRI-based radiomic models for predicting NAT response have been extensively studied, but MRI’s practical limitations restrict its frequent use​. In contrast, ultrasound-based radiomics is less explored but potentially valuable for NAT assessment​. Recent studies have demonstrated that ultrasound radiomics can reveal microscopic textural changes in tumors that precede gross size reduction​. For instance, Byra et al. (2021) and Jiang et al. (2021) reported that texture features from baseline ultrasound images were independent predictors of NAC (neoadjuvant chemotherapy) response [
+18
+,
+19
+].​ A recent systematic review confirmed the potential of ultrasound radiomics in predicting NAC response, though it highlighted the limited data and methodological quality in existing studies​. These findings suggest that integrating radiomics with ultrasound may significantly improve early response evaluation, but robust, multimodal evidence is still needed [
+20
+].
+Given the need for more accurate early predictors and the advantages of ultrasound, our study aims to leverage multimodal ultrasound (B-mode, SWE, and CEUS) together with radiomic analysis to predict NAT response at an early time point. We hypothesize that this integrative multimodal ultrasound–radiomics strategy may better capture the complex heterogeneity of breast tumors than any single approach.
+Materials and methods
+Study population and sample size considerations
+This retrospective study included female breast cancer patients treated at West China Hospital, Sichuan University, from April 2020 to December 2022. This study was approved by the Institutional Ethics Committee, and informed consent was waived due to its retrospective design. Inclusion criteria were: (1) pathologically confirmed breast cancer with no distant metastasis, (2) completion of a standardized NAT regimen (6–8 cycles of anthracycline- and taxane-based chemotherapy), (3) availability of multimodal ultrasound examinations at baseline (pre-NAT) and after two cycles of NAT, and (4) definitive surgery with histopathological evaluation after NAT. Exclusion criteria were: prior breast cancer or treatment, pregnancy or lactation, baseline ultrasound more than 30 days before NAT or follow-up ultrasound less than 14 days after the second cycle, poor image quality or excessively large lesions precluding consistent imaging, and incomplete clinical or imaging data. We included all eligible cases within the study period to maximize sample size. The inclusion and exclusion process is shown in Fig.
+1
+.
+Fig. 1
+Full size image
+Research route flow chart of breast cancer patients
+Clinical data collection
+Clinical data collected included age, clinical stage, menopausal status and age at menopause, relevant medical history, and details of the NAT regimen. According to the National Comprehensive Cancer Network (NCCN) Breast Cancer Guidelines (2020) [
+21
+], the current recommendation for NAT involves combination regimens of two to three drugs, primarily consisting of anthracyclines and/or taxanes. The principal agents include anthracyclines (such as doxorubicin and epirubicin) and taxanes (such as docetaxel and paclitaxel).
+Pathological data collection
+In accordance with the guidelines from the American Society of Clinical Oncology/College of American Pathologists (ASCO/CAP) [
+22
+], immunohistochemistry (IHC) was used to detect estrogen receptor (ER) and progesterone receptor (PR) status. HER2 protein expression was determined by IHC, while HER2 gene amplification was evaluated using fluorescence in situ hybridization (FISH) [
+23
+]. Cases with HER2 3 + by IHC or FISH-positive were defined as HER2-positive, while all other cases were considered HER2-negative. Ki-67 was reported as the percentage of positively stained nuclei. Based on the St. Gallen consensus [
+24
+], cases were classified into four IHC subtypes: Luminal A, Luminal B, HER2 + type, and triple-negative breast cancer (TNBC).
+Multimodal ultrasound examination methods
+Baseline examinations were uniformly performed using the Siemens OXANA2 ABVS system, while follow-up examinations after two cycles of NAT were conducted using either the same system or the Philips Affiniti system. The sonographers conducting the examinations possess at least five years of specialized breast ultrasound experience and have received dedicated breast examination training to standardize interpretation of key features and familiarize themselves with structured reporting forms. During each exam, the sonographer acquired and saved representative images for each modality (B-mode, Doppler, SWE, CEUS) following standard guidelines. All qualitative assessments (e.g., margin or invasion) were performed by two independent radiologists from the breast subspecialty group of the ultrasound department, both blinded to treatment outcomes, to enhance objectivity and reproducibility. Any disagreements were resolved by a senior radiologist. This standardized evaluation process ensured that conventional ultrasound features were recorded uniformly for all patients.
+Conventional ultrasound (B-Mode and Doppler)
+Lesions were evaluated according to ACR BI-RADS (Second Edition, 2013) for parameters including lesion size, echo pattern, margins, aspect ratio, calcifications, posterior acoustic features, and involvement of surrounding tissues. Axillary lymph nodes were assessed according to the surgical zones for breast cancer, and color Doppler flow imaging (CDFI) blood flow was graded using the Adler classification [
+25
+]. In cases of multiple lesions, we selected the largest pathologically confirmed malignant lesion on baseline ultrasound as the index lesion. This approach follows RECIST 1.1 [
+26
+] recommendations and aligns with institutional imaging protocols that prioritize longitudinal assessment of the dominant lesion during NAT.
+Shear-Wave elastography (SWE)
+SWE measurements were performed in accordance with the “Chinese Ultrasound Elastography Clinical Application Guidelines” [
+27
+]. During the examination, the probe was held steadily for 3–4 s to acquire stiffness images. The region of interest (ROI) encompassed the lesion along with a portion of the adjacent normal tissue (excluding the skin and chest wall). If the SWE value exceeded 10 m/s, the system automatically displayed a “+” indication. In the stiff region of the tumor, five ROIs were selected to automatically obtain the parameters Emax, Emin, Emedian, Emean, Estd, and EIQR. These parameters reflect not only overall tumor stiffness but also the heterogeneity of stiffness. To ensure reliability, SWE acquisition was repeated if the elastogram was suboptimal (e.g., due to motion or poor contact).
+Contrast-Enhanced ultrasound (CEUS)
+After B-mode, Doppler, and SWE, CEUS was conducted using a low mechanical index (MI ~ 0.06) to visualize tumor perfusion. A bolus of 4.8 mL sulfur hexafluoride microbubble contrast (SonoVue
+®
+) was injected intravenously, followed by a 5 mL saline flush​. Real-time contrast enhancement of the lesion was observed and recorded for 2–3 min. A plane showing the largest tumor cross-section or richest blood flow was selected for analysis​. Quantitative analysis was performed using VueBox
+®
+software, where the region of interest (ROI) was independently delineated to ensure consistency. Parameters extracted included peak intensity (PE), wash-in area under the curve (WiAUC), rise time (RT), time to peak (TTP), and wash-in rate (WiR). In addition, we recorded qualitative CEUS features including the presence of perfusion defects (defined as areas within the lesion lacking contrast uptake, indicating possible necrosis or avascular regions) and the so-called “radiation sign” (a characteristic spoke-wheel-like enhancement pattern extending radially from the lesion center toward the periphery, suggestive of infiltrative growth or angiogenic activity) (Fig.
+2
+).
+Fig. 2
+Full size image
+Representative CEUS schematic diagrams:
+a
+-
+b
+, Perfusion defect: non-enhancing tumor regions;
+c
+-
+d
+, Radial enhancement pattern from lesion center
+The example image illustrates the examination workflow and image acquisition requirements for baseline multimodal ultrasound of a breast cancer lesion (Fig.
+3
+).
+Fig. 3
+Full size image
+Example of baseline multimodal ultrasound of breast cancer lesions:
+a
+. Maximum diameter section of the primary lesion;
+b
+. Plane perpendicular to the maximum radial section;
+c
+. Color Doppler flow imaging (CDFI) of the lesion;
+d
+. Pulse wave (PW) Doppler of lesion blood flow;
+e
+. Axillary lymph node with structural abnormalities;
+f
+. Blood flow signal of the lymph node;
+g
+. Shear-wave elastography (SWE) imaging;
+h
+. SWE parameter acquisition;
+i
+. CEUS peak perfusion frame;
+j
+. CEUS region of interest (ROI) delineation;
+k
+. SWE value summary table;
+l
+. CEUS time-intensity curve (TIC)
+Radiomics methods
+For radiomics analysis, we focused on grayscale ultrasound images (from the B-mode modality) at two time points: before NAT (baseline) and after two cycles of NAT (early-treatment). From each patient’s DICOM image set, we identified the representative axial image showing the largest tumor cross-section at baseline and the corresponding plane at the early-treatment exam​. These images were de-identified and then processed through a semi-automated pipeline. First, tumor segmentation was initially performed using a deep learning model based on the U-Net architecture, which achieved an intersection over union (IoU) of 0.86. The U-Net framework has been widely adopted for tumor segmentation in various organs with demonstrated effectiveness [
+28
+]. In this study, the model was employed to generate preliminary binary masks of the lesions—ROI-1 at baseline and ROI-2 after two cycles of therapy. Manual corrections were applied in cases of under- or over-segmentation to ensure accurate delineation of tumor boundaries. This semi-automated approach helped standardize ROI generation and reduce inter-observer variability across the dataset.
+PyRadiomics v3.1.0 was used to automatically extract features based on the final ROIs, including first-order statistics (e.g., mean, energy, entropy), morphological features (2D/3D size, surface area), texture features (GLCM, GLRLM, GLSZM, NGTDM, GLDM), and wavelet-transformed features. In total, several hundred features were extracted per image. To capture treatment-related changes, we also calculated delta features for each radiomic parameter as the relative change from baseline to post-two-cycle (early) imaging: Δfeature = (Value_after 2 cycles– Value_baseline)/Value_baseline​. These delta radiomics features (noted as RSD for “radiomic score difference” in our analysis) quantify the early therapy-induced alterations in tumor texture. (Fig.
+4
+).
+Fig. 4
+Full size image
+Process of radiomics analysis of two-dimensional grayscale ultrasound images
+Evaluation of NAT efficacy and outcome grouping
+Early efficacy assessment
+In line with the 2024 Chinese Anti-Cancer Association Breast Cancer Guidelines [
+29
+]—which, for the first time, recommend evaluating neoadjuvant-therapy efficacy after the second cycle—we chose the end of the second cycle as the time point for early response evaluation to comply with the latest standards and enable timely treatment decisions. Following completion of two cycles of standard NAT, imaging evaluations were conducted according to RECIST 1.1 [
+26
+]. Tumor size was determined using both ultrasound and MRI, and a reduction of the maximum tumor diameter by ≥ 30% after NAT compared to baseline was defined as a response; otherwise, the case was considered non-responsive.
+Final efficacy evaluation
+The primary tumor response was assessed using the Miller–Payne grading (MPG) system [
+30
+] by comparing the number of cancer cells in the pre-treatment core biopsy specimens with that in the post-treatment surgical specimens (graded G1–G5). In this study, MPG grades G1–G3 were classified as the non-major histological response (NMHR) group, whereas MPG grades G4–G5 were classified as the major histological response (MHR) group.
+Construction of predictive models
+A univariate analysis was first performed to screen candidate clinical and multimodal ultrasound features. Variables with a p-value < 0.1 were considered eligible for multivariate modeling to avoid premature exclusion of potential predictors. Subsequently, multicollinearity was assessed using the variance inflation factor (VIF), and variables showing substantial collinearity were excluded prior to logistic regression. Radiomic features underwent dimensionality reduction and were then selected via LASSO regression with 10-fold cross-validation for correlation with treatment efficacy (Fig.
+4
+). Patients were randomly stratified into training and validation cohorts (7:3). Using the selected features, multivariate logistic regression constructed three predictive models:
+(1)
+Clinical + Ultrasound Model (Model_Clinic): This model incorporated conventional clinical factors and multimodal ultrasound features (no radiomics). Candidate variables were initially screened in univariate analyses, and those significantly associated with response were entered into a backward stepwise multivariate regression to derive the final predictors.
+(2)
+Radiomics Model (Model_RSA): This model used only the radiomics features extracted at baseline, early-treatment, and as delta changes between time points. After feature selection via regularized methods, a logistic regression was fitted to the training dataset.
+(3)
+Combined Model (Model_Combined): This comprehensive model combined all available predictive factors, incorporating both the previously identified clinical/ultrasound predictors and the selected radiomics features to evaluate whether adding radiomics information improved predictive performance. All models underwent stepwise selection to avoid overfitting, and their final form was determined by the features remaining significant after multivariable adjustment.
+Statistical analysis
+Statistical analyses were conducted using IBM SPSS 26.0 and R 4.3.0. Normally distributed continuous variables (mean ± SD) were compared using the t-test, and non-normal data with the Mann–Whitney U test. Categorical variables were compared using the χ² test or Fisher’s exact test. Performance metrics (AUC, sensitivity, specificity) of all models in the training and validation cohorts were compared using the DeLong test for statistical significance. Data preprocessing, feature selection, model construction, and performance evaluations (including ROC) were performed in R. A two-sided P-value < 0.05 was considered statistically significant.
+Results
+Of 239 patients included (training
+n
+= 167, validation
+n
+= 72), 51.5% achieved MHR. Cohorts were comparable for key baseline characteristics (
+P
+> 0.1,
+Appendix
+Tables
+1
+, 2, 3, 4, 5 and 6).
+Clinical and pathological data
+In the training set, there was no significant difference in the mean age between the NMHR and MHR groups (
+P
+= 0.642); however, the T stage showed a statistically significant difference between the groups (
+P
+= 0.005). Analysis of tumor shrinkage after two cycles of treatment revealed that 74.0% of patients in the NMHR group exhibited no significant response, whereas only 47.8% of patients in the MHR group showed no significant response (
+P
+= 0.001), suggesting a better early response to NAT in the MHR group. Pathological analysis indicated that both groups were predominantly diagnosed with invasive ductal carcinoma (
+P
+= 0.551), and there were no significant differences in ER, PR, Ki-67 index, or IHC subtype; however, the HER2-positive rate was significantly higher in the MHR group (66.7%) compared to the NMHR group (15.6%,
+P
+< 0.001), highlighting the important role of HER2 in NAT sensitivity (
+Appendix
+Tables
+1
+and 2).
+Analysis of multimodal ultrasound features
+Conventional Ultrasound: Comparative analysis demonstrated that the maximum tumor diameter in the NMHR group (42.46 ± 2.70 mm) was significantly larger than that in the MHR group (35.23 ± 2.26 mm,
+P
+= 0.007). In addition, the proportions of cases with invasion of the skin and the posterior mammary space were higher in the NMHR group (
+P
+= 0.037 and 0.035, respectively), while no significant differences were observed in the CDFI blood flow grading or BI-RADS classification (
+Appendix
+Table 3).
+SWE: The NMHR group exhibited significantly higher values of Emax, Emin, Emedian, and Emean compared to the MHR group (
+P
+< 0.01), indicating that tumors in the NMHR group were generally stiffer. Conversely, the variability indices Estd and EIQR were significantly higher in the MHR group (
+P
+= 0.013 and 0.032, respectively), suggesting a more heterogeneous distribution of stiffness within the tumors (
+Appendix
+Table 4).
+CEUS: The proportion of patients with perfusion defects in the NMHR group was as high as 50.6%, compared to 25.6% in the MHR group (
+P
+= 0.001). Additionally, the positive rate for the “radiation sign” was significantly higher in the NMHR group (48.1% vs. 32.2%,
+P
+= 0.037). Moreover, the parameters WoAUC and WiWoAUC showed statistically significant differences between the two groups (
+P
+= 0.030 and 0.036, respectively), while other CEUS quantitative parameters did not differ significantly (
+Appendix
+Tables 5 and 6).
+Radiomics analysis
+Using PyRadiomics, a total of 1,395 features were extracted from three datasets—RS0 (baseline), RS2 (after two NAT cycles), and RSD (rate of change)—with 465 features from each. Following LASSO regression with 10-fold cross-validation, 7, 13, and 10 significant features were selected from RS0, RS2, and RSD, respectively (Fig.
+4
+; Table
+1
+). These features included various wavelet transform and texture parameters, exhibiting both positive and negative correlations, and provided multidimensional indicators for subsequent model development.
+Table 1 Ultrasound radiomics feature selection for RS0, RS2, and RSD
+Full size table
+Model construction and validation
+The
+Model_Clinic
+, which integrated baseline clinical data and multimodal ultrasound features, achieved an AUC of 0.854, with a sensitivity of 0.844 and a specificity of 0.756. Regression analysis identified HER2 (OR = 14.181,
+P
+< 0.001), Emax (
+P
+= 0.007), Estd (
+P
+= 0.004), and the “radiation sign” (
+P
+= 0.049) as independent predictors (Table
+2
+).
+Table 2 Clinical pathology combined model (Model_Clinic) factors
+Full size table
+The
+Model_RSA
+, based solely on radiomics features, exhibited relatively modest predictive performance when using baseline radiomics (RS0) alone (AUC = 0.690). However, when utilizing radiomics features after two cycles (RS2) and the rate of feature change (RSD), the AUC increased to 0.833 and 0.788, respectively. The combined radiomics model (integrating RS0, RS2, and RSD) achieved an AUC of 0.863.
+The
+Model_Combined
+, which incorporated clinical, pathological, multimodal ultrasound, and radiomics features, yielded an AUC of 0.914, with a sensitivity of 0.894 and a specificity of 0.829. This performance was significantly superior to both the Clinic model (
+P
+= 0.006) and the RSA model (
+P
+= 0.042), and no statistically significant differences were observed between the training and validation sets (Table
+3
+). In summary, the combined model demonstrated the best performance in the early prediction of NAT efficacy.
+Table 3 Comparison of predictive performance among different NAT response prediction models
+Full size table
+Baseline and follow-up ultrasound images exemplifying tumor response are illustrated in Figs.
+5
+and
+6
+.
+Fig. 5
+Full size image
+Example 1: Female, 44 years old, Premenopausal, T2N1M0, Invasive ductal carcinoma (ER 55%，PR 80%，HER2+，Ki-67 35%)
+Fig. 6
+Full size image
+Example 2: Female, 47 years old, Premenopausal, T3N1M0, Invasive ductal carcinoma (ER 80%, PR 80%, HER2+, Ki-67 40%）
+Discussion
+In this study, we developed and validated a multivariate model to predict breast cancer NAT response early in the treatment course by integrating clinical factors, multimodal ultrasound features, and radiomic signatures. Our findings highlight the value of a multidimensional approach: the combined model outperformed models based on clinical-ultrasound features or radiomics alone, suggesting that these data modalities provide complementary information about tumor characteristics and treatment effects. Early identification of likely non-responders is crucial, as it could enable a switch to alternative therapies or the addition of novel agents without waiting for completion of an ineffective regimen.
+The results of this study indicate that there were no significant differences in age distribution between responders and non-responders, suggesting that age is not a major factor influencing the efficacy of NAT. This finding is consistent with previous multicenter real-world studies [
+31
+]. In contrast, T stage demonstrated a significant difference between NMHR and MHR groups, indicating that larger tumor size and greater local infiltration are associated with poorer response [
+32
+]. The degree of lymph node involvement (N stage) did not significantly impact efficacy in our data [
+33
+]. Additionally, we found no association between menopausal status and NAT efficacy, aligning with some prior reports [
+34
+,
+35
+]. Assessments based on RECIST 1.1 in our cohort showed that early tumor shrinkage after two cycles correlated well with the final histological response, underscoring the importance of early identification of responsive patients for optimizing treatment strategies [
+36
+,
+37
+].
+Regarding the pathological indicators of the primary lesion, our findings demonstrated that HER2-positive patients were significantly more likely to achieve a marked histological response to NAT (66.7% vs. 15.6%,
+P
+< 0.001), reinforcing the role of HER2 as a key molecular predictor of NAT sensitivity [
+4
+,
+38
+]. In our cohort, this corresponded to roughly a four-fold higher likelihood of major response in HER2-overexpressing tumors, consistent with the well-documented chemosensitivity of HER2-driven breast cancers in the neoadjuvant setting [
+4
+]. HER2-positive tumors– especially when treated with targeted anti-HER2 antibodies as per standard care– are known to achieve pathologic complete response at markedly higher rates than HER2-negative subtypes [
+4
+]. This enhanced response is attributed to the aggressive yet therapy-sensitive nature of HER2-amplified disease and the efficacy of HER2-directed therapies in eliminating HER2-dependent cancer cells. In contrast, ER and PR status did not show a significant correlation with NAT efficacy in this study, despite some reports indicating lower pCR rates among ER-positive patients [
+39
+]. (Hormone receptor-positive/HER2-negative tumors are generally less chemosensitive, which helps explain why ER/PR status alone was not predictive in our cohort [
+4
+]). Although Ki-67, a marker of cellular proliferation, is often positively correlated with chemotherapy response [
+40
+,
+41
+], our study only observed a non-significant trend in that direction. Overall, HER2 remains a crucial biomarker of response, while the roles of ER, PR, and Ki-67 warrant further evaluation within broader clinical and molecular contexts.
+We found that traditional B-mode sonographic features of the tumor (shape, margin, etc.) were not strong predictors of NAT response. This is in line with prior findings that morphologic criteria have limited utility in gauging chemotherapy sensitivity ​ [
+42
+,
+43
+]. One exception in our analysis was the extent of local invasion visible on ultrasound–skin or chest wall involvement was more common in poor responders. This likely reflects aggressive tumor biology (for example, basal-like or triple-negative tumors often present with direct local invasion) which correlates with relative chemoresistance. Although parameters such as CDFI blood flow grading and BI-RADS category provide valuable information on tumor vascularity and overall assessment [
+44
+], their precision in predicting NAT efficacy remains limited. Thus, purely anatomical imaging features may miss critical information about the tumor’s biology, prompting the use of more functional ultrasound techniques (e.g., elastography and contrast-enhanced imaging) to improve early response prediction.
+SWE emerged as a critical modality for early response prediction in our study. Baseline SWE parameters in the NMHR group–specifically, higher absolute stiffness values (E_max, E_min, E_median, and E_mean)–were significantly greater than those of the MHR group, while stiffness variability indices (E_std and E_IQR) were lower. This indicates that tumors in the NMHR group generally exhibit higher and more homogeneous stiffness, which may impede the diffusion of chemotherapeutic agents within the tumor [
+45
+,
+46
+]. Conversely, the relatively lower or more heterogeneous stiffness observed in the MHR group may facilitate drug penetration and enhance treatment efficacy. Indeed, a stiffer tumor microenvironment corresponds to a dense collagen-rich stroma that elevates interstitial fluid pressure and compresses blood vessels, thereby reducing intratumoral perfusion and drug uptake [
+47
+]. Such mechanical barriers to drug delivery– coupled with pro-survival mechanotransduction signaling triggered by a rigid extracellular matrix– are thought to contribute to chemoresistance in highly stiff tumors [
+47
+]. By contrast, tumors with lower or spatially heterogeneous stiffness may contain more compliant regions or micronecrosis that allow deeper chemotherapy penetration, partially explaining their better response. Although some studies have reported correlations between baseline SWE stiffness values and post-NAT residual tumor or pCR rates [
+48
+], further validation through large-scale, multicenter trials is necessary to confirm these observations.
+Furthermore, CEUS offers distinct advantages in revealing tumor angiogenesis and microcirculation, and CEUS features provided additional predictive value in our model. In our study, a higher proportion of patients in the NMHR group exhibited perfusion defects on CEUS and a positive “radiation sign,” with significant differences observed in the quantitative perfusion parameters (e.g., Whole-tumor Area Under the Curve (WoAUC) and the Wash-in/Wash-out AUC ratio). These findings suggest that abnormal vascular architecture or poor perfusion is associated with an unfavorable treatment response [
+49
+,
+50
+]. This is biologically plausible, as poorly perfused tumor regions often indicate necrosis and hypoxia, which can blunt the effectiveness of cytotoxic chemotherapy by limiting drug delivery and fostering a therapy-resistant microenvironment [
+51
+]. The “radiation sign” on CEUS– an irregular radial enhancement pattern emanating from the tumor– likely denotes an infiltrative growth with heterogeneous blood supply, features characteristic of more aggressive disease that responds sub-optimally to treatment. Notably, this kind of perfusion heterogeneity has also been linked to worse outcomes in breast MRI studies [
+48
+], underscoring that disorganized tumor vasculature (whether seen on CEUS or MRI) is a marker of therapy resistance. Although some baseline CEUS metrics such as peak enhancement (PE) and initial wash-in AUC (WiAUC) did not show significant differences between responder groups in our cohort, the literature indicates that dynamic changes in these parameters during the course of chemotherapy might better reflect alterations in tumor blood flow and vascular permeability [
+51
+,
+52
+,
+53
+]. Future studies with multi-timepoint CEUS follow-ups are warranted to explore these temporal dynamics. It is noteworthy that baseline CEUS features alone were not as powerful as SWE features for prediction in our data, but they clearly complement the stiffness information. In our combined model, the inclusion of the CEUS-derived radiation sign alongside SWE parameters improved predictive accuracy, indicating that these modalities capture different facets of tumor biology (vascular perfusion vs. mechanical properties) that are both relevant to treatment response.
+A major innovation of our work is the inclusion of radiomics from ultrasound images, both at baseline and after two cycles of NAT. Radiomics can detect subtle textural and higher-order intensity patterns that are not easily recognized by human observers. In our study, baseline radiomic features provided moderate predictive ability (AUC ~ 0.69), which improved substantially after two cycles (AUC ~ 0.83 using RS2 features), suggesting that early treatment-induced alterations in tumor architecture contain important prognostic information.
+The radiomic features that changed most in responders appeared to reflect increasing intratumoral heterogeneity. For instance, we observed increases in texture complexity and variance among responders, which are thought to arise from treatment-induced tumor cell death, inflammatory cell infiltration, and stromal remodeling—all of which can alter the grayscale echo pattern on ultrasound [
+54
+,
+55
+,
+56
+]​. One representative feature was the decrease in GLCM correlation, indicating reduced uniformity of pixel intensity relationships as tissue structure breaks down. Another was an increase in a wavelet-derived high-frequency texture energy feature, which may correspond to microcavitation or fluid-filled regions appearing as treatment progresses. These subtle imaging signatures are not captured by conventional size-based RECIST measurements, highlighting the added value of radiomics. Furthermore, by calculating delta radiomic features (i.e., proportional changes from baseline), we inherently adjusted for inter-individual variability and emphasized the relative structural changes induced by therapy. This was particularly useful in cases where tumors with initially homogeneous texture diverged in response—remaining homogeneous in non-responders and becoming heterogeneous in responders. Delta features effectively captured these differences.
+Our findings are in line with emerging literature. Huang et al. [
+57
+] demonstrated that delta radiomics from longitudinal dual-modal ultrasound (B-mode and SWE) could enhance early prediction of neoadjuvant chemotherapy (NAC) response. Similarly, Sannachi et al. [
+58
+] used quantitative ultrasound texture analysis and successfully predicted pCR prior to NAC completion, confirming that backscatter texture changes are reflective of histological tumor response. Together, our results support the growing consensus that radiomic analysis, even using standard B-mode ultrasound images, has the potential to improve early response prediction when combined with appropriate segmentation and feature engineering.
+Our results are generally consistent with, and build upon, findings from recent literature. Several studies using MRI-based radiomics or multi-parametric MRI have reported high AUCs (0.8–0.9) for predicting pCR, often including features like tumor volume reduction and radiomic texture changes [
+59
+,
+60
+]. Our results suggest that ultrasound, a far more accessible modality, may achieve comparable predictive performance when advanced techniques are applied. Ultrasound radiomics is an emerging field; for example, Li et al. [
+20
+]performed a meta-analysis of ultrasound radiomics studies for NAC response and found pooled sensitivity ~ 0.87 and specificity ~ 0.78​, which are in line with the performance of our combined model (sensitivity ~ 0.89, specificity ~ 0.83). However, that meta-analysis also noted the generally low quality and single-center nature of existing studies​. Our study, while retrospective and single-center, attempted to address quality by using standardized imaging, blinding evaluators, and employing validation. Additionally, Sannachi et al. [
+61
+] used quantitative ultrasound (QUS) spectral features and reported the ability to distinguish responders early with an accuracy around 80%​. Our combined approach slightly exceeds that, likely due to the inclusion of complementary imaging modes and clinical data. It is important to mention that a direct comparison across studies is complicated by differences in endpoint (some predict pCR specifically, whereas we used Miller–Payne 4–5 as MHR), timing of interim assessment, and features used. Nonetheless, the convergence of evidence suggests that incorporating data from multiple sources (molecular, imaging, radiomic) is the path forward for improving NAT response prediction​.
+Nevertheless, this study has several limitations. First, as a single-center retrospective study, it is susceptible to sample selection bias and institutional practice patterns. Second, although we incorporated multimodal ultrasound and radiomics, the absence of multi-timepoint imaging follow-up may have limited our ability to capture dynamic treatment-related changes throughout NAT. Third, our analysis was restricted to the largest malignant lesion in patients with multifocal or multicentric tumors, based on the RECIST 1.1 principle of assessing the most representative target lesion. While this improves reproducibility and reflects clinical workflows, it may underestimate heterogeneity in treatment response across different tumor foci. Future studies incorporating whole-breast lesion tracking or volumetric assessment may better capture the complete response landscape in such complex cases. Lastly, we did not perform direct comparisons with advanced imaging modalities such as MRI, which may offer complementary predictive insights.
+Conclusion
+We have demonstrated that an integrative model combining clinical factors, multimodal ultrasound features, and radiomic analysis of ultrasound images demonstrates promising accuracy in predicting the histological response of breast cancer to neoadjuvant therapy after just two treatment cycles. Key contributors to the prediction included HER2 status, tumor stiffness metrics from elastography, and perfusion patterns from CEUS, as well as multi-scale textural changes captured by radiomics. Early identification of non-responders using this approach has the potential to help oncologists tailor treatment earlier, which warrants prospective confirmation. This study underscores the innovative potential of merging traditional imaging with AI-driven analytics in oncology. With further validation and refinement, such a multimodal ultrasound radiomics model could become a valuable component of precision medicine for breast cancer– offering clinicians a practical tool for more personalized neoadjuvant therapy strategies.
+Data availability
+Data generated or analysed during the study are available from the corresponding author on reasonable request; the dataset is fully anonymised.
+References
+Xu Y, Gong M, Wang Y, Yang Y, Liu S, Zeng Q. Global trends and forecasts of breast cancer incidence and deaths. Sci Data. 2023;10(1):334.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Arnold M, Morgan E, Rumgay H, Mafra A, Singh D, Laversanne M, Vignat J, Gralow J, Cardoso F, Siesling S, et al. Current and future burden of breast cancer: global statistics for 2020 and 2040. Breast. 2022;66:15–23.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Chinese Anti-Cancer Association Breast Cancer Committee. Chinese Anti-Cancer association guidelines and standards for breast Cancer diagnosis and treatment (2021 Edition). Chin J Cancer. 2021;31(10):954–1040.
+Google Scholar
+Ortmann O, Blohmer J, Sibert N, Brucker S, Janni W, Wöckel A, Scharl A, Dieng S, Ferencz J, Inwald E, et al. Current clinical practice and outcome of neoadjuvant chemotherapy for early breast cancer: analysis of individual data from 94,638 patients treated in 55 breast cancer centers. J Cancer Res Clin Oncol. 2023;149(3):1195–209.
+Article
+CAS
+PubMed
+Google Scholar
+Bianchini G, De Angelis C, Licata L, Gianni L. Treatment landscape of triple-negative breast cancer - expanded options, evolving needs. Nat Rev Clin Oncol. 2022;19(2):91–113.
+Article
+CAS
+PubMed
+Google Scholar
+Mamounas EP. Neoadjuvant chemotherapy for operable breast cancer: is this the future? Clin Breast Cancer. 2003;4(Suppl 1):S10–19.
+Article
+PubMed
+Google Scholar
+Liang X, Li Z, Zhang L, Wang D, Tian J. Application of contrast-enhanced ultrasound in the differential diagnosis of different molecular subtypes of breast cancer. Ultrason Imaging. 2020;42(6):261–70.
+Article
+PubMed
+Google Scholar
+Yi M, Lin H, Bedrosian I, Shen Y, Hunt K, Chavez-MacGregor M, King T, Mittendorf E. Staging for breast cancer patients receiving neoadjuvant chemotherapy: utility of incorporating biologic factors. Ann Surg Oncol. 2020;27(2):359–66.
+Article
+PubMed
+Google Scholar
+Chinese Expert Panel on Neoadjuvant Therapy for Breast Cancer. Chinese expert consensus on neoadjuvant therapy for breast Cancer (2019 Edition). Chin J Cancer. 2019;29(5):11.
+Google Scholar
+Lim H, Sharma A, Gallagher C, Hall P. Value of ultrasound in assessing response to neoadjuvant chemotherapy in breast cancer. Clin Radiol. 2023;78(12):912–8.
+Article
+CAS
+PubMed
+Google Scholar
+Lugano R, Ramachandran M, Dimberg A. Tumor angiogenesis: causes, consequences, challenges and opportunities. Cell Mol Life Sci. 2020;77(9):1745–70.
+Article
+CAS
+PubMed
+Google Scholar
+Wang S, Wen W, Zhao H, Liu J, Wan X, Lan Z, Peng Y. Prediction of clinical response to neoadjuvant therapy in advanced breast cancer by baseline B-mode ultrasound, shear-wave elastography, and pathological information. Front Oncol. 2023;13:1096571.
+Article
+CAS
+PubMed
+PubMed Central
+Google Scholar
+Wang S, Lan Z, Wan X, Liu J, Wen W, Peng Y. Correlation between baseline conventional ultrasounds, shear-wave elastography indicators, and neoadjuvant therapy efficacy in triple-negative breast cancer. Diagnostics. 2023.
+https://doi.org/10.3390/diagnostics13203178
+.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Jin J, Liu Y, Zhang B. Diagnostic performance of strain and shear wave elastography for the response to neoadjuvant chemotherapy in breast cancer patients: systematic review and meta-analysis. J Ultrasound Med. 2022;41(10):2459–66.
+Article
+PubMed
+Google Scholar
+Wang J, Chu Y, Wang B, Jiang T. A narrative review of ultrasound technologies for the prediction of neoadjuvant chemotherapy response in breast Cancer. Cancer Manag Res. 2021;13:7885–95.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Huang R, Jiang L, Xu Y, Gong Y, Ran H, Wang Z, Sun Y. Comparative diagnostic accuracy of Contrast-Enhanced ultrasound and shear wave elastography in differentiating benign and malignant lesions: A network Meta-Analysis. Front Oncol. 2019;9:102.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Gu LS, Zhang R, Wang Y, Liu XM, Ma F, Wang JY, Sun XY, Liu MJ, Wang B, Zou SM. Characteristics of contrast-enhanced ultrasonography and strain elastography of locally advanced breast cancer. J Thorac Dis. 2019;11(12):5274–89.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Jiang M, Li CL, Luo XM, Chuan ZR, Lv WZ, Li X, Cui XW, Dietrich CF. Ultrasound-based deep learning radiomics in the assessment of pathological complete response to neoadjuvant chemotherapy in locally advanced breast cancer. Eur J Cancer. 2021;147:95–105.
+Article
+CAS
+PubMed
+Google Scholar
+Byra M, Dobruch-Sobczak K, Klimonda Z, Piotrzkowska-Wroblewska H, Litniewski J. Early prediction of response to neoadjuvant chemotherapy in breast cancer sonography using Siamese convolutional neural networks. IEEE J Biomed Health Inform. 2021;25(3):797–805.
+Article
+PubMed
+Google Scholar
+Zhifan L, Xinran L, Ya G, Xingru L, Junqiang L. Ultrasound-based radiomics for early predicting response to neoadjuvant chemotherapy in patients with breast cancer: a systematic review with meta-analysis. Radiol Med 2024;129(6).
+National Comprehensive Cancer Network. Breast cancer, version 1.2020. In. National Comprehensive Cancer Network; 2020.
+Allison KH, Hammond MEH, Dowsett M, McKernin SE, Carey LA, Fitzgibbons PL, Hayes DF, Lakhani SR, Chavez-MacGregor M, Perlmutter J, et al. Estrogen and progesterone receptor testing in breast cancer: ASCO/CAP guideline update. J Clin Oncol. 2020;38(12):1346–66.
+Article
+PubMed
+Google Scholar
+Chinese Society of Clinical Oncology Breast Cancer Expert Committee CA-CABCC, Zefei J, Jiong W, et al. Chinese expert consensus on the clinical diagnosis and treatment of HER2-Positive breast Cancer (2021 Edition). Chin Med J. 2021;101(17):6.
+Google Scholar
+Burstein H, Curigliano G, Thürlimann B, Weber W, Poortmans P, Regan M, Senn H, Winer E, Gnant M. Customizing local and systemic therapies for women with early breast cancer: the St. Gallen international consensus guidelines for treatment of early breast cancer 2021. Ann Oncol. 2021;32(10):1216–35.
+Article
+CAS
+PubMed
+Google Scholar
+Adler DD, Carson PL, Rubin JM, Quinn-Reid D. Doppler ultrasound color flow imaging in the study of breast cancer: preliminary findings. Ultrasound Med Biol. 1990;16(6):553–9.
+Article
+CAS
+PubMed
+Google Scholar
+Eisenhauer EA, Therasse P, Bogaerts J, Schwartz LH, Sargent D, Ford R, Dancey J, Arbuck S, Gwyther S, Mooney M, et al. New response evaluation criteria in solid tumours: revised RECIST guideline (version 1.1). Eur J Cancer. 2009;45(2):228–47.
+Article
+CAS
+PubMed
+Google Scholar
+Liang Ping JY. Guidelines for clinical application of ultrasound elastography. 1st ed. China: Guidelines for clinical application of ultrasound elastography; 2018.
+Google Scholar
+Ronneberger O, Fischer P, Brox T. U-Net: convolutional networks for biomedical image segmentation. In: 2015; Cham. Springer International Publishing; 2015. pp. 234–41.
+Chinese Anti-Cancer Association BCEC, Breast Tumor Group of the Chinese Society of Clinical Oncology. Guidelines and standards for the diagnosis and treatment of breast Cancer by the Chinese Anti-Cancer association (2024 Edition). China Oncol. 2023;33(12):1092–187.
+Google Scholar
+Ogston KN, Miller ID, Payne S, Hutcheon AW, Sarkar TK, Smith I, Schofield A, Heys SD. A new histological grading system to assess response of breast cancers to primary chemotherapy: prognostic significance and survival. Breast. 2003;12(5):320–7.
+Article
+PubMed
+Google Scholar
+Li Y, Chen H, He J, Fan Z, Zhang H. The outcome of neoadjuvant chemotherapy and the current trend of surgical treatment in young women with breast cancer: a multicenter real-world study (CSBrS-012). Front Public Health. 2023;11:1100421.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Lee Y, Kim S, Kang B, Kim Y. Contrast-Enhanced ultrasound for early prediction of response of breast Cancer to neoadjuvant chemotherapy. Ultraschall Der Medizin (Stuttgart Germany: 1980). 2019;40(2):194–204.
+Article
+Google Scholar
+Liu Y, He M, Zuo WJ, Hao S, Wang ZH, Shao ZM. Tumor size still impacts prognosis in breast cancer with extensive nodal involvement. Front Oncol. 2021;11: 585613.
+Article
+CAS
+PubMed
+PubMed Central
+Google Scholar
+Ramalingam K, Clelland E, Rothschild H, Mujir F, Record H, Kaur M, Mukhtar RA. Successful breast conservation after neoadjuvant chemotherapy in lobular breast cancer: the role of menopausal status in response to treatment. Ann Surg Oncol. 2023;30(12):7099–106.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Yamamoto Y, Yamaguchi R, Fujiki Y, Ibusuki M, Murakami K, Iwase H. Association of response to neoadjuvant chemotherapy (NAC) in premenopausal patients with hormone receptor-positive early breast cancer with chemotherapy-induced ovarian function suppression by NAC. J Clin Oncol. 2012.
+https://doi.org/10.1200/jco.2012.30.15_suppl.e11017
+.
+Article
+PubMed
+Google Scholar
+Evans A, Whelehan P, Thompson A, Purdie C, Jordan L, Macaskill J, Waugh S, Fuller-Pace F, Brauer K, Vinnicombe S. Prediction of pathological complete response to neoadjuvant chemotherapy for primary breast Cancer comparing interim ultrasound, shear wave elastography and MRI. Ultraschall Med. 2018;39(4):422–31.
+Article
+PubMed
+Google Scholar
+Wang KN, Meng YJ, Yu Y, Cai WR, Wang X, Cao XC, Ge J. Predicting pathological complete response after neoadjuvant chemotherapy: A nomogram combining clinical features and ultrasound semantics in patients with invasive breast cancer. Front Oncol. 2023;13:1117538.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Hong J, Wu J, Huang O, He J, Zhu L, Chen W, Li Y, Chen X, Shen K. Early response and pathological complete remission in breast cancer with different molecular subtypes: a retrospective single center analysis. J Cancer. 2020;11(23):6916–24.
+Article
+CAS
+PubMed
+PubMed Central
+Google Scholar
+Cortazar P, Zhang L, Untch M, Mehta K, Costantino J, Wolmark N, Bonnefoi H, Cameron D, Gianni L, Valagussa P, et al. Pathological complete response and long-term clinical benefit in breast cancer: the CTNeoBC pooled analysis. Lancet. 2014;384(9938):164–72.
+Article
+PubMed
+Google Scholar
+Cheng C, Zhao H, Tian W, Hu C, Zhao H. Predicting the expression level of Ki-67 in breast cancer using multi-modal ultrasound parameters. BMC Med Imaging. 2021;21(1):1–7.
+Article
+Google Scholar
+Srivastava P, Wang T, Clark BZ, Yu J, Fine JL, Villatoro TM, Carter GJ, Brufsky AM, Gorantla VC, Huggins-Puhalla SL, et al. Clinical-pathologic characteristics and response to neoadjuvant chemotherapy in triple-negative low Ki-67 proliferation (TNLP) breast cancers. NPJ Breast Cancer. 2022;8(1):51.
+Article
+CAS
+PubMed
+PubMed Central
+Google Scholar
+Wojcinski S, Stefanidou N, Hillemanns P, Degenhardt F. The biology of malignant breast tumors has an impact on the presentation in ultrasound: an analysis of 315 cases. BMC Womens Health. 2013.
+https://doi.org/10.1186/1472-6874-13-47
+.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Penny S. Sonography of benign and malignant breast lesions. Radiol Technol. 2021;93(1):M75–91.
+Google Scholar
+Han X, Li H, Dong SS, Zhou SY, Wang CH, Guo L, Yang J, Zhang GL. Application of triple evaluation method in predicting the efficacy of neoadjuvant therapy for breast cancer. World J Surg Oncol. 2023.
+https://doi.org/10.1186/s12957-023-02998-8
+.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Yuan S, Shao H, Na Z, Kong M, Cheng W. Value of shear wave elasticity in predicting the efficacy of neoadjuvant chemotherapy in different molecular types. Clin Imaging. 2022;89:97–103.
+Article
+PubMed
+Google Scholar
+Pratt S, Lee R, Martin S. The mechanical microenvironment in breast cancer. Cancers. 2020.
+https://doi.org/10.3390/cancers12061452
+.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Ruoxi X, Peng Y, Jifu W, Qiang D. The role of matrix stiffness in breast cancer progression: a review. Front Oncol. 2023;13(0).
+Evans A, Armstrong S, Whelehan P, Thomson K, Rauchhaus P, Purdie C, Jordan L, Jones L, Thompson A, Vinnicombe S. Can shear-wave elastography predict response to neoadjuvant chemotherapy in women with invasive breast cancer? Br J Cancer. 2013;109(11):2798–802.
+Article
+CAS
+PubMed
+PubMed Central
+Google Scholar
+Jung E, Jung F, Stroszczynski C, Wiesinger I. Quantification of dynamic contrast-enhanced ultrasound (CEUS) in non-cystic breast lesions using external perfusion software. Sci Rep. 2021;11(1): 17677.
+Article
+CAS
+PubMed
+PubMed Central
+Google Scholar
+Cho H, Kim H, Nam S, Lee J, Han B, Ko E, Choi J, Park H, Ko E. Measurement of perfusion heterogeneity within tumor habitats on magnetic resonance imaging and its association with prognosis in breast cancer patients. Cancers. 2022.
+https://doi.org/10.3390/cancers14081858
+.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Wan C, Zhou L, Li H, Wang L, Li F, Yin W, Wang Y, Jiang L, Lu J. Multiparametric contrast-enhanced ultrasound in early prediction of response to neoadjuvant chemotherapy and recurrence-free survival in breast cancer. Diagnostics. 2023.
+https://doi.org/10.3390/diagnostics13142378
+.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Janu E, Krikavova L, Little J, Dvorak K, Brancikova D, Jandakova E, Pavlik T, Kovalcikova P, Kazda T, Valek V. Prospective evaluation of contrast-enhanced ultrasound of breast BI-RADS 3–5 lesions. BMC Med Imaging. 2020;20(1):66.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Wang B, Yang D, Zhang X, Gong X, Xu T, Han J, Ren Y, Zou S, Li L, Wang Y. The diagnostic value of contrast-enhanced ultrasonography in breast ductal abnormalities. Cancer Imaging. 2023;23(1): 25.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Kong X, Zhang Q, Wu X, Zou T, Duan J, Song S, Nie J, Tao C, Tang M, Wang M, et al. Advances in imaging in evaluating the efficacy of neoadjuvant chemotherapy for breast Cancer. Front Oncol. 2022;12:816297.
+Article
+CAS
+PubMed
+PubMed Central
+Google Scholar
+Pasha N, Turner N. Understanding and overcoming tumor heterogeneity in metastatic breast cancer treatment. Nat Cancer. 2021;2(7):680–92.
+Article
+CAS
+PubMed
+Google Scholar
+Carneiro B, El-Deiry W. Targeting apoptosis in cancer therapy. Nat Rev Clin Oncol. 2020;17(7):395–417.
+Article
+PubMed
+PubMed Central
+Google Scholar
+Jia-Xin H, Lei W, Xue-Yan W, Shi-Yang L, Yan-Fen X, Ming-Jie W, Xiao-Qing P. Delta radiomics based on longitudinal Dual-modal ultrasound can early predict response to neoadjuvant chemotherapy in breast cancer patients. Acad Radiol. 2023;31(5).
+Sannachi L, Osapoetra LO, DiCenzo D, Halstead S, Wright F, Look-Hong N, Slodkowska E, Gandhi S, Curpen B, Kolios MC, et al. A priori prediction of breast cancer response to neoadjuvant chemotherapy using quantitative ultrasound, texture derivative and molecular subtype. Sci Rep. 2023;13(1):22687.
+Article
+CAS
+PubMed
+PubMed Central
+Google Scholar
+Liu Z, Li Z, Qu J, Zhang R, Zhou X, Li L, Sun K, Tang Z, Jiang H, Li H, et al. Radiomics of multiparametric MRI for pretreatment prediction of pathologic complete response to neoadjuvant chemotherapy in breast cancer: a multicenter study. Clin Cancer Res. 2019;25(12):3538–47.
+Article
+CAS
+PubMed
+Google Scholar
+Eun NL, Kang D, Son EJ, Park JS, Youk JH, Kim JA, Gweon HM. Texture analysis with 3.0-T MRI for association of response to neoadjuvant chemotherapy in breast cancer. Radiology. 2020;294(1):31–41.
+Article
+PubMed
+Google Scholar
+Hayashi M, Yamamoto Y, Iwase H. Clinical imaging for the prediction of neoadjuvant chemotherapy response in breast cancer. Chin Clin Oncol. 2020;9(3):31.
+Article
+PubMed
+Google Scholar
+Download references
+Acknowledgements
+We thank all of the participants recruited for this study.
+Funding
+Not applicable.
+Author information
+Authors and Affiliations
+Department of Medical Ultrasound, West China Hospital, Sichuan University, Wai nan guo xue xiang 37, Chengdu, 610041, China
+Siyu Wang, Jingyan Liu, Linlin Song, Haina Zhao, Xue Wan & Yulan Peng
+Authors
+Siyu Wang
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Jingyan Liu
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Linlin Song
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Haina Zhao
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Xue Wan
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Yulan Peng
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Contributions
+Contributions: Conception: WSY and PYL; Study design: WSY and LJY; Data collection: SLL and WX; Data analysis: LJY and ZHN; Data interpretation: WSY and SLL; Manuscript writing: WSY and PYL; Manuscript editing: All authors. The author(s) read and approved the final manuscript.
+Corresponding author
+Correspondence to
+Yulan Peng
+.
+Ethics declarations
+Ethics approval and consent to participate
+All procedural aspects of this investigation were conducted in accordance with the 2013 revision of the Declaration of Helsinki. Ethical approval was granted by the Ethics Review Committee of West China Hospital, Sichuan University (Approval No. 2020 − 1219), which waived the requirement for informed consent because the study was retrospective and relied solely on fully anonymised data.
+Consent for publication
+Availability of data and materials.
+Competing interests
+The authors declare no competing interests.
+Additional information
+Publisher’s Note
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+Supplementary Information
+Supplementary Material 1 (download DOCX
+)
+Supplementary Material 2 (download DOCX
+)
+Supplementary Material 3 (download DOCX
+)
+Supplementary Material 4 (download DOCX
+)
+Supplementary Material 5 (download DOCX
+)
+Supplementary Material 6 (download DOCX
+)
+Appendix
+Appendix
+Analysis results of clinical data of NAT breast cancer patients
+Factor
+NMHR (
+n
+=77)
+MHR (
+n
+=90)
+P
+Value
+Training set (
+n
+=167)
+Validation set (
+n
+=72)
+P
+Value
+Age
+50.48±1.161
+48.78±0.982
+0.642
+49.56±0.753
+46.74±1.207
+0.084
+T stage
+0.005
+0.559
+1
+2(2.6)
+13(14.4)
+15(9.0)
+4(5.6)
+2
+34(44.2)
+49(54.4)
+83(49.7)
+34(47.2)
+3
+11(14.3)
+10(11.1)
+21(12.6)
+13(18.1)
+4
+30(39.0)
+18(20.0)
+48(28.7)
+21(29.2)
+N stage
+0.698
+0.473
+0
+6(7.8)
+7(7.8)
+13(7.8)
+7(9.7)
+1
+41(53.2)
+40(44.4)
+81(48.5)
+31(43.1)
+2
+14(18.2)
+21(23.3)
+35(21.0)
+21(29.2)
+3
+16(20.8)
+22(24.4)
+38(22.8)
+13(18.1)
+M stage
+1.000
+0.448
+0
+74(96.1)
+87(96.7)
+161(96.4)
+71(98.6)
+1
+3(3.9)
+3(3.3)
+6(3.6)
+1(1.4)
+Clinical stage
+0.884
+0.587
+2
+28(36.4)
+36(40.0)
+64(38.3)
+26(36.1)
+3
+46(59.7)
+51(56.7)
+97(58.1)
+45(62.5)
+4
+3(3.9)
+3(3.3)
+6(3.6)
+1(1.4)
+Menopause
+0.693
+0.662
+0
+37(48.1)
+46(51.1)
+83(49.7)
+38(52.8)
+1
+40(51.9)
+44(48.9)
+84(50.3)
+34(47.2)
+Efficacy after 2 cycles
+0.001
+0.533
+0
+57(74.0)
+43(47.8)
+100(59.9)
+40(55.6)
+1
+20(26.0)
+47(52.2)
+67(40.1)
+32(44.4)
+*
+P
+<0.05: The difference is statistically significant
+Analysis results of pathological data of NAT breast cancer patients
+Factor
+NMHR (
+n
+=77)
+MHR (
+n
+=90)
+P Value
+Training set (
+n
+=167)
+Validation set (
+n
+=72)
+P Value
+Organizational type
+0.551
+0.092
+Invasive ductal carcinoma
+68(88.3)
+82(91.1)
+150(89.8)
+59(81.9)
+Other
+9(11.7)
+8(8.9)
+17(10.2)
+13(18.1)
+ER
+0.770
+0.258
+Negative
+28(36.4)
+45(50.0)
+68(40.7)
+35(48.6)
+Positive
+49(63.6)
+45(50.0)
+99(59.3)
+37(51.4)
+PR
+0.145
+0.266
+Negative
+29(37.7)
+44(48.9)
+66(39.5)
+23(31.9)
+Positive
+48(63.3)
+46(51.1)
+101(60.5)
+49(68.1)
+HER2
+<0.001
+0.557
+Negative
+65(84.4)
+30(33.3)
+95(56.9)
+38(52.8)
+Positive
+12(15.6)
+60(66.7)
+72(43.1)
+34(47.2)
+Ki-67
+0.102
+0.589
+Low expression
+44(57.1)
+40(44.4)
+122(73.1)
+55(76.4)
+High expression
+33(42.9)
+50(55.6)
+45(26.9)
+17(23.6)
+IHC subtypes
+0.091
+0.262
+Luminal A
+32(41.6)
+28(31.1)
+51(30.5)
+20(27.8)
+Luminal B
+20(26.0)
+27(30.0)
+60(35.9)
+19(26.4)
+HER2+
+8(10.4)
+21(23.3)
+25(15.0)
+17(23.6)
+TN
+17(22.1)
+14(15.6)
+31(18.6)
+16(22.2)
+*
+P
+<0.05: The difference is statistically significant
+Analysis results of conventional ultrasound characteristics of NAT breast cancer patients
+Feature
+NMHR (
+n
+=77)
+MHR (
+n
+=90)
+P
+Value
+Training set (
+n
+=167)
+Validation set (
+n
+=72)
+P
+Value
+dmax
+42.46±2.697
+35.23±2.261
+0.007
+37.29±1.437
+38.69±2.178
+0.532
+Margin
+Angular
+45(58.4)
+52(57.8)
+0.931
+97(58.1)
+40(55.6)
+0.717
+-
+32(41.6)
+38(42.2)
+70(41.9)
+32(44.4)
+Lobulation
+35(45.5)
+47(52.2)
+0.383
+82(49.1)
+32(44.4)
+0.508
+-
+42(54.5)
+43(47.8)
+85(50.9)
+40(55.6)
+Spiculation
+62(80.5)
+74(82.2)
+0.778
+136(81.4)
+56(77.8)
+0.514
+-
+15(19.5)
+16(17.8)
+31(18.6)
+16(22.2)
+Aspect Ratio
+0.876
+0.405
+<1
+42(54.5)
+48(53.3)
+90(53.9)
+43(59.7)
+>1
+35(45.5)
+42(46.7)
+77(46.1)
+29(40.3)
+Calcification
+0.282
+0.390
+Absent
+14(18.2)
+11(12.2)
+25(15.0)
+14(19.4)
+Present
+63(81.8)
+79(87.8)
+142(85.0)
+58(80.6)
+Posterior Echo
+Absent
+24(31.2)
+32(35.6)
+0.549
+56(33.5)
+24(33.3)
+0.976
+Present
+53(68.8)
+58(64.4)
+111(66.5)
+48(66.7)
+Enhancement
+65(84.4)
+69(76.7)
+0.210
+134(80.2)
+58(80.6)
+0.955
+-
+12(15.6)
+21(23.3)
+33(19.8)
+14(19.4)
+Attenuation
+61(79.2)
+79(87.8)
+0.134
+140(83.8)
+55(76.4)
+0.173
+-
+16(20.8)
+11(12.2)
+27(16.2)
+17(23.6)
+Mixed
+52(67.5)
+64(71.1)
+0.617
+116(69.5)
+55(76.4)
+0.276
+-
+25(32.5)
+26(28.9)
+51(30.5)
+17(23.6)
+Surrounding Tissue
+Architectural Distortion
+7(9.1)
+17(18.9)
+0.072
+24(14.4)
+13(18.1)
+0.470
+-
+70(90.9)
+73(81.1)
+143(85.6)
+59(81.9)
+Ductal Abnormality
+71(92.2)
+85(94.4)
+0.561
+156(93.4)
+65(90.3)
+0.399
+-
+6(7.8)
+5(5.6)
+11(6.6)
+7(9.7)
+Skin Thickening
+64(83.1)
+77(85.6)
+0.665
+141(84.4)
+63(87.5)
+0.538
+-
+13(16.9)
+13(14.4)
+26(15.6)
+9(12.5)
+Skin Edema
+63(81.8)
+80(88.9)
+0.194
+143(85.6)
+64(88.9)
+0.497
+-
+14(18.2)
+10(11.1)
+24(14.4)
+8(11.1)
+Involved Layers
+Skin
+58(75.3)
+79(87.8)
+0.037
+137(82.0)
+60(83.3)
+0.809
+-
+19(24.7)
+11(12.2)
+30(18.0)
+12(16.7)
+Subcutaneous Tissue
+18(23.4)
+23(25.6)
+0.744
+41(24.6)
+11(15.3)
+0.111
+-
+59(76.6)
+67(74.4)
+126(75.4)
+61(84.7)
+Retromammary Space
+16(20.8)
+32(35.6)
+0.035
+48(28.7)
+15(20.8)
+0.203
+-
+61(79.2)
+58(64.4)
+119(71.3)
+57(79.2)
+Muscle Layer
+72(93.5)
+89(98.9)
+0.062
+161(96.4)
+70(97.2)
+0.748
+-
+5(6.5)
+1(1.1)
+6(3.6)
+2(2.8)
+Nipple
+72(93.5)
+88(97.8)
+0.250
+160(95.8)
+67(93.1)
+0.371
+-
+5(6.5)
+2(2.2)
+7(4.2)
+5(6.9)
+Lymph Nodes
+Level I
+6(7.8)
+7(7.8)
+0.997
+13(7.8)
+6(8.3)
+0.886
+-
+71(92.2)
+83(92.2)
+154(92.2)
+66(91.7)
+Level II
+43(55.8)
+37(41.1)
+0.057
+80(47.9)
+32(44.4)
+0.623
+-
+34(44.2)
+53(58.9)
+87(52.1)
+40(55.6)
+Level III
+61(79.2)
+64(71.1)
+0.229
+125(74.9)
+60(83.3)
+0.150
+-
+16(20.8)
+26(28.9)
+42(25.1)
+12(16.7)
+Supraclavicular Region
+64(83.1)
+74(82.2)
+0.879
+138(82.6)
+62(86.1)
+0.505
+-
+13(16.9)
+16(17.8)
+29(17.4)
+10(13.9)
+Infraclavicular Region
+75(97.4)
+88(97.8)
+1.000
+163(97.6)
+72(100.0)
+0.319
+-
+2(2.6)
+2(2.2)
+4(2.4)
+0(0.0)
+Internal Mammary Region
+71(92.2)
+66(73.3)
+0.363
+157(94.0)
+67(93.1)
+0.780
+-
+6(7.8)
+4(4.4)
+10(6.0)
+5(6.9)
+CDFI Grading
+0.654
+0.613
+0
+7(9.1)
+14(15.6)
+21(12.6)
+8(11.1)
+1
+29(37.7)
+31(34.4)
+60(35.9)
+21(29.2)
+2
+20(26)
+21(23.3)
+41(24.6)
+18(25.0)
+3
+21(27.3)
+24(26.7)
+45(26.9)
+25(34.7)
+BI-RADS
+0.126
+0.673
+4a
+0(0.0)
+2(2.2)
+2(1.2)
+0(0.0)
+4b
+3(3.9)
+1(1.1)
+4(2.4)
+1(1.4)
+4c
+11(14.3)
+22(24.4)
+33(19.8)
+12(16.7)
+5
+63(81.8)
+65(72.2)
+128(76.6)
+59(81.9)
+Efficacy after 2 Cycles
+0.001
+0.533
+No/Insufficient response
+57(74.0)
+43(47.8)
+100(59.9)
+40(55.6)
+Response achieved
+20(26.0)
+47(52.2)
+67(40.1)
+32(44.4)
+*
+P
+<0.05: The difference is statistically significant
+SWE parameter analysis results of NAT breast cancer patients
+Parameter
+NMHR (
+n
+=77)
+MHR (
+n
+=90)
+P
+Value
+Training set (
+n
+=167)
+Validation set (
+n
+=72)
+P
+Value
+Emax
+9.19±0.156
+8.30±0.193
+0.003
+8.71±0.131
+9.01±0.167
+0.542
+Emin
+8.01±0.190
+6.71±0.205
+<0.001
+7.31±0.150
+7.71±0.223
+0.102
+Emedian
+8.63±0.180
+7.52±0.209
+<0.001
+8.03±0.146
+8.40±0.198
+0.216
+Emean
+8.62±0.173
+7.51±0.197
+<0.001
+8.02±0.139
+8.38±0.191
+0.132
+Estd
+0.51±0.042
+0.68±0.051
+0.013
+0.60±0.034
+0.57±0.052
+0.528
+EIQR
+0.87±0.079
+1.14±0.092
+0.032
+1.02±0.062
+0.95±0.087
+0.527
+*
+P
+<0.05: The difference is statistically significant
+Analysis results of CEUS characteristics of NAT breast cancer patients
+Feature
+NMHR (
+n
+=77)
+MHR (
+n
+=90)
+P
+Value
+Training set (
+n
+=167)
+Validation set (
+n
+=72)
+P
+Value
+Perfusion Homogeneity
+0.387
+0.322
+Homogeneous
+8(10.4)
+16(17.8)
+14(8.4)
+9(12.5)
+Heterogeneous
+69(89.6)
+84(93.3)
+153(91.6)
+63(87.5)
+Enhancement Pattern
+0.481
+0.305
+Low Enhancement
+3(3.9)
+4(4.4)
+7(4.2)
+4(5.6)
+Iso-enhancement
+1(1.3)
+4(4.4)
+5(3.0)
+0(0.0)
+High Enhancement
+73(94.8)
+82(91.1)
+155(92.8)
+68(94.4)
+Perfusion Defect
+0.001
+0.645
+Absent
+38(49.4)
+67(74.4)
+105(62.9)
+43(59.7)
+Present
+39(50.6)
+23(25.6)
+62(37.1)
+29(40.3)
+Perfusion Pattern
+0.433
+0.609
+Centripetal
+4(5.2)
+3(3.3)
+7(4.2)
+4(5.6)
+Centrifugal
+29(37.7)
+27(30.0)
+56(33.5)
+28(38.9)
+Diffuse
+44(57.1)
+60(66.7)
+104(62.3)
+40(55.6)
+Radiating Sign
+0.037
+0.127
+Absent
+40(51.9)
+61(67.8)
+101(60.5)
+51(70.8)
+Present
+37(48.1)
+29(32.2)
+66(39.5)
+21(29.2)
+*
+P
+<0.05: The difference is statistically significant
+Analysis results of CEUS TIC curve parameters of NAT breast cancer patients
+Parameter
+NMHR (
+n
+=77)
+MHR (
+n
+=90)
+P
+Value
+Training set (
+n
+=167)
+Validation set (
+n
+=72)
+P
+Value
+PE
+6681.32±767.680
+7333.49±1117.499
+0.468
+7032.79±697.045
+7075.09±1093.080
+0.846
+WiAUC
+32178.10±3868.923
+30830.05±4896.940
+0.094
+31451.60±3176.683
+27214.01±3079.544
+0.850
+RT
+8.27±0.529
+7.31±0.553
+0.171
+7.75±0.386
+7.25±0.407
+0.306
+mTTI
+78.36±6.369
+84.34±9.177
+0.707
+81.58±5.740
+89.29±9.85
+0.610
+TTP
+13.06±1.003
+11.79±0.864
+0.723
+12.38±0.656
+11.37±0.682
+0.547
+WiR
+1529.55±202.935
+2068.05±403.556
+0.802
+1819.76±237.031
+1886.12±384.903
+0.604
+WiPI
+4280.77±488.527
+4700.02±720.828
+0.435
+4506.71±448.078
+4507.43±689.655
+0.824
+WoAUC
+66495.77±7609.478
+63586.83±9837.916
+0.030
+64928.074±6340.422
+54408.89±5437.724
+0.723
+WiWoAUC
+98673.86±11384.336
+93474.38±14564.571
+0.036
+95871.74±9417.594
+81622.91±8413.030
+0.723
+FT
+19.18±1.054
+17.10±1.495
+0.072
+18.06±1.063
+17.32±1.577
+0.518
+*
+P
+<0.05: The difference is statistically significant
+Rights and permissions
+Open Access
+This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+.
+Reprints and permissions
+About this article
+Cite this article
+Wang, S., Liu, J., Song, L.
+et al.
+Integrative multimodal ultrasound and radiomics for early prediction of neoadjuvant therapy response in breast cancer: a clinical study.
+BMC Cancer
+25
+, 1156 (2025). https://doi.org/10.1186/s12885-025-14556-4
+Download citation
+Received
+:
+29 March 2025
+Accepted
+:
+20 June 2025
+Published
+:
+09 July 2025
+Version of record
+:
+09 July 2025
+DOI
+:
+https://doi.org/10.1186/s12885-025-14556-4
+Share this article
+Anyone you share the following link with will be able to read this content:
+Get shareable link
+Sorry, a shareable link is not currently available for this article.
+Copy shareable link to clipboard
+Provided by the Springer Nature SharedIt content-sharing initiative
+Keywords
+Breast Cancer
+Neoadjuvant therapy
+Multimodal ultrasound
+Radiomics
+Early response prediction
+Advertisement

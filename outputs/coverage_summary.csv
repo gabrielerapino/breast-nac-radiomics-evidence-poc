@@ -1,0 +1,5 @@
+study_id,fields_expected,fields_present,fields_missing,source_bound_fields,performance_rows,known_auc
+YANG_2022,54,44,10,53,8,8
+WANG_2025,54,41,13,47,9,6
+WU_2025,54,41,13,46,8,8
+FRONTIERS_2024,54,49,5,50,24,24

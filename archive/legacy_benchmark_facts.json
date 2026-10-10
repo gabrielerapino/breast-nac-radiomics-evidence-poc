@@ -1,0 +1,19 @@
+{
+  "title": "Ultrasound-based radiomics for early predicting response to neoadjuvant chemotherapy in patients with breast cancer: a systematic review with meta-analysis",
+  "year": 2024,
+  "doi": "10.1007/s11547-024-01783-1",
+  "pmid": "38630147",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/38630147/",
+  "search_cutoff": "2023-01-01",
+  "studies_included": 8,
+  "average_RQS": "12.88 (35.8% of maximum)",
+  "pooled_sensitivity": "0.87 (95% CI 0.81–0.92)",
+  "pooled_specificity": "0.78 (95% CI 0.72–0.83)",
+  "other_metrics": {
+    "positive_likelihood_ratio": "4.02 (95% CI 3.18–5.08)",
+    "negative_likelihood_ratio": "0.16 (95% CI 0.10–0.25)",
+    "diagnostic_odds_ratio": "25.17 (95% CI 15.10–41.95)"
+  },
+  "methodological_quality": "RQS and QUADAS-2 used; authors report limited data and low quality of eligible studies; prospective studies apparently had more optimal sensitivity than retrospective studies.",
+  "summary": "Eight studies were eligible (search through 1 January 2023). Pooled sensitivity was 0.87 (95% CI 0.81–0.92) and specificity 0.78 (95% CI 0.72–0.83); mean RQS was 12.88/36 (35.8%). The authors conclude that limited data and low study quality warrant larger multicenter prospective studies with rigorous methods."
+}

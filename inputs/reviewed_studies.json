@@ -1,0 +1,3215 @@
+[
+  {
+    "study_id": "YANG_2022",
+    "doi": "10.3389/fonc.2022.748008",
+    "year": 2022,
+    "title": "Treatment Response Prediction Using Ultrasound-Based Pre-, Post-Early, and Delta Radiomics in Neoadjuvant Chemotherapy in Breast Cancer",
+    "endpoint_code": "RECIST",
+    "fields": {
+      "authors": {
+        "value": "Yang et al.",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "country": {
+        "value": "China",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "centers": {
+        "value": "Single center; Guizhou Medical University",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "design": {
+        "value": "Retrospective",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "recruitment_period": {
+        "value": "December 2018–December 2020 (Methods; abstract says January 2018)",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "N_total": {
+        "value": 217,
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "train_N": {
+        "value": 152,
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "validation_N": {
+        "value": 65,
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "external_validation_N": {
+        "value": 0,
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "train_responder_N": {
+        "value": 89,
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "train_nonresponder_N": {
+        "value": 63,
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "validation_responder_N": {
+        "value": 38,
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "validation_nonresponder_N": {
+        "value": 27,
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "population": {
+        "value": "Newly diagnosed invasive breast carcinoma treated with NAC",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "inclusion_criteria": {
+        "value": "Previously untreated biopsy-confirmed invasive carcinoma; 4–8 NAC cycles; baseline and after-two-cycle US",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "exclusion_criteria": {
+        "value": "Bilateral/multiple lesions; large or poor-quality images; incomplete clinical/US data",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "subtype": {
+        "value": "Molecular typing recorded; Table 1 includes luminal A/B, HER2, triple-negative",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "regimen": {
+        "value": "Paclitaxel and anthracycline-based; 4–8 cycles",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "validation_type": {
+        "value": "Random stratified internal 7:3 holdout",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "4389c183dfee9a744d869149415b2c1cf0b1c79cd83962e79e2a8a68e8224e81",
+          "excerpt": "Ethical approval for this retrospective study was obtained from our institutional review board, and informed consent was waived. A total of 217 patients with br",
+          "needle": "Ethical approval for this retrospective"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "endpoint": {
+        "value": "RECIST responder / non-responder",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 68,
+          "section": "Methods / Patients",
+          "sha256": "a52b883e19b44e254f63b0f476a1a86d53ad89937cfa2f86bacc7b41b10c1357",
+          "excerpt": "Participants were then classified as responders (R) or non-responders (NR) based on the radiological evaluation by the RECIST-based criteria in tumor size reduc",
+          "needle": "Participants were then classified"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "endpoint_definition": {
+        "value": "At least 30% reduction in longest dimension on both US and MRI versus baseline",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 68,
+          "section": "Methods / Patients",
+          "sha256": "a52b883e19b44e254f63b0f476a1a86d53ad89937cfa2f86bacc7b41b10c1357",
+          "excerpt": "Participants were then classified as responders (R) or non-responders (NR) based on the radiological evaluation by the RECIST-based criteria in tumor size reduc",
+          "needle": "Participants were then classified"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "pCR_definition": {
+        "value": "Not the target endpoint",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 68,
+          "section": "Methods / Patients",
+          "sha256": "a52b883e19b44e254f63b0f476a1a86d53ad89937cfa2f86bacc7b41b10c1357",
+          "excerpt": "Participants were then classified as responders (R) or non-responders (NR) based on the radiological evaluation by the RECIST-based criteria in tumor size reduc",
+          "needle": "Participants were then classified"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "reference_standard": {
+        "value": "Radiological size response assessed by two radiologists using US and MRI",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 68,
+          "section": "Methods / Patients",
+          "sha256": "a52b883e19b44e254f63b0f476a1a86d53ad89937cfa2f86bacc7b41b10c1357",
+          "excerpt": "Participants were then classified as responders (R) or non-responders (NR) based on the radiological evaluation by the RECIST-based criteria in tumor size reduc",
+          "needle": "Participants were then classified"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "reference_timing": {
+        "value": "Pre- versus post-treatment; exact response assessment cycle not explicit",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 68,
+          "section": "Methods / Patients",
+          "sha256": "a52b883e19b44e254f63b0f476a1a86d53ad89937cfa2f86bacc7b41b10c1357",
+          "excerpt": "Participants were then classified as responders (R) or non-responders (NR) based on the radiological evaluation by the RECIST-based criteria in tumor size reduc",
+          "needle": "Participants were then classified"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "responder_N": {
+        "value": 127,
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 57,
+          "section": "Abstract / Results",
+          "sha256": "9ad250c63a595adbc351d4cd2af05ea9ade21b544199136d9d74468815b1c1a4",
+          "excerpt": "Of the 217 breast masses, 127 (58.5%) were responsive to NAC and 90 (41.5%) were non-responsive. Following feature selection, nine features in RS1, 11 features ",
+          "needle": "Of the 217 breast masses"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "nonresponder_N": {
+        "value": 90,
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 57,
+          "section": "Abstract / Results",
+          "sha256": "9ad250c63a595adbc351d4cd2af05ea9ade21b544199136d9d74468815b1c1a4",
+          "excerpt": "Of the 217 breast masses, 127 (58.5%) were responsive to NAC and 90 (41.5%) were non-responsive. Following feature selection, nine features in RS1, 11 features ",
+          "needle": "Of the 217 breast masses"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "ultrasound": {
+        "value": "B-mode grayscale and conventional Doppler descriptors",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 69,
+          "section": "Methods / US examination",
+          "sha256": "bb496db61678235001cf470ae4cc60df5feaec7c0d8c739c647f925cb2c285d5",
+          "excerpt": "All patients were examined using a Logiq E9 ® scanner (GE Healthcare, Wauwatosa, WI, USA) equipped with a linear array transducer having a central frequency of ",
+          "needle": "All patients were examined using a Logiq"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "SWE": {
+        "value": "Not reported",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 69,
+          "section": "Methods / US examination",
+          "sha256": "bb496db61678235001cf470ae4cc60df5feaec7c0d8c739c647f925cb2c285d5",
+          "excerpt": "All patients were examined using a Logiq E9 ® scanner (GE Healthcare, Wauwatosa, WI, USA) equipped with a linear array transducer having a central frequency of ",
+          "needle": "All patients were examined using a Logiq"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "CEUS": {
+        "value": "Not reported",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 69,
+          "section": "Methods / US examination",
+          "sha256": "bb496db61678235001cf470ae4cc60df5feaec7c0d8c739c647f925cb2c285d5",
+          "excerpt": "All patients were examined using a Logiq E9 ® scanner (GE Healthcare, Wauwatosa, WI, USA) equipped with a linear array transducer having a central frequency of ",
+          "needle": "All patients were examined using a Logiq"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "QUS": {
+        "value": "Not reported",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 69,
+          "section": "Methods / US examination",
+          "sha256": "bb496db61678235001cf470ae4cc60df5feaec7c0d8c739c647f925cb2c285d5",
+          "excerpt": "All patients were examined using a Logiq E9 ® scanner (GE Healthcare, Wauwatosa, WI, USA) equipped with a linear array transducer having a central frequency of ",
+          "needle": "All patients were examined using a Logiq"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "scanner": {
+        "value": "GE Logiq E9; linear probe, central frequency 7 MHz",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 69,
+          "section": "Methods / US examination",
+          "sha256": "bb496db61678235001cf470ae4cc60df5feaec7c0d8c739c647f925cb2c285d5",
+          "excerpt": "All patients were examined using a Logiq E9 ® scanner (GE Healthcare, Wauwatosa, WI, USA) equipped with a linear array transducer having a central frequency of ",
+          "needle": "All patients were examined using a Logiq"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "timepoints": {
+        "value": "Pretreatment and after 2 NAC cycles",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 69,
+          "section": "Methods / US examination",
+          "sha256": "bb496db61678235001cf470ae4cc60df5feaec7c0d8c739c647f925cb2c285d5",
+          "excerpt": "All patients were examined using a Logiq E9 ® scanner (GE Healthcare, Wauwatosa, WI, USA) equipped with a linear array transducer having a central frequency of ",
+          "needle": "All patients were examined using a Logiq"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "image_count": {
+        "value": "Largest long-axis image per timepoint",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 69,
+          "section": "Methods / US examination",
+          "sha256": "bb496db61678235001cf470ae4cc60df5feaec7c0d8c739c647f925cb2c285d5",
+          "excerpt": "All patients were examined using a Logiq E9 ® scanner (GE Healthcare, Wauwatosa, WI, USA) equipped with a linear array transducer having a central frequency of ",
+          "needle": "All patients were examined using a Logiq"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "acquisition_standardization": {
+        "value": "One scanner; settings adjusted per lesion",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 69,
+          "section": "Methods / US examination",
+          "sha256": "bb496db61678235001cf470ae4cc60df5feaec7c0d8c739c647f925cb2c285d5",
+          "excerpt": "All patients were examined using a Logiq E9 ® scanner (GE Healthcare, Wauwatosa, WI, USA) equipped with a linear array transducer having a central frequency of ",
+          "needle": "All patients were examined using a Logiq"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "segmentation": {
+        "value": "Manual 2D ITK-SNAP ROI; reader >5 years; repeat segmentation in 50 patients after one week",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 71,
+          "section": "Methods / Segmentation",
+          "sha256": "9084d5cb32b02b4d1597623384340102d4471d2a032c09c1849832fc3a614c18",
+          "excerpt": "A flowchart of the processing step using the radiomics method for predicting NAC responses is shown in Figure 2 . The image of pre-NAC and early post-NAC US ima",
+          "needle": "A region of interest (ROI) was manually"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "segmentation_dimension": {
+        "value": "2D",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 71,
+          "section": "Methods / Segmentation",
+          "sha256": "9084d5cb32b02b4d1597623384340102d4471d2a032c09c1849832fc3a614c18",
+          "excerpt": "A flowchart of the processing step using the radiomics method for predicting NAC responses is shown in Figure 2 . The image of pre-NAC and early post-NAC US ima",
+          "needle": "A region of interest (ROI) was manually"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "operator_count": {
+        "value": 1,
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 71,
+          "section": "Methods / Segmentation",
+          "sha256": "9084d5cb32b02b4d1597623384340102d4471d2a032c09c1849832fc3a614c18",
+          "excerpt": "A flowchart of the processing step using the radiomics method for predicting NAC responses is shown in Figure 2 . The image of pre-NAC and early post-NAC US ima",
+          "needle": "A region of interest (ROI) was manually"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "operator_expertise": {
+        "value": ">5 years",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 71,
+          "section": "Methods / Segmentation",
+          "sha256": "9084d5cb32b02b4d1597623384340102d4471d2a032c09c1849832fc3a614c18",
+          "excerpt": "A flowchart of the processing step using the radiomics method for predicting NAC responses is shown in Figure 2 . The image of pre-NAC and early post-NAC US ima",
+          "needle": "A region of interest (ROI) was manually"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "segmentation_software": {
+        "value": "ITK-SNAP",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 71,
+          "section": "Methods / Segmentation",
+          "sha256": "9084d5cb32b02b4d1597623384340102d4471d2a032c09c1849832fc3a614c18",
+          "excerpt": "A flowchart of the processing step using the radiomics method for predicting NAC responses is shown in Figure 2 . The image of pre-NAC and early post-NAC US ima",
+          "needle": "A region of interest (ROI) was manually"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "radiomics_software": {
+        "value": "USKit 1.3.0",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 71,
+          "section": "Methods / Segmentation",
+          "sha256": "9084d5cb32b02b4d1597623384340102d4471d2a032c09c1849832fc3a614c18",
+          "excerpt": "A flowchart of the processing step using the radiomics method for predicting NAC responses is shown in Figure 2 . The image of pre-NAC and early post-NAC US ima",
+          "needle": "A region of interest (ROI) was manually"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "feature_families": {
+        "value": "First-order, shape, texture, transform/wavelet",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 71,
+          "section": "Methods / Segmentation",
+          "sha256": "9084d5cb32b02b4d1597623384340102d4471d2a032c09c1849832fc3a614c18",
+          "excerpt": "A flowchart of the processing step using the radiomics method for predicting NAC responses is shown in Figure 2 . The image of pre-NAC and early post-NAC US ima",
+          "needle": "A region of interest (ROI) was manually"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "initial_features": {
+        "value": 788,
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 85,
+          "section": "Results / Feature selection",
+          "sha256": "6d7c91cd059dcc3e0393e2cac544710ad0b2552c0b3a322dd75f8f9534793ef7",
+          "excerpt": "A total of 788 candidate radiomic features were extracted from each ROI. Before selection, the 126 features remained with the ICC (>0.7) to ensure repeatability",
+          "needle": "A total of 788 candidate"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "final_features": {
+        "value": "RS1:9; RS2:11; delta:8",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 85,
+          "section": "Results / Feature selection",
+          "sha256": "6d7c91cd059dcc3e0393e2cac544710ad0b2552c0b3a322dd75f8f9534793ef7",
+          "excerpt": "A total of 788 candidate radiomic features were extracted from each ROI. Before selection, the 126 features remained with the ICC (>0.7) to ensure repeatability",
+          "needle": "A total of 788 candidate"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "feature_selection": {
+        "value": "ICC >0.7, mRMR, LASSO",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 85,
+          "section": "Results / Feature selection",
+          "sha256": "6d7c91cd059dcc3e0393e2cac544710ad0b2552c0b3a322dd75f8f9534793ef7",
+          "excerpt": "A total of 788 candidate radiomic features were extracted from each ROI. Before selection, the 126 features remained with the ICC (>0.7) to ensure repeatability",
+          "needle": "A total of 788 candidate"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "feature_robustness": {
+        "value": "Repeat segmentation ICC >0.7",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 85,
+          "section": "Results / Feature selection",
+          "sha256": "6d7c91cd059dcc3e0393e2cac544710ad0b2552c0b3a322dd75f8f9534793ef7",
+          "excerpt": "A total of 788 candidate radiomic features were extracted from each ROI. Before selection, the 126 features remained with the ICC (>0.7) to ensure repeatability",
+          "needle": "A total of 788 candidate"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "algorithm": {
+        "value": "Logistic regression",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 77,
+          "section": "Methods / Model construction",
+          "sha256": "848fb8299d9bea41b04e329465039b4a869c7d08dede4ea9e22fbeab4e3d3d29",
+          "excerpt": "The prediction model for predicting tumor responses to NAC were developed using data from the training group. First, the univariate analyses were performed to s",
+          "needle": "The prediction model for predicting tumor"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "cv_strategy": {
+        "value": "10-fold CV in training",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 77,
+          "section": "Methods / Model construction",
+          "sha256": "848fb8299d9bea41b04e329465039b4a869c7d08dede4ea9e22fbeab4e3d3d29",
+          "excerpt": "The prediction model for predicting tumor responses to NAC were developed using data from the training group. First, the univariate analyses were performed to s",
+          "needle": "The prediction model for predicting tumor"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "comparator": {
+        "value": "Clinical-only; baseline/early/delta signatures; longitudinal nomogram",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 77,
+          "section": "Methods / Model construction",
+          "sha256": "848fb8299d9bea41b04e329465039b4a869c7d08dede4ea9e22fbeab4e3d3d29",
+          "excerpt": "The prediction model for predicting tumor responses to NAC were developed using data from the training group. First, the univariate analyses were performed to s",
+          "needle": "The prediction model for predicting tumor"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "model_types": {
+        "value": "Radiomics-only; clinical-only; clinical+radiomics",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 77,
+          "section": "Methods / Model construction",
+          "sha256": "848fb8299d9bea41b04e329465039b4a869c7d08dede4ea9e22fbeab4e3d3d29",
+          "excerpt": "The prediction model for predicting tumor responses to NAC were developed using data from the training group. First, the univariate analyses were performed to s",
+          "needle": "The prediction model for predicting tumor"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "tuning": {
+        "value": "Not reported",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 77,
+          "section": "Methods / Model construction",
+          "sha256": "848fb8299d9bea41b04e329465039b4a869c7d08dede4ea9e22fbeab4e3d3d29",
+          "excerpt": "The prediction model for predicting tumor responses to NAC were developed using data from the training group. First, the univariate analyses were performed to s",
+          "needle": "The prediction model for predicting tumor"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "calibration": {
+        "value": "Hosmer–Lemeshow p=0.11 training; p=0.75 validation; curves",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 99,
+          "section": "Results / Nomogram",
+          "sha256": "3ac670c6f42bce10dab7924da83c06198acd1801ab178605ba640fa631ab2bd5",
+          "excerpt": "Table 4 displays the results of multivariable logistic regression analysis of risk factors for NAC responders in the training group. RS1, RS2, and Ki-67 express",
+          "needle": "Table 4 displays the results"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "decision_curve": {
+        "value": "Not reported",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "paragraph": 99,
+          "section": "Results / Nomogram",
+          "sha256": "3ac670c6f42bce10dab7924da83c06198acd1801ab178605ba640fa631ab2bd5",
+          "excerpt": "Table 4 displays the results of multivariable logistic regression analysis of risk factors for NAC responders in the training group. RS1, RS2, and Ki-67 express",
+          "needle": "Table 4 displays the results"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "age": {
+        "value": "Table 1 original columns: [\"Variable\", \"Responder (n = 127)\", \"Non-Responder (n = 90)\", \"P-value\", \"Training Cohort (n = 152)\", \"Test Cohort (n = 65)\", \"P-value\"]; original age row: Age | 50.00 (44.00, 57.00) | 49.00 (42.00, 55.05) | 0.384 | 49.50 (44.00, 56.00) | 49.00 (43.70, 57.00) | 0.954",
+        "evidence": {
+          "file": "YANG_2022.html",
+          "table": 1,
+          "row": 42,
+          "column": null,
+          "section": "Results / Table 1",
+          "sha256": "85fc69ca73e4a36055b99145903de62273f47366cf82dc8407c711c0d8e13f26",
+          "excerpt": "Age | 50.00 (44.00, 57.00) | 49.00 (42.00, 55.05) | 0.384 | 49.50 (44.00, 56.00) | 49.00 (43.70, 57.00) | 0.954",
+          "needle": "Age row, with original cohort columns"
+        },
+        "review": "Original cohort/response columns preserved; no pooled or invented overall mean."
+      }
+    },
+    "model_specs": [
+      {
+        "model_id": "RS1",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "baseline",
+        "file": "YANG_2022.html",
+        "table": 3,
+        "row": 2,
+        "column": 1,
+        "layout": "auc_row"
+      },
+      {
+        "model_id": "RS1",
+        "model_type": "radiomics-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "baseline",
+        "file": "YANG_2022.html",
+        "table": 3,
+        "row": 2,
+        "column": 5,
+        "layout": "auc_row"
+      },
+      {
+        "model_id": "RS2",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "early-treatment",
+        "file": "YANG_2022.html",
+        "table": 3,
+        "row": 3,
+        "column": 1,
+        "layout": "auc_row"
+      },
+      {
+        "model_id": "RS2",
+        "model_type": "radiomics-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "early-treatment",
+        "file": "YANG_2022.html",
+        "table": 3,
+        "row": 3,
+        "column": 5,
+        "layout": "auc_row"
+      },
+      {
+        "model_id": "Delta RS",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "delta",
+        "file": "YANG_2022.html",
+        "table": 3,
+        "row": 4,
+        "column": 1,
+        "layout": "auc_row"
+      },
+      {
+        "model_id": "Delta RS",
+        "model_type": "radiomics-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "delta",
+        "file": "YANG_2022.html",
+        "table": 3,
+        "row": 4,
+        "column": 5,
+        "layout": "auc_row"
+      },
+      {
+        "model_id": "Nomogram RS1+RS2+Ki-67",
+        "model_type": "clinical+radiomics",
+        "dataset_role": "training",
+        "timepoint_role": "longitudinal combined",
+        "file": "YANG_2022.html",
+        "table": 3,
+        "row": 5,
+        "column": 1,
+        "layout": "auc_row"
+      },
+      {
+        "model_id": "Nomogram RS1+RS2+Ki-67",
+        "model_type": "clinical+radiomics",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "longitudinal combined",
+        "file": "YANG_2022.html",
+        "table": 3,
+        "row": 5,
+        "column": 5,
+        "layout": "auc_row"
+      }
+    ],
+    "semantic": {
+      "timepoints": [
+        "baseline",
+        "early-treatment",
+        "delta",
+        "longitudinal combined"
+      ],
+      "modalities": [
+        "B-mode"
+      ],
+      "strategy": [
+        "radiomics",
+        "clinical+radiomics"
+      ],
+      "comparators": [
+        "clinical",
+        "radiomics"
+      ],
+      "validation": [
+        "internal_validation"
+      ],
+      "population": "breast/NAC",
+      "subtype": [
+        "luminal",
+        "HER2",
+        "TNBC"
+      ],
+      "regimen": [
+        "anthracycline",
+        "taxane"
+      ],
+      "acquisition_roles": [
+        "baseline",
+        "after 2 cycles"
+      ]
+    },
+    "issues": [
+      {
+        "field": "recruitment_period",
+        "reason": "Abstract starts January 2018; Methods starts December 2018.",
+        "impact": "Recruitment provenance; not AUC calculations."
+      },
+      {
+        "field": "prevalence",
+        "reason": "Results says 127 (62.5%) and 90 (37.5%); counts and abstract support 58.5% and 41.5%.",
+        "impact": "Prevalence calculated explicitly from counts; prose discrepancy retained."
+      },
+      {
+        "field": "specificity:Nomogram RS1+RS2+Ki-67:internal_validation",
+        "reason": "Table 3 says 0.789; Results prose says 0.798.",
+        "impact": "Table transcription provisional; specificity delta flagged."
+      },
+      {
+        "field": "nomogram_tests",
+        "reason": "Nomogram vs RS1 p<0.001 and vs RS2 p=0.376 reported without unambiguous dataset allocation.",
+        "impact": "Do not transfer these tests to validation contrasts."
+      }
+    ],
+    "source_url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.748008/full"
+  },
+  {
+    "study_id": "WANG_2025",
+    "doi": "10.1186/s12885-025-14556-4",
+    "year": 2025,
+    "title": "Integrative multimodal ultrasound and radiomics for early prediction of neoadjuvant therapy response in breast cancer: a clinical study",
+    "endpoint_code": "MHR",
+    "fields": {
+      "authors": {
+        "value": "Wang et al.",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 13,
+          "section": "Methods / Patients",
+          "sha256": "50b05709ca94e21cbf704cbd5004c6d11c6fd5daaa01d5ff063a5ece2ee760c1",
+          "excerpt": "This retrospective study included female breast cancer patients treated at West China Hospital, Sichuan University, from April 2020 to December 2022. This study",
+          "needle": "This retrospective study included female"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "country": {
+        "value": "China",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 13,
+          "section": "Methods / Patients",
+          "sha256": "50b05709ca94e21cbf704cbd5004c6d11c6fd5daaa01d5ff063a5ece2ee760c1",
+          "excerpt": "This retrospective study included female breast cancer patients treated at West China Hospital, Sichuan University, from April 2020 to December 2022. This study",
+          "needle": "This retrospective study included female"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "centers": {
+        "value": "Single center; West China Hospital",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 13,
+          "section": "Methods / Patients",
+          "sha256": "50b05709ca94e21cbf704cbd5004c6d11c6fd5daaa01d5ff063a5ece2ee760c1",
+          "excerpt": "This retrospective study included female breast cancer patients treated at West China Hospital, Sichuan University, from April 2020 to December 2022. This study",
+          "needle": "This retrospective study included female"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "design": {
+        "value": "Retrospective",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 13,
+          "section": "Methods / Patients",
+          "sha256": "50b05709ca94e21cbf704cbd5004c6d11c6fd5daaa01d5ff063a5ece2ee760c1",
+          "excerpt": "This retrospective study included female breast cancer patients treated at West China Hospital, Sichuan University, from April 2020 to December 2022. This study",
+          "needle": "This retrospective study included female"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "recruitment_period": {
+        "value": "April 2020–December 2022",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 13,
+          "section": "Methods / Patients",
+          "sha256": "50b05709ca94e21cbf704cbd5004c6d11c6fd5daaa01d5ff063a5ece2ee760c1",
+          "excerpt": "This retrospective study included female breast cancer patients treated at West China Hospital, Sichuan University, from April 2020 to December 2022. This study",
+          "needle": "This retrospective study included female"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "population": {
+        "value": "Female non-metastatic breast cancer patients completing NAT and surgery",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 13,
+          "section": "Methods / Patients",
+          "sha256": "50b05709ca94e21cbf704cbd5004c6d11c6fd5daaa01d5ff063a5ece2ee760c1",
+          "excerpt": "This retrospective study included female breast cancer patients treated at West China Hospital, Sichuan University, from April 2020 to December 2022. This study",
+          "needle": "This retrospective study included female"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "inclusion_criteria": {
+        "value": "Pathological diagnosis; 6–8 anthracycline/taxane cycles; baseline and after-two-cycle US; surgery/pathology",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 13,
+          "section": "Methods / Patients",
+          "sha256": "50b05709ca94e21cbf704cbd5004c6d11c6fd5daaa01d5ff063a5ece2ee760c1",
+          "excerpt": "This retrospective study included female breast cancer patients treated at West China Hospital, Sichuan University, from April 2020 to December 2022. This study",
+          "needle": "This retrospective study included female"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "exclusion_criteria": {
+        "value": "Prior breast cancer/treatment; pregnancy/lactation; timing violations; poor images/large lesions; incomplete data",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 13,
+          "section": "Methods / Patients",
+          "sha256": "50b05709ca94e21cbf704cbd5004c6d11c6fd5daaa01d5ff063a5ece2ee760c1",
+          "excerpt": "This retrospective study included female breast cancer patients treated at West China Hospital, Sichuan University, from April 2020 to December 2022. This study",
+          "needle": "This retrospective study included female"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "regimen": {
+        "value": "Anthracycline and taxane-based, 6–8 cycles",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 13,
+          "section": "Methods / Patients",
+          "sha256": "50b05709ca94e21cbf704cbd5004c6d11c6fd5daaa01d5ff063a5ece2ee760c1",
+          "excerpt": "This retrospective study included female breast cancer patients treated at West China Hospital, Sichuan University, from April 2020 to December 2022. This study",
+          "needle": "This retrospective study included female"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "surgery": {
+        "value": "Yes; definitive surgery after NAT",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 13,
+          "section": "Methods / Patients",
+          "sha256": "50b05709ca94e21cbf704cbd5004c6d11c6fd5daaa01d5ff063a5ece2ee760c1",
+          "excerpt": "This retrospective study included female breast cancer patients treated at West China Hospital, Sichuan University, from April 2020 to December 2022. This study",
+          "needle": "This retrospective study included female"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "N_total": {
+        "value": 239,
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 6,
+          "section": "Abstract / Methods",
+          "sha256": "b70dc92c5c215a419709554c29e40a9c5cad7a34a8738c1d56e2683373143f59",
+          "excerpt": "This retrospective study included 239 breast cancer patients receiving neoadjuvant therapy, divided into training ( n = 167) and validation ( n = 72) cohorts. M",
+          "needle": "This retrospective study included 239"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "train_N": {
+        "value": 167,
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 6,
+          "section": "Abstract / Methods",
+          "sha256": "b70dc92c5c215a419709554c29e40a9c5cad7a34a8738c1d56e2683373143f59",
+          "excerpt": "This retrospective study included 239 breast cancer patients receiving neoadjuvant therapy, divided into training ( n = 167) and validation ( n = 72) cohorts. M",
+          "needle": "This retrospective study included 239"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "validation_N": {
+        "value": 72,
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 6,
+          "section": "Abstract / Methods",
+          "sha256": "b70dc92c5c215a419709554c29e40a9c5cad7a34a8738c1d56e2683373143f59",
+          "excerpt": "This retrospective study included 239 breast cancer patients receiving neoadjuvant therapy, divided into training ( n = 167) and validation ( n = 72) cohorts. M",
+          "needle": "This retrospective study included 239"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "external_validation_N": {
+        "value": 0,
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 6,
+          "section": "Abstract / Methods",
+          "sha256": "b70dc92c5c215a419709554c29e40a9c5cad7a34a8738c1d56e2683373143f59",
+          "excerpt": "This retrospective study included 239 breast cancer patients receiving neoadjuvant therapy, divided into training ( n = 167) and validation ( n = 72) cohorts. M",
+          "needle": "This retrospective study included 239"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "validation_type": {
+        "value": "Random stratified internal 7:3 holdout",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 29,
+          "section": "Methods / Model construction",
+          "sha256": "f124e6ae3a7a31ba6885e364c6a068c0a367142b19aaf5e7eb75fd842122a8e9",
+          "excerpt": "A univariate analysis was first performed to screen candidate clinical and multimodal ultrasound features. Variables with a p-value < 0.1 were considered eligib",
+          "needle": "Patients were randomly stratified"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "algorithm": {
+        "value": "Multivariate logistic regression",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 29,
+          "section": "Methods / Model construction",
+          "sha256": "f124e6ae3a7a31ba6885e364c6a068c0a367142b19aaf5e7eb75fd842122a8e9",
+          "excerpt": "A univariate analysis was first performed to screen candidate clinical and multimodal ultrasound features. Variables with a p-value < 0.1 were considered eligib",
+          "needle": "Patients were randomly stratified"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "cv_strategy": {
+        "value": "LASSO 10-fold CV",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 29,
+          "section": "Methods / Model construction",
+          "sha256": "f124e6ae3a7a31ba6885e364c6a068c0a367142b19aaf5e7eb75fd842122a8e9",
+          "excerpt": "A univariate analysis was first performed to screen candidate clinical and multimodal ultrasound features. Variables with a p-value < 0.1 were considered eligib",
+          "needle": "Patients were randomly stratified"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "feature_selection": {
+        "value": "Univariate screening; VIF; LASSO; stepwise regression",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 29,
+          "section": "Methods / Model construction",
+          "sha256": "f124e6ae3a7a31ba6885e364c6a068c0a367142b19aaf5e7eb75fd842122a8e9",
+          "excerpt": "A univariate analysis was first performed to screen candidate clinical and multimodal ultrasound features. Variables with a p-value < 0.1 were considered eligib",
+          "needle": "Patients were randomly stratified"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "comparator": {
+        "value": "Clinical+conventional multimodal ultrasound; radiomics-only; combined",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 29,
+          "section": "Methods / Model construction",
+          "sha256": "f124e6ae3a7a31ba6885e364c6a068c0a367142b19aaf5e7eb75fd842122a8e9",
+          "excerpt": "A univariate analysis was first performed to screen candidate clinical and multimodal ultrasound features. Variables with a p-value < 0.1 were considered eligib",
+          "needle": "Patients were randomly stratified"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "model_types": {
+        "value": "Clinical+ultrasound; radiomics-only; combined clinical+ultrasound+radiomics",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 29,
+          "section": "Methods / Model construction",
+          "sha256": "f124e6ae3a7a31ba6885e364c6a068c0a367142b19aaf5e7eb75fd842122a8e9",
+          "excerpt": "A univariate analysis was first performed to screen candidate clinical and multimodal ultrasound features. Variables with a p-value < 0.1 were considered eligib",
+          "needle": "Patients were randomly stratified"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "endpoint": {
+        "value": "Miller–Payne MHR / non-MHR",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 28,
+          "section": "Methods / Final efficacy evaluation",
+          "sha256": "cf2037e0cc31c3bf08f9a6c72afb57ff39553fc43333a83f696f36ea409a00aa",
+          "excerpt": "The primary tumor response was assessed using the Miller–Payne grading (MPG) system [ 30 ] by comparing the number of cancer cells in the pre-treatment core bio",
+          "needle": "The primary tumor response was assessed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "endpoint_definition": {
+        "value": "Miller–Payne G4–G5 = major histological response; G1–G3 = non-major response",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 28,
+          "section": "Methods / Final efficacy evaluation",
+          "sha256": "cf2037e0cc31c3bf08f9a6c72afb57ff39553fc43333a83f696f36ea409a00aa",
+          "excerpt": "The primary tumor response was assessed using the Miller–Payne grading (MPG) system [ 30 ] by comparing the number of cancer cells in the pre-treatment core bio",
+          "needle": "The primary tumor response was assessed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "pCR_definition": {
+        "value": "MHR includes grades 4 and 5; not equivalent to pCR",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 28,
+          "section": "Methods / Final efficacy evaluation",
+          "sha256": "cf2037e0cc31c3bf08f9a6c72afb57ff39553fc43333a83f696f36ea409a00aa",
+          "excerpt": "The primary tumor response was assessed using the Miller–Payne grading (MPG) system [ 30 ] by comparing the number of cancer cells in the pre-treatment core bio",
+          "needle": "The primary tumor response was assessed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "reference_standard": {
+        "value": "Core biopsy versus post-treatment surgical pathology",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 28,
+          "section": "Methods / Final efficacy evaluation",
+          "sha256": "cf2037e0cc31c3bf08f9a6c72afb57ff39553fc43333a83f696f36ea409a00aa",
+          "excerpt": "The primary tumor response was assessed using the Miller–Payne grading (MPG) system [ 30 ] by comparing the number of cancer cells in the pre-treatment core bio",
+          "needle": "The primary tumor response was assessed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "reference_timing": {
+        "value": "After completion of NAT and surgery",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 28,
+          "section": "Methods / Final efficacy evaluation",
+          "sha256": "cf2037e0cc31c3bf08f9a6c72afb57ff39553fc43333a83f696f36ea409a00aa",
+          "excerpt": "The primary tumor response was assessed using the Miller–Payne grading (MPG) system [ 30 ] by comparing the number of cancer cells in the pre-treatment core bio",
+          "needle": "The primary tumor response was assessed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "ultrasound": {
+        "value": "B-mode, Doppler, SWE, CEUS; radiomics on grayscale images",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 17,
+          "section": "Methods / Ultrasound",
+          "sha256": "550fb4d291bcaa69f80dc10973941f792f74a30c8bd9d8f0611ec165cb183498",
+          "excerpt": "Baseline examinations were uniformly performed using the Siemens OXANA2 ABVS system, while follow-up examinations after two cycles of NAT were conducted using e",
+          "needle": "Baseline examinations were uniformly"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "SWE": {
+        "value": "Yes",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 17,
+          "section": "Methods / Ultrasound",
+          "sha256": "550fb4d291bcaa69f80dc10973941f792f74a30c8bd9d8f0611ec165cb183498",
+          "excerpt": "Baseline examinations were uniformly performed using the Siemens OXANA2 ABVS system, while follow-up examinations after two cycles of NAT were conducted using e",
+          "needle": "Baseline examinations were uniformly"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "CEUS": {
+        "value": "Yes",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 17,
+          "section": "Methods / Ultrasound",
+          "sha256": "550fb4d291bcaa69f80dc10973941f792f74a30c8bd9d8f0611ec165cb183498",
+          "excerpt": "Baseline examinations were uniformly performed using the Siemens OXANA2 ABVS system, while follow-up examinations after two cycles of NAT were conducted using e",
+          "needle": "Baseline examinations were uniformly"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "QUS": {
+        "value": "Not reported",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 17,
+          "section": "Methods / Ultrasound",
+          "sha256": "550fb4d291bcaa69f80dc10973941f792f74a30c8bd9d8f0611ec165cb183498",
+          "excerpt": "Baseline examinations were uniformly performed using the Siemens OXANA2 ABVS system, while follow-up examinations after two cycles of NAT were conducted using e",
+          "needle": "Baseline examinations were uniformly"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "scanner": {
+        "value": "Siemens OXANA2 ABVS; follow-up same system or Philips Affiniti",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 17,
+          "section": "Methods / Ultrasound",
+          "sha256": "550fb4d291bcaa69f80dc10973941f792f74a30c8bd9d8f0611ec165cb183498",
+          "excerpt": "Baseline examinations were uniformly performed using the Siemens OXANA2 ABVS system, while follow-up examinations after two cycles of NAT were conducted using e",
+          "needle": "Baseline examinations were uniformly"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "acquisition_standardization": {
+        "value": "Standardized protocol; follow-up scanner may change",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 17,
+          "section": "Methods / Ultrasound",
+          "sha256": "550fb4d291bcaa69f80dc10973941f792f74a30c8bd9d8f0611ec165cb183498",
+          "excerpt": "Baseline examinations were uniformly performed using the Siemens OXANA2 ABVS system, while follow-up examinations after two cycles of NAT were conducted using e",
+          "needle": "Baseline examinations were uniformly"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "operator_expertise": {
+        "value": "At least 5 years",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 17,
+          "section": "Methods / Ultrasound",
+          "sha256": "550fb4d291bcaa69f80dc10973941f792f74a30c8bd9d8f0611ec165cb183498",
+          "excerpt": "Baseline examinations were uniformly performed using the Siemens OXANA2 ABVS system, while follow-up examinations after two cycles of NAT were conducted using e",
+          "needle": "Baseline examinations were uniformly"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "timepoints": {
+        "value": "Baseline and after 2 NAT cycles",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 13,
+          "section": "Methods / Patients",
+          "sha256": "50b05709ca94e21cbf704cbd5004c6d11c6fd5daaa01d5ff063a5ece2ee760c1",
+          "excerpt": "This retrospective study included female breast cancer patients treated at West China Hospital, Sichuan University, from April 2020 to December 2022. This study",
+          "needle": "This retrospective study included female"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "radiomics_software": {
+        "value": "PyRadiomics 3.1.0",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 25,
+          "section": "Methods / Radiomics",
+          "sha256": "4c9a24ecb8471d54ef69b55d700d2feae7fdeecc04f16caf1143083676c14a7d",
+          "excerpt": "PyRadiomics v3.1.0 was used to automatically extract features based on the final ROIs, including first-order statistics (e.g., mean, energy, entropy), morpholog",
+          "needle": "PyRadiomics v3.1.0"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "initial_features": {
+        "value": 1395,
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 39,
+          "section": "Results / Radiomics",
+          "sha256": "2549db5e5224db741b8e8c217f613afe2923efe4e5742f38e362a9e68d540c6a",
+          "excerpt": "Using PyRadiomics, a total of 1,395 features were extracted from three datasets—RS0 (baseline), RS2 (after two NAT cycles), and RSD (rate of change)—with 465 fe",
+          "needle": "Using PyRadiomics, a total"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "final_features": {
+        "value": "Baseline:7; after two cycles:13; delta:10",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 39,
+          "section": "Results / Radiomics",
+          "sha256": "2549db5e5224db741b8e8c217f613afe2923efe4e5742f38e362a9e68d540c6a",
+          "excerpt": "Using PyRadiomics, a total of 1,395 features were extracted from three datasets—RS0 (baseline), RS2 (after two NAT cycles), and RSD (rate of change)—with 465 fe",
+          "needle": "Using PyRadiomics, a total"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "feature_families": {
+        "value": "First-order, morphology, texture, wavelet",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 25,
+          "section": "Methods / Radiomics",
+          "sha256": "4c9a24ecb8471d54ef69b55d700d2feae7fdeecc04f16caf1143083676c14a7d",
+          "excerpt": "PyRadiomics v3.1.0 was used to automatically extract features based on the final ROIs, including first-order statistics (e.g., mean, energy, entropy), morpholog",
+          "needle": "PyRadiomics v3.1.0"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "preprocessing": {
+        "value": "Not reported",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 39,
+          "section": "Results / Radiomics",
+          "sha256": "2549db5e5224db741b8e8c217f613afe2923efe4e5742f38e362a9e68d540c6a",
+          "excerpt": "Using PyRadiomics, a total of 1,395 features were extracted from three datasets—RS0 (baseline), RS2 (after two NAT cycles), and RSD (rate of change)—with 465 fe",
+          "needle": "Using PyRadiomics, a total"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "normalization": {
+        "value": "Not reported",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 39,
+          "section": "Results / Radiomics",
+          "sha256": "2549db5e5224db741b8e8c217f613afe2923efe4e5742f38e362a9e68d540c6a",
+          "excerpt": "Using PyRadiomics, a total of 1,395 features were extracted from three datasets—RS0 (baseline), RS2 (after two NAT cycles), and RSD (rate of change)—with 465 fe",
+          "needle": "Using PyRadiomics, a total"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "discretization": {
+        "value": "Not reported",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 39,
+          "section": "Results / Radiomics",
+          "sha256": "2549db5e5224db741b8e8c217f613afe2923efe4e5742f38e362a9e68d540c6a",
+          "excerpt": "Using PyRadiomics, a total of 1,395 features were extracted from three datasets—RS0 (baseline), RS2 (after two NAT cycles), and RSD (rate of change)—with 465 fe",
+          "needle": "Using PyRadiomics, a total"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "prevalence": {
+        "value": "51.5% MHR (reported; overall counts not explicit)",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 34,
+          "section": "Results / General information",
+          "sha256": "68069555cadb827041e0520a6ef9e7d2558c1c26d58f69bb4c225feedde322e0",
+          "excerpt": "Of 239 patients included (training n = 167, validation n = 72), 51.5% achieved MHR. Cohorts were comparable for key baseline characteristics ( P > 0.1, Appendix",
+          "needle": "Of 239 patients included"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "responder_N": {
+        "value": "NR",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 34,
+          "section": "Results / General information",
+          "sha256": "68069555cadb827041e0520a6ef9e7d2558c1c26d58f69bb4c225feedde322e0",
+          "excerpt": "Of 239 patients included (training n = 167, validation n = 72), 51.5% achieved MHR. Cohorts were comparable for key baseline characteristics ( P > 0.1, Appendix",
+          "needle": "Of 239 patients included"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "nonresponder_N": {
+        "value": "NR",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 34,
+          "section": "Results / General information",
+          "sha256": "68069555cadb827041e0520a6ef9e7d2558c1c26d58f69bb4c225feedde322e0",
+          "excerpt": "Of 239 patients included (training n = 167, validation n = 72), 51.5% achieved MHR. Cohorts were comparable for key baseline characteristics ( P > 0.1, Appendix",
+          "needle": "Of 239 patients included"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "subtype": {
+        "value": "Luminal A, Luminal B, HER2-positive, triple-negative",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 16,
+          "section": "Methods / Pathological information",
+          "sha256": "0e2cd89e757fcdcb7f2fa5e30d05defaea635e00759f5643c0032f68c29b9080",
+          "excerpt": "In accordance with the guidelines from the American Society of Clinical Oncology/College of American Pathologists (ASCO/CAP) [ 22 ], immunohistochemistry (IHC) ",
+          "needle": "cases were classified into four IHC subtypes"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "segmentation": {
+        "value": "U-Net segmentation with radiologist manual correction",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 6,
+          "section": "Methods / Radiomics",
+          "sha256": "b70dc92c5c215a419709554c29e40a9c5cad7a34a8738c1d56e2683373143f59",
+          "excerpt": "This retrospective study included 239 breast cancer patients receiving neoadjuvant therapy, divided into training ( n = 167) and validation ( n = 72) cohorts. M",
+          "needle": "U-Net"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "segmentation_software": {
+        "value": "U-Net",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 6,
+          "section": "Methods / Radiomics",
+          "sha256": "b70dc92c5c215a419709554c29e40a9c5cad7a34a8738c1d56e2683373143f59",
+          "excerpt": "This retrospective study included 239 breast cancer patients receiving neoadjuvant therapy, divided into training ( n = 167) and validation ( n = 72) cohorts. M",
+          "needle": "U-Net"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "age": {
+        "value": "Table 1 original columns: [\"Factor\", \"NMHR ( n =77)\", \"MHR ( n =90)\", \"P Value\", \"Training set ( n =167)\", \"Validation set ( n =72)\", \"P Value\"]; original age row: Age | 50.48±1.161 | 48.78±0.982 | 0.642 | 49.56±0.753 | 46.74±1.207 | 0.084",
+        "evidence": {
+          "file": "WANG_2025.html",
+          "table": 1,
+          "row": 1,
+          "column": null,
+          "section": "Results / Table 1",
+          "sha256": "18551dbcb77cfbeb4f335891a5594ac2c5879a1483eb08c440d97edb9c3e4ed5",
+          "excerpt": "Age | 50.48±1.161 | 48.78±0.982 | 0.642 | 49.56±0.753 | 46.74±1.207 | 0.084",
+          "needle": "Age row, with original cohort columns"
+        },
+        "review": "Original cohort/response columns preserved; no pooled or invented overall mean."
+      }
+    },
+    "model_specs": [],
+    "semantic": {
+      "timepoints": [
+        "baseline",
+        "early-treatment",
+        "delta",
+        "longitudinal combined"
+      ],
+      "modalities": [
+        "B-mode",
+        "Doppler",
+        "SWE",
+        "CEUS"
+      ],
+      "strategy": [
+        "radiomics",
+        "clinical+radiomics"
+      ],
+      "comparators": [
+        "clinical+ultrasound",
+        "radiomics"
+      ],
+      "validation": [
+        "internal_validation"
+      ],
+      "population": "breast/NAC",
+      "subtype": [
+        "luminal",
+        "HER2",
+        "TNBC"
+      ],
+      "regimen": [
+        "anthracycline",
+        "taxane"
+      ],
+      "acquisition_roles": [
+        "baseline",
+        "after 2 cycles"
+      ]
+    },
+    "issues": [
+      {
+        "field": "validation_AUC",
+        "reason": "Exact validation AUCs unavailable; do not convert approximately 0.90 to an exact estimate.",
+        "impact": "Validation incremental value is Indeterminate."
+      },
+      {
+        "field": "comparison_tests",
+        "reason": "Abstract assigns p=.006/.042 to validation, but Table 3 pairs them with the training AUCs .854/.863/.914.",
+        "impact": "Dataset allocation remains ambiguous; no Demonstrated validation claim."
+      },
+      {
+        "field": "responder_N",
+        "reason": "51.5% is reported overall, but Table S1 header has MHR=90 and NMHR=77 in training only.",
+        "impact": "Do not infer overall counts by rounding a percentage."
+      }
+    ],
+    "missing_models": [
+      {
+        "model_id": "Model_RSA",
+        "model_type": "radiomics-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "longitudinal combined",
+        "AUC": "NR",
+        "reason": "Exact validation AUC is not in the inspected full text or Table 3; combined is only approximately 0.90."
+      },
+      {
+        "model_id": "Model_Clinic",
+        "model_type": "clinical+ultrasound",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "baseline",
+        "AUC": "NR",
+        "reason": "Exact validation AUC is not in the inspected full text or Table 3; combined is only approximately 0.90."
+      },
+      {
+        "model_id": "Model_Combined",
+        "model_type": "clinical+ultrasound+radiomics",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "longitudinal combined",
+        "AUC": "NR",
+        "reason": "Exact validation AUC is not in the inspected full text or Table 3; combined is only approximately 0.90."
+      }
+    ],
+    "source_url": "https://link.springer.com/article/10.1186/s12885-025-14556-4",
+    "narrative_performance": [
+      {
+        "model_id": "RSA baseline",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "baseline",
+        "AUC": 0.69,
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 41,
+          "section": "Results / Model construction",
+          "sha256": "8c63b7aafe654952e2a6d8898f37d4d87fe297bfd6d3f5a331c3e35b677852b8",
+          "excerpt": "The Model_RSA , based solely on radiomics features, exhibited relatively modest predictive performance when using baseline radiomics (RS0) alone (AUC = 0.690). ",
+          "needle": "when using baseline radiomics"
+        },
+        "dataset_note": "Training allocation supported by abstract and matching Table 3 AUCs; early/delta Results allocation less explicit."
+      },
+      {
+        "model_id": "RSA early",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "early-treatment",
+        "AUC": 0.833,
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 41,
+          "section": "Results / Model construction",
+          "sha256": "8c63b7aafe654952e2a6d8898f37d4d87fe297bfd6d3f5a331c3e35b677852b8",
+          "excerpt": "The Model_RSA , based solely on radiomics features, exhibited relatively modest predictive performance when using baseline radiomics (RS0) alone (AUC = 0.690). ",
+          "needle": "when using baseline radiomics"
+        },
+        "dataset_note": "Training allocation supported by abstract and matching Table 3 AUCs; early/delta Results allocation less explicit."
+      },
+      {
+        "model_id": "RSA delta",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "delta",
+        "AUC": 0.788,
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 41,
+          "section": "Results / Model construction",
+          "sha256": "8c63b7aafe654952e2a6d8898f37d4d87fe297bfd6d3f5a331c3e35b677852b8",
+          "excerpt": "The Model_RSA , based solely on radiomics features, exhibited relatively modest predictive performance when using baseline radiomics (RS0) alone (AUC = 0.690). ",
+          "needle": "when using baseline radiomics"
+        },
+        "dataset_note": "Training allocation supported by abstract and matching Table 3 AUCs; early/delta Results allocation less explicit."
+      },
+      {
+        "model_id": "Model_RSA",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "longitudinal combined",
+        "AUC": 0.863,
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 41,
+          "section": "Results / Model construction",
+          "sha256": "8c63b7aafe654952e2a6d8898f37d4d87fe297bfd6d3f5a331c3e35b677852b8",
+          "excerpt": "The Model_RSA , based solely on radiomics features, exhibited relatively modest predictive performance when using baseline radiomics (RS0) alone (AUC = 0.690). ",
+          "needle": "when using baseline radiomics"
+        },
+        "dataset_note": "Training allocation supported by abstract and matching Table 3 AUCs; early/delta Results allocation less explicit."
+      },
+      {
+        "model_id": "Model_Clinic",
+        "model_type": "clinical+ultrasound",
+        "dataset_role": "training",
+        "timepoint_role": "baseline",
+        "AUC": 0.854,
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 40,
+          "section": "Results / Model construction",
+          "sha256": "c173246df2b2e82bab1f2e730bd53bbe76d053e94284794a9320cc71c2bf17df",
+          "excerpt": "The Model_Clinic , which integrated baseline clinical data and multimodal ultrasound features, achieved an AUC of 0.854, with a sensitivity of 0.844 and a speci",
+          "needle": "achieved an AUC of 0.854"
+        },
+        "dataset_note": "Training allocation supported by abstract and matching Table 3 AUCs; early/delta Results allocation less explicit."
+      },
+      {
+        "model_id": "Model_Combined",
+        "model_type": "clinical+ultrasound+radiomics",
+        "dataset_role": "training",
+        "timepoint_role": "longitudinal combined",
+        "AUC": 0.914,
+        "evidence": {
+          "file": "WANG_2025.html",
+          "paragraph": 42,
+          "section": "Results / Model construction",
+          "sha256": "9379f4a015e27a368f31daacc05fba27d7218a416e7f3d9aed6efad51098f5f0",
+          "excerpt": "The Model_Combined , which incorporated clinical, pathological, multimodal ultrasound, and radiomics features, yielded an AUC of 0.914, with a sensitivity of 0.",
+          "needle": "yielded an AUC of 0.914"
+        },
+        "dataset_note": "Training allocation supported by abstract and matching Table 3 AUCs; early/delta Results allocation less explicit."
+      }
+    ]
+  },
+  {
+    "study_id": "WU_2025",
+    "doi": "10.3389/fonc.2025.1525285",
+    "year": 2025,
+    "title": "Combination of ultrasound-based radiomics and deep learning with clinical data to predict response in breast cancer patients treated with neoadjuvant chemotherapy",
+    "endpoint_code": "pCR",
+    "fields": {
+      "authors": {
+        "value": "Wu et al.",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 58,
+          "section": "Methods / Patients",
+          "sha256": "7fe42d4de2d642049d87c7de2a4bdf5d1b8621c6fb23efd4c7c96b6e5784fc07",
+          "excerpt": "This retrospective study adhered to the Declaration of Helsinki and received ethical approval from Xiangyang First People’s Hospital and Zou Ping Hospital, with",
+          "needle": "Data collection at Xiangyang"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "country": {
+        "value": "China",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 58,
+          "section": "Methods / Patients",
+          "sha256": "7fe42d4de2d642049d87c7de2a4bdf5d1b8621c6fb23efd4c7c96b6e5784fc07",
+          "excerpt": "This retrospective study adhered to the Declaration of Helsinki and received ethical approval from Xiangyang First People’s Hospital and Zou Ping Hospital, with",
+          "needle": "Data collection at Xiangyang"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "centers": {
+        "value": "Two institutions: Xiangyang First People’s Hospital and Zou Ping Hospital",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 58,
+          "section": "Methods / Patients",
+          "sha256": "7fe42d4de2d642049d87c7de2a4bdf5d1b8621c6fb23efd4c7c96b6e5784fc07",
+          "excerpt": "This retrospective study adhered to the Declaration of Helsinki and received ethical approval from Xiangyang First People’s Hospital and Zou Ping Hospital, with",
+          "needle": "Data collection at Xiangyang"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "design": {
+        "value": "Retrospective",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 58,
+          "section": "Methods / Patients",
+          "sha256": "7fe42d4de2d642049d87c7de2a4bdf5d1b8621c6fb23efd4c7c96b6e5784fc07",
+          "excerpt": "This retrospective study adhered to the Declaration of Helsinki and received ethical approval from Xiangyang First People’s Hospital and Zou Ping Hospital, with",
+          "needle": "Data collection at Xiangyang"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "recruitment_period": {
+        "value": "Jan 2022–Feb 2024; Mar 2022–Feb 2024",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 58,
+          "section": "Methods / Patients",
+          "sha256": "7fe42d4de2d642049d87c7de2a4bdf5d1b8621c6fb23efd4c7c96b6e5784fc07",
+          "excerpt": "This retrospective study adhered to the Declaration of Helsinki and received ethical approval from Xiangyang First People’s Hospital and Zou Ping Hospital, with",
+          "needle": "Data collection at Xiangyang"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "N_total": {
+        "value": 643,
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 58,
+          "section": "Methods / Patients",
+          "sha256": "7fe42d4de2d642049d87c7de2a4bdf5d1b8621c6fb23efd4c7c96b6e5784fc07",
+          "excerpt": "This retrospective study adhered to the Declaration of Helsinki and received ethical approval from Xiangyang First People’s Hospital and Zou Ping Hospital, with",
+          "needle": "Data collection at Xiangyang"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "train_N": {
+        "value": "NR",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 58,
+          "section": "Methods / Patients",
+          "sha256": "7fe42d4de2d642049d87c7de2a4bdf5d1b8621c6fb23efd4c7c96b6e5784fc07",
+          "excerpt": "This retrospective study adhered to the Declaration of Helsinki and received ethical approval from Xiangyang First People’s Hospital and Zou Ping Hospital, with",
+          "needle": "Data collection at Xiangyang"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "validation_N": {
+        "value": "NR",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 58,
+          "section": "Methods / Patients",
+          "sha256": "7fe42d4de2d642049d87c7de2a4bdf5d1b8621c6fb23efd4c7c96b6e5784fc07",
+          "excerpt": "This retrospective study adhered to the Declaration of Helsinki and received ethical approval from Xiangyang First People’s Hospital and Zou Ping Hospital, with",
+          "needle": "Data collection at Xiangyang"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "primary_cohort_N": {
+        "value": 372,
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 58,
+          "section": "Methods / Patients",
+          "sha256": "7fe42d4de2d642049d87c7de2a4bdf5d1b8621c6fb23efd4c7c96b6e5784fc07",
+          "excerpt": "This retrospective study adhered to the Declaration of Helsinki and received ethical approval from Xiangyang First People’s Hospital and Zou Ping Hospital, with",
+          "needle": "Data collection at Xiangyang"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "external_validation_N": {
+        "value": 271,
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 58,
+          "section": "Methods / Patients",
+          "sha256": "7fe42d4de2d642049d87c7de2a4bdf5d1b8621c6fb23efd4c7c96b6e5784fc07",
+          "excerpt": "This retrospective study adhered to the Declaration of Helsinki and received ethical approval from Xiangyang First People’s Hospital and Zou Ping Hospital, with",
+          "needle": "Data collection at Xiangyang"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "responder_N": {
+        "value": 253,
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 58,
+          "section": "Methods / Patients",
+          "sha256": "7fe42d4de2d642049d87c7de2a4bdf5d1b8621c6fb23efd4c7c96b6e5784fc07",
+          "excerpt": "This retrospective study adhered to the Declaration of Helsinki and received ethical approval from Xiangyang First People’s Hospital and Zou Ping Hospital, with",
+          "needle": "Data collection at Xiangyang"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "nonresponder_N": {
+        "value": 390,
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 58,
+          "section": "Methods / Patients",
+          "sha256": "7fe42d4de2d642049d87c7de2a4bdf5d1b8621c6fb23efd4c7c96b6e5784fc07",
+          "excerpt": "This retrospective study adhered to the Declaration of Helsinki and received ethical approval from Xiangyang First People’s Hospital and Zou Ping Hospital, with",
+          "needle": "Data collection at Xiangyang"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "validation_type": {
+        "value": "Internal 7:3 stratified split; independent external center",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 58,
+          "section": "Methods / Patients",
+          "sha256": "7fe42d4de2d642049d87c7de2a4bdf5d1b8621c6fb23efd4c7c96b6e5784fc07",
+          "excerpt": "This retrospective study adhered to the Declaration of Helsinki and received ethical approval from Xiangyang First People’s Hospital and Zou Ping Hospital, with",
+          "needle": "Data collection at Xiangyang"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "regimen": {
+        "value": "NAC; specific regimens not reported",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 58,
+          "section": "Methods / Patients",
+          "sha256": "7fe42d4de2d642049d87c7de2a4bdf5d1b8621c6fb23efd4c7c96b6e5784fc07",
+          "excerpt": "This retrospective study adhered to the Declaration of Helsinki and received ethical approval from Xiangyang First People’s Hospital and Zou Ping Hospital, with",
+          "needle": "Data collection at Xiangyang"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "population": {
+        "value": "Confirmed invasive breast cancer, completed NAC and surgery",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 59,
+          "section": "Methods / Patients",
+          "sha256": "8b6f7a69a6dfb267b77482ff8483f19497bfb9805d90469e8d9ed8d2df8deb45",
+          "excerpt": "Inclusion criteria were as follows: (a) confirmed diagnosis of invasive breast cancer; (b) completion of NAC treatment followed by surgery; (c) availability of ",
+          "needle": "Inclusion criteria were as follows"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "inclusion_criteria": {
+        "value": "Invasive breast cancer; complete NAC/surgery; pre- and midpoint US; complete clinical/pathological data",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 59,
+          "section": "Methods / Patients",
+          "sha256": "8b6f7a69a6dfb267b77482ff8483f19497bfb9805d90469e8d9ed8d2df8deb45",
+          "excerpt": "Inclusion criteria were as follows: (a) confirmed diagnosis of invasive breast cancer; (b) completion of NAC treatment followed by surgery; (c) availability of ",
+          "needle": "Inclusion criteria were as follows"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "surgery": {
+        "value": "Yes; surgery after completed NAC",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 59,
+          "section": "Methods / Patients",
+          "sha256": "8b6f7a69a6dfb267b77482ff8483f19497bfb9805d90469e8d9ed8d2df8deb45",
+          "excerpt": "Inclusion criteria were as follows: (a) confirmed diagnosis of invasive breast cancer; (b) completion of NAC treatment followed by surgery; (c) availability of ",
+          "needle": "Inclusion criteria were as follows"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "timepoints": {
+        "value": "Pretreatment and midpoint of NAC",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 59,
+          "section": "Methods / Patients",
+          "sha256": "8b6f7a69a6dfb267b77482ff8483f19497bfb9805d90469e8d9ed8d2df8deb45",
+          "excerpt": "Inclusion criteria were as follows: (a) confirmed diagnosis of invasive breast cancer; (b) completion of NAC treatment followed by surgery; (c) availability of ",
+          "needle": "Inclusion criteria were as follows"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "exclusion_criteria": {
+        "value": "Bilateral cancer; incomplete/non-standard treatment/surgery; poor/missing US; metastatic disease/secondary malignancy",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 60,
+          "section": "Methods / Patients",
+          "sha256": "657cc37020aedee2f9efa3ab5b6809040a7cb32ed7e8a153bc4603df24974f42",
+          "excerpt": "Exclusion criteria included: (a) diagnosis of bilateral breast cancer; (b) incomplete or non-standardized NAC treatment or surgery; (c) poor US quality or absen",
+          "needle": "Exclusion criteria included"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "endpoint": {
+        "value": "pCR / non-pCR",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 54,
+          "section": "Introduction / Endpoint definition",
+          "sha256": "00fa7e01330884618c7aa39f0a6df18a0f6567a74b11e47c8426d086f20108c1",
+          "excerpt": "Despite its benefits, the effectiveness of NAC varies significantly due to tumor heterogeneity, leading to considerable differences in pCR rates among different",
+          "needle": "ypT0/is ypN0"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "endpoint_definition": {
+        "value": "Postoperative pCR; ypT0/is ypN0 stated in Introduction; operational adjudication not explicit in Methods",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 54,
+          "section": "Introduction / Endpoint definition",
+          "sha256": "00fa7e01330884618c7aa39f0a6df18a0f6567a74b11e47c8426d086f20108c1",
+          "excerpt": "Despite its benefits, the effectiveness of NAC varies significantly due to tumor heterogeneity, leading to considerable differences in pCR rates among different",
+          "needle": "ypT0/is ypN0"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "pCR_definition": {
+        "value": "ypT0/is ypN0 (Introduction)",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 54,
+          "section": "Introduction / Endpoint definition",
+          "sha256": "00fa7e01330884618c7aa39f0a6df18a0f6567a74b11e47c8426d086f20108c1",
+          "excerpt": "Despite its benefits, the effectiveness of NAC varies significantly due to tumor heterogeneity, leading to considerable differences in pCR rates among different",
+          "needle": "ypT0/is ypN0"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "reference_standard": {
+        "value": "Postoperative surgical pathology",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 54,
+          "section": "Introduction / Endpoint definition",
+          "sha256": "00fa7e01330884618c7aa39f0a6df18a0f6567a74b11e47c8426d086f20108c1",
+          "excerpt": "Despite its benefits, the effectiveness of NAC varies significantly due to tumor heterogeneity, leading to considerable differences in pCR rates among different",
+          "needle": "ypT0/is ypN0"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "reference_timing": {
+        "value": "After NAC and surgery",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 54,
+          "section": "Introduction / Endpoint definition",
+          "sha256": "00fa7e01330884618c7aa39f0a6df18a0f6567a74b11e47c8426d086f20108c1",
+          "excerpt": "Despite its benefits, the effectiveness of NAC varies significantly due to tumor heterogeneity, leading to considerable differences in pCR rates among different",
+          "needle": "ypT0/is ypN0"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "subtype": {
+        "value": "HR+/HER2−, HER2+, TNBC; distributions in Table 1 have inconsistent totals",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 82,
+          "section": "Results / Patient characteristics",
+          "sha256": "f4a01807ef8dd9b16e8e383ba1bc5008aed4ed05531f702941c93264ed7ce9fd",
+          "excerpt": "Regarding molecular subtypes, the HER2-positive subtype had the highest pCR rate, with 66.4% of pCR patients in the primary cohort belonging to this subtype, wh",
+          "needle": "Regarding molecular subtypes"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "ultrasound": {
+        "value": "B-mode US before and at midpoint of NAC",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 64,
+          "section": "Methods / Data processing",
+          "sha256": "474b741b4340fbef008c71bf7acc208596243a878e82971aa9c9773a227d65e2",
+          "excerpt": "Breast ultrasound examinations were conducted by five radiologists with over 10 years of experience in breast ultrasound imaging, both prior to intervention and",
+          "needle": "Breast ultrasound examinations were conducted"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "scanner": {
+        "value": "Resona 7; Philips; GE LOGIQ E20; Samsung",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 64,
+          "section": "Methods / Data processing",
+          "sha256": "474b741b4340fbef008c71bf7acc208596243a878e82971aa9c9773a227d65e2",
+          "excerpt": "Breast ultrasound examinations were conducted by five radiologists with over 10 years of experience in breast ultrasound imaging, both prior to intervention and",
+          "needle": "Breast ultrasound examinations were conducted"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "operator_expertise": {
+        "value": "Five radiologists with >10 years",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 64,
+          "section": "Methods / Data processing",
+          "sha256": "474b741b4340fbef008c71bf7acc208596243a878e82971aa9c9773a227d65e2",
+          "excerpt": "Breast ultrasound examinations were conducted by five radiologists with over 10 years of experience in breast ultrasound imaging, both prior to intervention and",
+          "needle": "Breast ultrasound examinations were conducted"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "image_count": {
+        "value": "Largest cross-sectional tumor image at each of two timepoints",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 64,
+          "section": "Methods / Data processing",
+          "sha256": "474b741b4340fbef008c71bf7acc208596243a878e82971aa9c9773a227d65e2",
+          "excerpt": "Breast ultrasound examinations were conducted by five radiologists with over 10 years of experience in breast ultrasound imaging, both prior to intervention and",
+          "needle": "Breast ultrasound examinations were conducted"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "segmentation": {
+        "value": "Manual 2D largest cross-sectional ROIs; two readers, senior supervision; blinded consensus",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 65,
+          "section": "Methods / Data processing",
+          "sha256": "4b5bc4f46d9ea118a53d7f9621ca17a861a831b20a6c2f641214a0c3958d3b79",
+          "excerpt": "To reduce variability introduced by different ultrasound machines, all images were rescaled to a uniform resolution of 512 × 512 pixels using linear interpolati",
+          "needle": "all images were rescaled"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "segmentation_software": {
+        "value": "3D Slicer",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 65,
+          "section": "Methods / Data processing",
+          "sha256": "4b5bc4f46d9ea118a53d7f9621ca17a861a831b20a6c2f641214a0c3958d3b79",
+          "excerpt": "To reduce variability introduced by different ultrasound machines, all images were rescaled to a uniform resolution of 512 × 512 pixels using linear interpolati",
+          "needle": "all images were rescaled"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "segmentation_dimension": {
+        "value": "2D images (software name is not a 3D acquisition)",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 65,
+          "section": "Methods / Data processing",
+          "sha256": "4b5bc4f46d9ea118a53d7f9621ca17a861a831b20a6c2f641214a0c3958d3b79",
+          "excerpt": "To reduce variability introduced by different ultrasound machines, all images were rescaled to a uniform resolution of 512 × 512 pixels using linear interpolati",
+          "needle": "all images were rescaled"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "operator_count": {
+        "value": 2,
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 65,
+          "section": "Methods / Data processing",
+          "sha256": "4b5bc4f46d9ea118a53d7f9621ca17a861a831b20a6c2f641214a0c3958d3b79",
+          "excerpt": "To reduce variability introduced by different ultrasound machines, all images were rescaled to a uniform resolution of 512 × 512 pixels using linear interpolati",
+          "needle": "all images were rescaled"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "preprocessing": {
+        "value": "512×512 linear interpolation; 3-sigma pixel outliers; deep input 128×128",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 65,
+          "section": "Methods / Data processing",
+          "sha256": "4b5bc4f46d9ea118a53d7f9621ca17a861a831b20a6c2f641214a0c3958d3b79",
+          "excerpt": "To reduce variability introduced by different ultrasound machines, all images were rescaled to a uniform resolution of 512 × 512 pixels using linear interpolati",
+          "needle": "all images were rescaled"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "radiomics_software": {
+        "value": "PyRadiomics",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 67,
+          "section": "Methods / Model construction",
+          "sha256": "f22ad1c4f6482fa6ee95a3074ffe49c008f89118f1fc3a98d314c17e6880ea1b",
+          "excerpt": "To construct the clinical model, clinical variables showing statistical significance (p < 0.05) in univariate analysis of the training cohort were selected and ",
+          "needle": "1,216 features per ROI"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "initial_features": {
+        "value": "1216/ROI; 2438/patient in Methods; 2920 in Abstract (conflicting)",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 67,
+          "section": "Methods / Model construction",
+          "sha256": "f22ad1c4f6482fa6ee95a3074ffe49c008f89118f1fc3a98d314c17e6880ea1b",
+          "excerpt": "To construct the clinical model, clinical variables showing statistical significance (p < 0.05) in univariate analysis of the training cohort were selected and ",
+          "needle": "1,216 features per ROI"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "feature_families": {
+        "value": "Shape, first-order, GLCM, GLRLM, GLSZM, GLDM, NGTDM; ResNet50 deep features",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 67,
+          "section": "Methods / Model construction",
+          "sha256": "f22ad1c4f6482fa6ee95a3074ffe49c008f89118f1fc3a98d314c17e6880ea1b",
+          "excerpt": "To construct the clinical model, clinical variables showing statistical significance (p < 0.05) in univariate analysis of the training cohort were selected and ",
+          "needle": "1,216 features per ROI"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "feature_selection": {
+        "value": "Clinical univariate p<0.05; best internal-validation model; early feature fusion",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 67,
+          "section": "Methods / Model construction",
+          "sha256": "f22ad1c4f6482fa6ee95a3074ffe49c008f89118f1fc3a98d314c17e6880ea1b",
+          "excerpt": "To construct the clinical model, clinical variables showing statistical significance (p < 0.05) in univariate analysis of the training cohort were selected and ",
+          "needle": "1,216 features per ROI"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "final_features": {
+        "value": "NR",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 67,
+          "section": "Methods / Model construction",
+          "sha256": "f22ad1c4f6482fa6ee95a3074ffe49c008f89118f1fc3a98d314c17e6880ea1b",
+          "excerpt": "To construct the clinical model, clinical variables showing statistical significance (p < 0.05) in univariate analysis of the training cohort were selected and ",
+          "needle": "1,216 features per ROI"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "algorithm": {
+        "value": "Eight ML algorithms; ResNet50; early feature fusion",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 70,
+          "section": "Methods / Model construction",
+          "sha256": "8ffc0432d481a78698f91282c2558195d00d544c5669cb90a217ebcc745c48b4",
+          "excerpt": "The composite (Combine) model was constructed by integrating clinical, radiomics, and deep learning features using early feature-level fusion. Eight machine lea",
+          "needle": "The composite (Combine) model"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "model_types": {
+        "value": "Clinical; radiomics; deep learning; clinical+radiomics+deep learning fusion",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 70,
+          "section": "Methods / Model construction",
+          "sha256": "8ffc0432d481a78698f91282c2558195d00d544c5669cb90a217ebcc745c48b4",
+          "excerpt": "The composite (Combine) model was constructed by integrating clinical, radiomics, and deep learning features using early feature-level fusion. Eight machine lea",
+          "needle": "The composite (Combine) model"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "comparator": {
+        "value": "Clinical, radiomics and standalone deep learning",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 70,
+          "section": "Methods / Model construction",
+          "sha256": "8ffc0432d481a78698f91282c2558195d00d544c5669cb90a217ebcc745c48b4",
+          "excerpt": "The composite (Combine) model was constructed by integrating clinical, radiomics, and deep learning features using early feature-level fusion. Eight machine lea",
+          "needle": "The composite (Combine) model"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "calibration": {
+        "value": "Calibration curves and Brier scores",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 70,
+          "section": "Methods / Model construction",
+          "sha256": "8ffc0432d481a78698f91282c2558195d00d544c5669cb90a217ebcc745c48b4",
+          "excerpt": "The composite (Combine) model was constructed by integrating clinical, radiomics, and deep learning features using early feature-level fusion. Eight machine lea",
+          "needle": "The composite (Combine) model"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "decision_curve": {
+        "value": "DCA reported",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 70,
+          "section": "Methods / Model construction",
+          "sha256": "8ffc0432d481a78698f91282c2558195d00d544c5669cb90a217ebcc745c48b4",
+          "excerpt": "The composite (Combine) model was constructed by integrating clinical, radiomics, and deep learning features using early feature-level fusion. Eight machine lea",
+          "needle": "The composite (Combine) model"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "cv_strategy": {
+        "value": "Not reported",
+        "evidence": {
+          "file": "WU_2025.html",
+          "paragraph": 70,
+          "section": "Methods / Model construction",
+          "sha256": "8ffc0432d481a78698f91282c2558195d00d544c5669cb90a217ebcc745c48b4",
+          "excerpt": "The composite (Combine) model was constructed by integrating clinical, radiomics, and deep learning features using early feature-level fusion. Eight machine lea",
+          "needle": "The composite (Combine) model"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "age": {
+        "value": "Table 1 original columns: [\"Characteristics\", \"Primary cohort (N=372)\", \"Validation cohort 1 (N=271)\"]; original age row: Age | 48.93 ± 8.73 | 49.21 ± 9.66 | 0.631 | 47.91 ± 10.31 | 49.13.39 ± 9.78 | 0.317",
+        "evidence": {
+          "file": "WU_2025.html",
+          "table": 1,
+          "row": 2,
+          "column": null,
+          "section": "Results / Table 1",
+          "sha256": "d5d366c9878d025e41b5489f24da24d390169114753d45a6b7eb6fa8ab5d9f81",
+          "excerpt": "Age | 48.93 ± 8.73 | 49.21 ± 9.66 | 0.631 | 47.91 ± 10.31 | 49.13.39 ± 9.78 | 0.317",
+          "needle": "Age row, with original cohort columns"
+        },
+        "review": "Original cohort/response columns preserved; no pooled or invented overall mean."
+      }
+    },
+    "model_specs": [
+      {
+        "model_id": "Fusion",
+        "model_type": "clinical+radiomics+deep learning",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "longitudinal combined",
+        "file": "WU_2025.html",
+        "table": 2,
+        "row": 2,
+        "column": 3,
+        "layout": "wu_row"
+      },
+      {
+        "model_id": "Fusion",
+        "model_type": "clinical+radiomics+deep learning",
+        "dataset_role": "external_validation",
+        "timepoint_role": "longitudinal combined",
+        "file": "WU_2025.html",
+        "table": 2,
+        "row": 2,
+        "column": 4,
+        "layout": "wu_row"
+      },
+      {
+        "model_id": "Deep learning",
+        "model_type": "deep learning",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "longitudinal combined",
+        "file": "WU_2025.html",
+        "table": 2,
+        "row": 3,
+        "column": 3,
+        "layout": "wu_row"
+      },
+      {
+        "model_id": "Deep learning",
+        "model_type": "deep learning",
+        "dataset_role": "external_validation",
+        "timepoint_role": "longitudinal combined",
+        "file": "WU_2025.html",
+        "table": 2,
+        "row": 3,
+        "column": 4,
+        "layout": "wu_row"
+      },
+      {
+        "model_id": "Radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "longitudinal combined",
+        "file": "WU_2025.html",
+        "table": 2,
+        "row": 4,
+        "column": 3,
+        "layout": "wu_row"
+      },
+      {
+        "model_id": "Radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "external_validation",
+        "timepoint_role": "longitudinal combined",
+        "file": "WU_2025.html",
+        "table": 2,
+        "row": 4,
+        "column": 4,
+        "layout": "wu_row"
+      },
+      {
+        "model_id": "Clinical",
+        "model_type": "clinical-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "baseline",
+        "file": "WU_2025.html",
+        "table": 2,
+        "row": 5,
+        "column": 3,
+        "layout": "wu_row"
+      },
+      {
+        "model_id": "Clinical",
+        "model_type": "clinical-only",
+        "dataset_role": "external_validation",
+        "timepoint_role": "baseline",
+        "file": "WU_2025.html",
+        "table": 2,
+        "row": 5,
+        "column": 4,
+        "layout": "wu_row"
+      }
+    ],
+    "semantic": {
+      "timepoints": [
+        "longitudinal combined"
+      ],
+      "modalities": [
+        "B-mode"
+      ],
+      "strategy": [
+        "radiomics",
+        "fusion",
+        "deep learning"
+      ],
+      "comparators": [
+        "clinical",
+        "radiomics",
+        "deep learning"
+      ],
+      "validation": [
+        "internal_validation",
+        "external_validation"
+      ],
+      "population": "breast/NAC",
+      "subtype": [
+        "luminal",
+        "HER2",
+        "TNBC"
+      ],
+      "regimen": [],
+      "acquisition_roles": [
+        "baseline",
+        "midpoint"
+      ]
+    },
+    "issues": [
+      {
+        "field": "AUC:Fusion:external_validation",
+        "reason": "Table 2 AUC .877 (.834–.919); abstract/results .891 (.848–.934). Table value retained as provisional transcription.",
+        "impact": "Fusion effect sizes uncertain; both versions are shown in sensitivity output."
+      },
+      {
+        "field": "AUC:Deep learning:external_validation",
+        "reason": "Table 2 AUC .834 (.808–.889); abstract/results .874 (.838–.909).",
+        "impact": "Fusion minus deep learning is .043 in Table 2, versus .003 using the legacy mixed sources; do not impose the expected delta."
+      },
+      {
+        "field": "endpoint_definition",
+        "reason": "ypT0/is ypN0 is in Introduction; detailed operational pathology criterion absent in Methods.",
+        "impact": "Shared pCR category; operational harmonization still needs review before pooling."
+      },
+      {
+        "field": "initial_features",
+        "reason": "Abstract 2920; Methods 1216 per ROI and 2438 per patient; 2×1216=2432, not 2438.",
+        "impact": "Feature counts not resolved."
+      },
+      {
+        "field": "subtype",
+        "reason": "Primary Table 1 subtype counts sum to 352, not 372; receptor category totals also inconsistent.",
+        "impact": "Category overlap can be compared; exact distributions cannot be trusted."
+      },
+      {
+        "field": "train_N",
+        "reason": "372 patients split 7:3; exact integer training and internal-validation sizes not explicit.",
+        "impact": "No invented integer split."
+      }
+    ],
+    "source_url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1525285/full"
+  },
+  {
+    "study_id": "FRONTIERS_2024",
+    "doi": "10.3389/fonc.2024.1485681",
+    "year": 2024,
+    "title": "Machine learning for predicting neoadjuvant chemotherapy effectiveness using ultrasound radiomics features and routine clinical data of patients with breast cancer",
+    "endpoint_code": "pCR",
+    "fields": {
+      "authors": {
+        "value": "Zhou et al.",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "ee5c56d8a69e387f1148dee84446c54286e4c038e2fb17fda1d8bd79178eb785",
+          "excerpt": "The study included patients diagnosed with BC between December 2014 and September 2023 who underwent NAC at the Affiliated Tumor Hospital of Nantong University.",
+          "needle": "The study included patients diagnosed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "country": {
+        "value": "China",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "ee5c56d8a69e387f1148dee84446c54286e4c038e2fb17fda1d8bd79178eb785",
+          "excerpt": "The study included patients diagnosed with BC between December 2014 and September 2023 who underwent NAC at the Affiliated Tumor Hospital of Nantong University.",
+          "needle": "The study included patients diagnosed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "centers": {
+        "value": "Single center; Affiliated Tumor Hospital of Nantong University",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "ee5c56d8a69e387f1148dee84446c54286e4c038e2fb17fda1d8bd79178eb785",
+          "excerpt": "The study included patients diagnosed with BC between December 2014 and September 2023 who underwent NAC at the Affiliated Tumor Hospital of Nantong University.",
+          "needle": "The study included patients diagnosed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "design": {
+        "value": "Retrospective",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "ee5c56d8a69e387f1148dee84446c54286e4c038e2fb17fda1d8bd79178eb785",
+          "excerpt": "The study included patients diagnosed with BC between December 2014 and September 2023 who underwent NAC at the Affiliated Tumor Hospital of Nantong University.",
+          "needle": "The study included patients diagnosed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "recruitment_period": {
+        "value": "December 2014–September 2023",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "ee5c56d8a69e387f1148dee84446c54286e4c038e2fb17fda1d8bd79178eb785",
+          "excerpt": "The study included patients diagnosed with BC between December 2014 and September 2023 who underwent NAC at the Affiliated Tumor Hospital of Nantong University.",
+          "needle": "The study included patients diagnosed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "N_total": {
+        "value": 231,
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "ee5c56d8a69e387f1148dee84446c54286e4c038e2fb17fda1d8bd79178eb785",
+          "excerpt": "The study included patients diagnosed with BC between December 2014 and September 2023 who underwent NAC at the Affiliated Tumor Hospital of Nantong University.",
+          "needle": "The study included patients diagnosed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "train_N": {
+        "value": 185,
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "ee5c56d8a69e387f1148dee84446c54286e4c038e2fb17fda1d8bd79178eb785",
+          "excerpt": "The study included patients diagnosed with BC between December 2014 and September 2023 who underwent NAC at the Affiliated Tumor Hospital of Nantong University.",
+          "needle": "The study included patients diagnosed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "validation_N": {
+        "value": 46,
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "ee5c56d8a69e387f1148dee84446c54286e4c038e2fb17fda1d8bd79178eb785",
+          "excerpt": "The study included patients diagnosed with BC between December 2014 and September 2023 who underwent NAC at the Affiliated Tumor Hospital of Nantong University.",
+          "needle": "The study included patients diagnosed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "external_validation_N": {
+        "value": 0,
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "ee5c56d8a69e387f1148dee84446c54286e4c038e2fb17fda1d8bd79178eb785",
+          "excerpt": "The study included patients diagnosed with BC between December 2014 and September 2023 who underwent NAC at the Affiliated Tumor Hospital of Nantong University.",
+          "needle": "The study included patients diagnosed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "population": {
+        "value": "Pathologically confirmed breast cancer completing NAC and surgery",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "ee5c56d8a69e387f1148dee84446c54286e4c038e2fb17fda1d8bd79178eb785",
+          "excerpt": "The study included patients diagnosed with BC between December 2014 and September 2023 who underwent NAC at the Affiliated Tumor Hospital of Nantong University.",
+          "needle": "The study included patients diagnosed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "inclusion_criteria": {
+        "value": "pCR/non-pCR pathology after NAC/surgery; full NAC; preoperative US and biopsy",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "ee5c56d8a69e387f1148dee84446c54286e4c038e2fb17fda1d8bd79178eb785",
+          "excerpt": "The study included patients diagnosed with BC between December 2014 and September 2023 who underwent NAC at the Affiliated Tumor Hospital of Nantong University.",
+          "needle": "The study included patients diagnosed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "exclusion_criteria": {
+        "value": "Missing pathology; incomplete NAC; inadequate images; bilateral/multifocal tumors",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "ee5c56d8a69e387f1148dee84446c54286e4c038e2fb17fda1d8bd79178eb785",
+          "excerpt": "The study included patients diagnosed with BC between December 2014 and September 2023 who underwent NAC at the Affiliated Tumor Hospital of Nantong University.",
+          "needle": "The study included patients diagnosed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "validation_type": {
+        "value": "Random internal holdout",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "ee5c56d8a69e387f1148dee84446c54286e4c038e2fb17fda1d8bd79178eb785",
+          "excerpt": "The study included patients diagnosed with BC between December 2014 and September 2023 who underwent NAC at the Affiliated Tumor Hospital of Nantong University.",
+          "needle": "The study included patients diagnosed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "surgery": {
+        "value": "Yes; NAC followed by surgery",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 65,
+          "section": "Methods / Patients",
+          "sha256": "ee5c56d8a69e387f1148dee84446c54286e4c038e2fb17fda1d8bd79178eb785",
+          "excerpt": "The study included patients diagnosed with BC between December 2014 and September 2023 who underwent NAC at the Affiliated Tumor Hospital of Nantong University.",
+          "needle": "The study included patients diagnosed"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "endpoint": {
+        "value": "pCR / non-pCR",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 73,
+          "section": "Methods / Effectiveness assessment",
+          "sha256": "2dcd5872d96244598469b4cf801f6d23aee9356f0cd4b73459daaad5468b5761",
+          "excerpt": "The National Comprehensive Cancer Network (NCCN) guidelines adhered to guide treatment regimens and schedules for BC patients. The NAC for BC included anthracyc",
+          "needle": "The 231 participants were subjected"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "endpoint_definition": {
+        "value": "No residual invasive carcinoma, DCIS may remain; no ipsilateral sentinel/axillary node involvement",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 73,
+          "section": "Methods / Effectiveness assessment",
+          "sha256": "2dcd5872d96244598469b4cf801f6d23aee9356f0cd4b73459daaad5468b5761",
+          "excerpt": "The National Comprehensive Cancer Network (NCCN) guidelines adhered to guide treatment regimens and schedules for BC patients. The NAC for BC included anthracyc",
+          "needle": "The 231 participants were subjected"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "pCR_definition": {
+        "value": "ypT0/is ypN0 equivalent operational definition",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 73,
+          "section": "Methods / Effectiveness assessment",
+          "sha256": "2dcd5872d96244598469b4cf801f6d23aee9356f0cd4b73459daaad5468b5761",
+          "excerpt": "The National Comprehensive Cancer Network (NCCN) guidelines adhered to guide treatment regimens and schedules for BC patients. The NAC for BC included anthracyc",
+          "needle": "The 231 participants were subjected"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "reference_standard": {
+        "value": "Postoperative histopathology",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 73,
+          "section": "Methods / Effectiveness assessment",
+          "sha256": "2dcd5872d96244598469b4cf801f6d23aee9356f0cd4b73459daaad5468b5761",
+          "excerpt": "The National Comprehensive Cancer Network (NCCN) guidelines adhered to guide treatment regimens and schedules for BC patients. The NAC for BC included anthracyc",
+          "needle": "The 231 participants were subjected"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "reference_timing": {
+        "value": "After NAC and surgery",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 73,
+          "section": "Methods / Effectiveness assessment",
+          "sha256": "2dcd5872d96244598469b4cf801f6d23aee9356f0cd4b73459daaad5468b5761",
+          "excerpt": "The National Comprehensive Cancer Network (NCCN) guidelines adhered to guide treatment regimens and schedules for BC patients. The NAC for BC included anthracyc",
+          "needle": "The 231 participants were subjected"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "responder_N": {
+        "value": 98,
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 60,
+          "section": "Abstract / Results",
+          "sha256": "d36d4707d38a558bf76e23c7bc989fac34ad706af67873234ee29f0511b9fe1f",
+          "excerpt": "Out of 231 participants with BC, 98 (42.42%) achieved pCR, and 133 (57.58%) did not. Twelve radiomics features were identified, with the GBM model demonstrating",
+          "needle": "Out of 231 participants"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "nonresponder_N": {
+        "value": 133,
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 60,
+          "section": "Abstract / Results",
+          "sha256": "d36d4707d38a558bf76e23c7bc989fac34ad706af67873234ee29f0511b9fe1f",
+          "excerpt": "Out of 231 participants with BC, 98 (42.42%) achieved pCR, and 133 (57.58%) did not. Twelve radiomics features were identified, with the GBM model demonstrating",
+          "needle": "Out of 231 participants"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "prevalence": {
+        "value": "42.42% (98/231)",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 60,
+          "section": "Abstract / Results",
+          "sha256": "d36d4707d38a558bf76e23c7bc989fac34ad706af67873234ee29f0511b9fe1f",
+          "excerpt": "Out of 231 participants with BC, 98 (42.42%) achieved pCR, and 133 (57.58%) did not. Twelve radiomics features were identified, with the GBM model demonstrating",
+          "needle": "Out of 231 participants"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "subtype": {
+        "value": "Luminal A/B-like, HER2-enriched, triple-negative",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 74,
+          "section": "Methods / Clinical parameters",
+          "sha256": "a3f3e7548a8fc3a07612aafa1ea825f53b4e7ff434d28b6d7baf6d6e40985c57",
+          "excerpt": "Clinical parameter comprised the patient’s age, menopausal status, history of breastfeeding, family history of cancer, and underlying diseases. Tumor-related in",
+          "needle": "Clinical parameter comprised"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "stage": {
+        "value": "T1–4 and N0–3 recorded",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 74,
+          "section": "Methods / Clinical parameters",
+          "sha256": "a3f3e7548a8fc3a07612aafa1ea825f53b4e7ff434d28b6d7baf6d6e40985c57",
+          "excerpt": "Clinical parameter comprised the patient’s age, menopausal status, history of breastfeeding, family history of cancer, and underlying diseases. Tumor-related in",
+          "needle": "Clinical parameter comprised"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "ultrasound": {
+        "value": "Pretreatment B-mode ultrasound",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 75,
+          "section": "Methods / Ultrasonography",
+          "sha256": "4946eddc5620269a95d80a89d5ec2020ac6e98be05527d8f164869947980069c",
+          "excerpt": "Ultrasonography was conducted using the GE Logic E9 and Philips EPIQ7 diagnostic ultrasound machines. Four highly experienced doctors (with more than ten years’",
+          "needle": "Ultrasonography was conducted"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "scanner": {
+        "value": "GE Logic E9 and Philips EPIQ7",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 75,
+          "section": "Methods / Ultrasonography",
+          "sha256": "4946eddc5620269a95d80a89d5ec2020ac6e98be05527d8f164869947980069c",
+          "excerpt": "Ultrasonography was conducted using the GE Logic E9 and Philips EPIQ7 diagnostic ultrasound machines. Four highly experienced doctors (with more than ten years’",
+          "needle": "Ultrasonography was conducted"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "image_count": {
+        "value": "Maximum diameter image per participant",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 75,
+          "section": "Methods / Ultrasonography",
+          "sha256": "4946eddc5620269a95d80a89d5ec2020ac6e98be05527d8f164869947980069c",
+          "excerpt": "Ultrasonography was conducted using the GE Logic E9 and Philips EPIQ7 diagnostic ultrasound machines. Four highly experienced doctors (with more than ten years’",
+          "needle": "Ultrasonography was conducted"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "segmentation": {
+        "value": "Two manual readers; third reader repeated 55 images after one month; ITK-SNAP 3.8.0",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 75,
+          "section": "Methods / Ultrasonography",
+          "sha256": "4946eddc5620269a95d80a89d5ec2020ac6e98be05527d8f164869947980069c",
+          "excerpt": "Ultrasonography was conducted using the GE Logic E9 and Philips EPIQ7 diagnostic ultrasound machines. Four highly experienced doctors (with more than ten years’",
+          "needle": "Ultrasonography was conducted"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "segmentation_dimension": {
+        "value": "2D",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 75,
+          "section": "Methods / Ultrasonography",
+          "sha256": "4946eddc5620269a95d80a89d5ec2020ac6e98be05527d8f164869947980069c",
+          "excerpt": "Ultrasonography was conducted using the GE Logic E9 and Philips EPIQ7 diagnostic ultrasound machines. Four highly experienced doctors (with more than ten years’",
+          "needle": "Ultrasonography was conducted"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "operator_count": {
+        "value": 2,
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 75,
+          "section": "Methods / Ultrasonography",
+          "sha256": "4946eddc5620269a95d80a89d5ec2020ac6e98be05527d8f164869947980069c",
+          "excerpt": "Ultrasonography was conducted using the GE Logic E9 and Philips EPIQ7 diagnostic ultrasound machines. Four highly experienced doctors (with more than ten years’",
+          "needle": "Ultrasonography was conducted"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "operator_expertise": {
+        "value": ">10 years; repeat reader 9 years",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 75,
+          "section": "Methods / Ultrasonography",
+          "sha256": "4946eddc5620269a95d80a89d5ec2020ac6e98be05527d8f164869947980069c",
+          "excerpt": "Ultrasonography was conducted using the GE Logic E9 and Philips EPIQ7 diagnostic ultrasound machines. Four highly experienced doctors (with more than ten years’",
+          "needle": "Ultrasonography was conducted"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "segmentation_software": {
+        "value": "ITK-SNAP 3.8.0",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 75,
+          "section": "Methods / Ultrasonography",
+          "sha256": "4946eddc5620269a95d80a89d5ec2020ac6e98be05527d8f164869947980069c",
+          "excerpt": "Ultrasonography was conducted using the GE Logic E9 and Philips EPIQ7 diagnostic ultrasound machines. Four highly experienced doctors (with more than ten years’",
+          "needle": "Ultrasonography was conducted"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "feature_robustness": {
+        "value": "ICC >0.75",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 75,
+          "section": "Methods / Ultrasonography",
+          "sha256": "4946eddc5620269a95d80a89d5ec2020ac6e98be05527d8f164869947980069c",
+          "excerpt": "Ultrasonography was conducted using the GE Logic E9 and Philips EPIQ7 diagnostic ultrasound machines. Four highly experienced doctors (with more than ten years’",
+          "needle": "Ultrasonography was conducted"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "timepoints": {
+        "value": "Pretreatment before NAC",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 76,
+          "section": "Methods / Radiomics",
+          "sha256": "14a900a3387aeb1a6776fd15965a2ddaae4c2818067e5b32a66375d1b7c8286a",
+          "excerpt": "We used the PyRadiomics open-source tool (available at: https://www.example.com/en/latest/index.html ) to extract radiomics features (RFs) from the images. A fu",
+          "needle": "These RFs were obtained from the pre-treatment"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "radiomics_software": {
+        "value": "PyRadiomics",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 76,
+          "section": "Methods / Radiomics",
+          "sha256": "14a900a3387aeb1a6776fd15965a2ddaae4c2818067e5b32a66375d1b7c8286a",
+          "excerpt": "We used the PyRadiomics open-source tool (available at: https://www.example.com/en/latest/index.html ) to extract radiomics features (RFs) from the images. A fu",
+          "needle": "These RFs were obtained from the pre-treatment"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "feature_families": {
+        "value": "First-order, GLCM, GLDM, GLRLM, GLSZM, NGTDM, shape",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 76,
+          "section": "Methods / Radiomics",
+          "sha256": "14a900a3387aeb1a6776fd15965a2ddaae4c2818067e5b32a66375d1b7c8286a",
+          "excerpt": "We used the PyRadiomics open-source tool (available at: https://www.example.com/en/latest/index.html ) to extract radiomics features (RFs) from the images. A fu",
+          "needle": "These RFs were obtained from the pre-treatment"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "initial_features": {
+        "value": 1562,
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 82,
+          "section": "Results / Radiomics",
+          "sha256": "1c1aae0b662d13b62df31dff91256ed46959e5fa81760a1f43dfe94594568740",
+          "excerpt": "From the RF extraction, a total of 1,562 RFs were screened, including FIRSTORDER (16.8%), GLCM (22.4%), GLDM (13.1%), GLRLM (15%), GLSZM (15%), NGTDM (4.7%), an",
+          "needle": "a total of 1,562 RFs"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "final_features": {
+        "value": 12,
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 82,
+          "section": "Results / Radiomics",
+          "sha256": "1c1aae0b662d13b62df31dff91256ed46959e5fa81760a1f43dfe94594568740",
+          "excerpt": "From the RF extraction, a total of 1,562 RFs were screened, including FIRSTORDER (16.8%), GLCM (22.4%), GLDM (13.1%), GLRLM (15%), GLSZM (15%), NGTDM (4.7%), an",
+          "needle": "a total of 1,562 RFs"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "feature_selection": {
+        "value": "ICC >0.75; Z-score; Pearson correlation; LASSO",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 77,
+          "section": "Methods / Screening",
+          "sha256": "f5f542a713d7b094fe88b7284e929c34908015537b2d9e6918d2b86c9f64d8fc",
+          "excerpt": "Before feature selection, the threshold value of ICC was greater than 0.75, which could ensure the repeatability and stability of the features. All ultrasound R",
+          "needle": "Before feature selection, the threshold"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "normalization": {
+        "value": "Z-score",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 77,
+          "section": "Methods / Screening",
+          "sha256": "f5f542a713d7b094fe88b7284e929c34908015537b2d9e6918d2b86c9f64d8fc",
+          "excerpt": "Before feature selection, the threshold value of ICC was greater than 0.75, which could ensure the repeatability and stability of the features. All ultrasound R",
+          "needle": "Before feature selection, the threshold"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "algorithm": {
+        "value": "Ten ML algorithms; GBM selected",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 77,
+          "section": "Methods / Screening",
+          "sha256": "f5f542a713d7b094fe88b7284e929c34908015537b2d9e6918d2b86c9f64d8fc",
+          "excerpt": "Before feature selection, the threshold value of ICC was greater than 0.75, which could ensure the repeatability and stability of the features. All ultrasound R",
+          "needle": "Before feature selection, the threshold"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "tuning": {
+        "value": "Mesh search",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 77,
+          "section": "Methods / Screening",
+          "sha256": "f5f542a713d7b094fe88b7284e929c34908015537b2d9e6918d2b86c9f64d8fc",
+          "excerpt": "Before feature selection, the threshold value of ICC was greater than 0.75, which could ensure the repeatability and stability of the features. All ultrasound R",
+          "needle": "Before feature selection, the threshold"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "preprocessing": {
+        "value": "Z-score; Pearson correlation",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 77,
+          "section": "Methods / Screening",
+          "sha256": "f5f542a713d7b094fe88b7284e929c34908015537b2d9e6918d2b86c9f64d8fc",
+          "excerpt": "Before feature selection, the threshold value of ICC was greater than 0.75, which could ensure the repeatability and stability of the features. All ultrasound R",
+          "needle": "Before feature selection, the threshold"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "model_types": {
+        "value": "Radiomics-only; clinical-only; clinical+radiomics",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 77,
+          "section": "Methods / Screening",
+          "sha256": "f5f542a713d7b094fe88b7284e929c34908015537b2d9e6918d2b86c9f64d8fc",
+          "excerpt": "Before feature selection, the threshold value of ICC was greater than 0.75, which could ensure the repeatability and stability of the features. All ultrasound R",
+          "needle": "Before feature selection, the threshold"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "comparator": {
+        "value": "Clinical-only and radiomics-only GBM; combined GBM",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 77,
+          "section": "Methods / Screening",
+          "sha256": "f5f542a713d7b094fe88b7284e929c34908015537b2d9e6918d2b86c9f64d8fc",
+          "excerpt": "Before feature selection, the threshold value of ICC was greater than 0.75, which could ensure the repeatability and stability of the features. All ultrasound R",
+          "needle": "Before feature selection, the threshold"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "cv_strategy": {
+        "value": "10-fold CV reported in table captions",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 77,
+          "section": "Methods / Screening",
+          "sha256": "f5f542a713d7b094fe88b7284e929c34908015537b2d9e6918d2b86c9f64d8fc",
+          "excerpt": "Before feature selection, the threshold value of ICC was greater than 0.75, which could ensure the repeatability and stability of the features. All ultrasound R",
+          "needle": "Before feature selection, the threshold"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "calibration": {
+        "value": "Calibration curves",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 78,
+          "section": "Methods / Model evaluation",
+          "sha256": "0785da9f789cd9d53f74acbc0fb7fcf0a769a242ed5bb62a7a373446744fc855",
+          "excerpt": "The predictive performance of 10 ML models was comprehensively evaluated using AUC, accuracy, sensitivity, specificity, positive predictive value (PPV), and neg",
+          "needle": "We use calibration curves"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "decision_curve": {
+        "value": "DCA training and validation",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 78,
+          "section": "Methods / Model evaluation",
+          "sha256": "0785da9f789cd9d53f74acbc0fb7fcf0a769a242ed5bb62a7a373446744fc855",
+          "excerpt": "The predictive performance of 10 ML models was comprehensively evaluated using AUC, accuracy, sensitivity, specificity, positive predictive value (PPV), and neg",
+          "needle": "We use calibration curves"
+        },
+        "review": "Source passage inspected; narrative mapping curated by the building agent."
+      },
+      "regimen": {
+        "value": "AC-T, TCbHP, AT, TP, AC, TC (Table 1)",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "paragraph": 72,
+          "section": "Table 1 footnote",
+          "sha256": "50bdb51cb6b6ca0090e0a6405fe107e89714b39769e6b8e55e366b87c5a7063a",
+          "excerpt": "SD, standard deviation; AC-T, adriamycin with cyclophosphamide plus docetaxel; TCbHP, docetaxel with carboplatin and trastuzumab and pertuzumab; AT, adriamycin ",
+          "needle": "AC-T, adriamycin"
+        },
+        "review": "Table footnote inspected."
+      },
+      "age": {
+        "value": "Table 1 original columns: [\"Characteristics\", \"\", \"Training Cohort (N=185)\", \"Validation Cohort (N=46)\", \"P-value\"]; original age row: Age, Mean (SD), years |  | 54.49 (± 9.539) | 56.13 (± 9.570) | 0.300",
+        "evidence": {
+          "file": "FRONTIERS_2024.html",
+          "table": 1,
+          "row": 1,
+          "column": null,
+          "section": "Results / Table 1",
+          "sha256": "519bcdebc670796149030727e5363c66483600fb2c66c60c1ce08e209195afde",
+          "excerpt": "Age, Mean (SD), years |  | 54.49 (± 9.539) | 56.13 (± 9.570) | 0.300",
+          "needle": "Age row, with original cohort columns"
+        },
+        "review": "Original cohort/response columns preserved; no pooled or invented overall mean."
+      }
+    },
+    "model_specs": [
+      {
+        "model_id": "GBM clinical",
+        "model_type": "clinical-only",
+        "dataset_role": "training",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 5,
+        "row": 2,
+        "column": 1,
+        "layout": "metric_columns"
+      },
+      {
+        "model_id": "GBM clinical",
+        "model_type": "clinical-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 5,
+        "row": 2,
+        "column": 4,
+        "layout": "metric_columns"
+      },
+      {
+        "model_id": "GBM radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 5,
+        "row": 2,
+        "column": 2,
+        "layout": "metric_columns"
+      },
+      {
+        "model_id": "GBM radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 5,
+        "row": 2,
+        "column": 5,
+        "layout": "metric_columns"
+      },
+      {
+        "model_id": "GBM clinical+radiomics",
+        "model_type": "clinical+radiomics",
+        "dataset_role": "training",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 5,
+        "row": 2,
+        "column": 3,
+        "layout": "metric_columns"
+      },
+      {
+        "model_id": "GBM clinical+radiomics",
+        "model_type": "clinical+radiomics",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 5,
+        "row": 2,
+        "column": 6,
+        "layout": "metric_columns"
+      },
+      {
+        "model_id": "LR radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 2,
+        "row": 1,
+        "column": 1,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "LR radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 3,
+        "row": 1,
+        "column": 1,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "NB radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 2,
+        "row": 1,
+        "column": 2,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "NB radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 3,
+        "row": 1,
+        "column": 2,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "SVM radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 2,
+        "row": 1,
+        "column": 3,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "SVM radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 3,
+        "row": 1,
+        "column": 3,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "KNN radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 2,
+        "row": 1,
+        "column": 4,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "KNN radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 3,
+        "row": 1,
+        "column": 4,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "RF radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 2,
+        "row": 1,
+        "column": 5,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "RF radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 3,
+        "row": 1,
+        "column": 5,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "ET radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 2,
+        "row": 1,
+        "column": 6,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "ET radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 3,
+        "row": 1,
+        "column": 6,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "LGBM radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 2,
+        "row": 1,
+        "column": 7,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "LGBM radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 3,
+        "row": 1,
+        "column": 7,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "AB radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 2,
+        "row": 1,
+        "column": 9,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "AB radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 3,
+        "row": 1,
+        "column": 9,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "MLP radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "training",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 2,
+        "row": 1,
+        "column": 10,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      },
+      {
+        "model_id": "MLP radiomics",
+        "model_type": "radiomics-only",
+        "dataset_role": "internal_validation",
+        "timepoint_role": "baseline",
+        "file": "FRONTIERS_2024.html",
+        "table": 3,
+        "row": 1,
+        "column": 10,
+        "layout": "algorithm_columns",
+        "is_candidate": true
+      }
+    ],
+    "semantic": {
+      "timepoints": [
+        "baseline"
+      ],
+      "modalities": [
+        "B-mode"
+      ],
+      "strategy": [
+        "radiomics",
+        "clinical+radiomics"
+      ],
+      "comparators": [
+        "clinical",
+        "radiomics"
+      ],
+      "validation": [
+        "internal_validation"
+      ],
+      "population": "breast/NAC",
+      "subtype": [
+        "luminal",
+        "HER2",
+        "TNBC"
+      ],
+      "regimen": [
+        "anthracycline",
+        "taxane",
+        "HER2-targeted"
+      ],
+      "acquisition_roles": [
+        "baseline"
+      ]
+    },
+    "issues": [
+      {
+        "field": "CI:GBM clinical:internal_validation",
+        "reason": "Figure 5B prints AUC .732 and 95% CI .758–.968, which excludes the point estimate.",
+        "impact": "Invalid reported CI retained in discrepancy log; usable CI left NR, no CI-based pooling."
+      },
+      {
+        "field": "recall:GBM clinical+radiomics:internal_validation",
+        "reason": "Table 5 sensitivity .750 and recall .850 differ for the same model/dataset.",
+        "impact": "Both transcribed, flagged; no confusion matrix inferred from rounded metrics."
+      }
+    ],
+    "source_url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1485681/full"
+  }
+]
